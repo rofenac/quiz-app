@@ -1,9 +1,10 @@
 import './index.css'
+import Counter from './counter'
 
 function App() {
   return (
     <>
-
+      <Counter />
     </>
   )
 }
