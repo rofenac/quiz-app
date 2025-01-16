@@ -1,10 +1,9 @@
 import './index.css'
-import Counter from './counter'
 
 function App() {
   return (
     <>
-      <Counter />
+      <h1>Life is Pain</h1>
     </>
   )
 }
