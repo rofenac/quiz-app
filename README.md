@@ -7,7 +7,7 @@
 
 # BACKLOG
 
-1. Install DaisyUI - (Supposedly this makes working with TailwindCSS easier)
+1. ~~Install DaisyUI - (Supposedly this makes working with TailwindCSS easier)~~
 2. Work on some sort of randomization of questions
   - "People" only questions
   - "Process" only questions
