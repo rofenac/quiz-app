@@ -626,5 +626,646 @@
       ],
       "principle": "Common Aspects of Team Development"
     }
+  },
+  {
+    "id": 21,
+    "question": "You have collected the requirements for your project, matched them to project scope, and broken them down into smaller parts and the activities required. In doing this, you notice that the manager of the marketing department has added extra scope that is unrelated to your current project. What will you do next?",
+    "options": [
+      {
+        "text": "Start an open dialogue with the functional manager, raise the incorrect scope items and their impacts.",
+        "isCorrect": true
+      },
+      {
+        "text": "Override the marketing manager’s decision on scope as you are the senior project manager.",
+        "isCorrect": false
+      },
+      {
+        "text": "Raise a change request for the additional scope and let the Change Control Board decide.",
+        "isCorrect": false
+      },
+      {
+        "text": "Place the additional scope into the product backlog for the product owner to prioritise it.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Without an open dialogue, you may not know if the scope was a mistake, previously approved, or any other reason for it being there. Positive discourse and courage are key aspects of a winning project team culture. Others include support, respect, celebrating success, and transparency.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "21"
+      ],
+      "principle": "Project Team Culture"
+    }
+  },
+  {
+    "id": 22,
+    "question": "Your project team are protected by a union agreement. You notice that they don’t know how to use the product you are improving, are slow to respond, and regularly complain about the work. Your project sponsor has had enough and threatens to shut the project down if improvements can’t be made. What will you do next?",
+    "options": [
+      {
+        "text": "Set up a new project with different team members and transfer the project work to that team.",
+        "isCorrect": false
+      },
+      {
+        "text": "Set a clear project purpose and vision and pair your team with the customer to show them how they are making a positive difference.",
+        "isCorrect": true
+      },
+      {
+        "text": "Tell your project team that they will lose their jobs if they don’t improve the speed of their work.",
+        "isCorrect": false
+      },
+      {
+        "text": "Create a project Gantt Chart schedule and burndown chart so the project work is transparent to all.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question calls for leadership skills, where setting a vision and purpose and showing your team how they are making a difference can increase their intrinsic motivation. Transferring to another team in the same company may risk the same result, and threatening your team may embed their behaviour further.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "24",
+        "25"
+      ],
+      "principle": "Leadership Skills: Establishing a Vision; Motivation"
+    }
+  },
+  {
+    "id": 23,
+    "question": "During a key scope meeting, an argument arises. The business manager accuses the technology manager of not delivering to their needs on past projects, and the technology manager accuses the business manager of changing requirements that impact the delivery schedule. The meeting is at risk, with the stakeholders being closed off to any further discussion. What will you do next?",
+    "options": [
+      {
+        "text": "Take the side of the technology manager, as scope that impacts delivery should be controlled.",
+        "isCorrect": false
+      },
+      {
+        "text": "Take the side of the business manager, as we should always deliver to the customer’s specification.",
+        "isCorrect": false
+      },
+      {
+        "text": "Facilitate to keep communication respectful, focus on the issue in the present and search for alternatives together.",
+        "isCorrect": true
+      },
+      {
+        "text": "Ensure they both agree to the change control process to avoid disagreements in the future.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Not all conflict is negative. How conflict is handled can either lead to more conflict or to better decision-making and stronger solutions. The PMBOK Guide notes open and respectful communication, focusing on the issue not the person, the present not the past, and searching for alternatives together.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "29"
+      ],
+      "principle": "Conflict Management"
+    }
+  },
+  {
+    "id": 24,
+    "question": "You are working on a project where the project team is completely distributed around the country in multiple sites, including working from home. Some of the project team members have not been able to contribute to the project, and there are concerns from the program that the project will fall behind. What will you do next?",
+    "options": [
+      {
+        "text": "Raise a request to the program to co-locate all your project team members as soon as possible.",
+        "isCorrect": false
+      },
+      {
+        "text": "Proceed with daily stand-ups and working group meetings with any team members in your area.",
+        "isCorrect": false
+      },
+      {
+        "text": "Set team leaders for each area around the country, to report back to you as the centralised project leader.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use technology to maintain ongoing contact with audio and video for meetings, with a team website to keep all project information available.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "This question is on distributed project teams. To improve you can use audio and video capabilities for meetings, use technology (including messaging) for ongoing contact, build in time to get to know remote team members, and have an open project site for information.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "30"
+      ],
+      "principle": "Distributed project teams"
+    }
+  },
+  {
+    "id": 25,
+    "question": "You are initiating a project to a sales team where the process will change significantly, even though the outcome of a completed sale will remain the same. The functional manager is concerned about the change and any disruption it might bring. What will you do next?",
+    "options": [
+      {
+        "text": "Kick off the project with multiple deliveries to deliver small parts and reduce the change impact.",
+        "isCorrect": false
+      },
+      {
+        "text": "Kick off the project work with a single delivery at the end of the project when the process change is complete.",
+        "isCorrect": true
+      },
+      {
+        "text": "Kick off the project with continuous delivery in mind, to ensure fast value to the business.",
+        "isCorrect": false
+      },
+      {
+        "text": "Kick off the project using periodic deliveries, delivering value as it is ready.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question covers delivery cadence and their various benefits. A process re-engineering project may not have any deliveries until near the end of the project when the new process is rolled out and ready.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "34"
+      ],
+      "principle": "Delivery Cadence"
+    }
+  },
+  {
+    "id": 26,
+    "question": "You are working on a project where the requirements are clear but the solution ideas are uncertain. The product owner and the technical experts can’t be sure which ideas will work in practice, and which ones won’t. The organisation cannot afford to get this project wrong, as they have previously made mistakes and customers are starting to leave. What will you do next?",
+    "options": [
+      {
+        "text": "Use an Incremental development approach for the project.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use an Iterative development approach for the project.",
+        "isCorrect": true
+      },
+      {
+        "text": "Use a Predictive development approach for the project.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use a hybrid development approach for the project.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "For development approaches, an iterative approach is used when you need to capture ideas that might change, while still delivered in one release. Incremental progressively delivers features (or increments), Predictive plans everything up-front, and hybrid is a combination of predictive and adaptive.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "37"
+      ],
+      "principle": "Development approaches",
+      "additionalSources": [
+        {
+          "guide": "Agile Practice Guide",
+          "year": 2017,
+          "pages": [
+            "18"
+          ],
+          "principle": "Characteristics of project lifecycles"
+        }
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "question": "You are working on a new product for your organisation where the requirements are complex and are likely to change a few times as the project progresses. The organisation also needs usable parts of the product to be released as soon as possible to try and capture some of the market they are aiming for, away from their competitors. What will you do next?",
+    "options": [
+      {
+        "text": "Recommend an Iterative development approach.",
+        "isCorrect": false
+      },
+      {
+        "text": "Recommend a Predictive development approach.",
+        "isCorrect": false
+      },
+      {
+        "text": "Recommend an Adaptive development approach.",
+        "isCorrect": true
+      },
+      {
+        "text": "Recommend a Hybrid development approach.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Adaptive approaches are useful when requirements are subject to uncertainty and change. A clear vision is established at the start of the project, and initial known requirements are refined or replaced in accordance with user feedback or unexpected events.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "38"
+      ],
+      "principle": "Adaptive approach"
+    }
+  },
+  {
+    "id": 28,
+    "question": "A new project has been kicked off in your organisation due to a recent government inquiry into your industry, which found multiple processes with significant regulatory oversight that need to change. The inquiry ordering these changes has given you a due date of 10 months’ time before you start incurring penalties. What will you do next?",
+    "options": [
+      {
+        "text": "Proceed, with an Agile development approach to deliver change as quickly as possible.",
+        "isCorrect": false
+      },
+      {
+        "text": "Proceed, with a Hybrid development approach to respond to changes while planning up front.",
+        "isCorrect": false
+      },
+      {
+        "text": "Proceed, with a Predictive methodology to ensure quality control.",
+        "isCorrect": true
+      },
+      {
+        "text": "Proceed, with an Iterative methodology to improve using feedback.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "In considerations for selecting a development approach, environments that have significant regulatory oversight may need to use a predictive approach due to the required process, documentation and demonstration needs.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "40"
+      ],
+      "principle": "Considerations for selecting a development approach"
+    }
+  },
+  {
+    "id": 29,
+    "question": "Your organisation is moving to an Agile way of work. Your project team are strongly opposed to using Agile as they have been burned using iterations, when executives used the team velocity to try and force the team to work faster instead of keeping a sustainable pace. What will you do next?",
+    "options": [
+      {
+        "text": "Add extra resources to your team to deliver faster and avoid executives getting involved.",
+        "isCorrect": false
+      },
+      {
+        "text": "Proceed with a predictive development approach, and deal with the consequences later.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask your team to work with Agile, velocity and iterations despite their hesitations.",
+        "isCorrect": false
+      },
+      {
+        "text": "Suggest the team uses flow-based scheduling, with a Kanban board for visual work.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "Kanban is one of the largest parts of Agile approaches, aside from other major parts such as Lean, XP and Scrum. A flow-based scheduling approach does not use sprints, lifecycles, or velocity but optimises deliveries based on resource capacity, and minimises waste such as context-switching and hand-offs.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "45"
+      ],
+      "principle": "Flow-based scheduling"
+    }
+  },
+  {
+    "id": 30,
+    "question": "Your team have not worked on projects before, and don’t know about waterfall, agile, or any of the different models. Your project may also have requirements that are certain or uncertain, with varying levels of risk, so are not sure which approach to use as you begin this new project. What will you do next?",
+    "options": [
+      {
+        "text": "Use Waterfall and plan everything up front, so the team have more stability.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use general phase definitions such as Feasibility, Design, Build, Test, Deploy and Close.",
+        "isCorrect": true
+      },
+      {
+        "text": "Use Agile to ensure you can respond to change while your team’s capability increases.",
+        "isCorrect": false
+      },
+      {
+        "text": "Don’t use any project approach – it doesn’t matter as long as the work is getting done.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "All projects will go through the general phases of Feasibility, Design, Build, Test, Deploy and Close. Waterfall projects will do these in sequence once, while Agile projects will do these multiple times, for each feature or increment. The underlying principle remains the same, so it is a good place to start.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "42"
+      ],
+      "principle": "Lifecycle and phase definitions"
+    }
+  },
+  {
+    "id": 31,
+    "question": "You are a project manager in an organization with a directive Project Management Office, and are currently in between projects. The PMO asks you to prepare for an upcoming project in the accounting area by meeting with the functional manager there. You have no team, no scope or requirements and no timeline as yet. What will you do next?",
+    "options": [
+      {
+        "text": "Ask the functional manager for their wish-list of improvements, so you can take these to your PMO.",
+        "isCorrect": false
+      },
+      {
+        "text": "Create a project management plan so the project, scope, budget, and schedule are more clear.",
+        "isCorrect": false
+      },
+      {
+        "text": "Create a small backlog of work and start your first sprint, then progressively update the backlog as the project progresses.",
+        "isCorrect": false
+      },
+      {
+        "text": "Progressively elaborate the vision statement and project charter to define a coordinated approach.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "Before initiating a project of any sort, we start with a vision statement, project charter, or business case in order to identify a coordinated path to achieve the desired outcomes.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "52"
+      ],
+      "principle": "Planning Overview"
+    }
+  },
+  {
+    "id": 32,
+    "question": "You are working on a project where part of the project delivers a high value, high risk component. Another part of the project delivers a routine change to the system. Your project sponsor wants to gain the business value as quickly as possible, but your project team wants to start with the work they are familiar with first. What will you do next?",
+    "options": [
+      {
+        "text": "Prioritise the high risk items at the end of the project.",
+        "isCorrect": false
+      },
+      {
+        "text": "Prioritise the high risk items at the start of the project.",
+        "isCorrect": true
+      },
+      {
+        "text": "Use an incremental approach and deliver part of the routine and high risk work in each sprint.",
+        "isCorrect": false
+      },
+      {
+        "text": "Plan out the work in detail and secure a scope baseline, with formal change controls to reduce uncertainty.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question refers to the concept of the last responsible moment. Work that is novel or risky can be prioritised at the start of the project to reduce uncertainty with the project scope before a large investment has been made. Routine work can be delayed until the cost of further delay would exceed the benefit.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "54"
+      ],
+      "principle": "Delivery"
+    }
+  },
+  {
+    "id": 33,
+    "question": "You are working on an agile project where the functional area you are delivering to only has a high-level idea of the system requirements they will need. The functional manager suggests a Work Breakdown Structure, however your team feels that is more for a predictive (waterfall) delivery approach. What will you do next?",
+    "options": [
+      {
+        "text": "Use and create a WBS anyway, as it is just a tool.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use rolling wave planning, and keep the work at a high level until you are ready to work on it, when you can plan in detail.",
+        "isCorrect": false
+      },
+      {
+        "text": "Note the high-level themes or epics, decompose them into features, and again into user stories.",
+        "isCorrect": true
+      },
+      {
+        "text": "Ask the functional area for more detailed requirements before the project begins.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question refers to 'decomposition' or breaking down the work. We could use a WBS, or rolling wave planning, but for an incremental approach breaking down the work from epics to features to user stories is a form of decomposition that fits the delivery approach.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "54"
+      ],
+      "principle": "Delivery"
+    }
+  },
+  {
+    "id": 34,
+    "question": "You are at the beginning of planning a new project, and have researched and gathered the requirements from the area, broken them down into deliverables and activities, which you believe could take 26 weeks to deliver. The project sponsor is asking you for an estimate on how long the project will take. What will you do next?",
+    "options": [
+      {
+        "text": "Tell the project sponsor 26 weeks.",
+        "isCorrect": false
+      },
+      {
+        "text": "Tell the project sponsor that you will use an iterative approach, where value is delivered until the project stops.",
+        "isCorrect": false
+      },
+      {
+        "text": "Tell the project sponsor approximately 24 to 28 weeks.",
+        "isCorrect": false
+      },
+      {
+        "text": "Tell the project sponsor approximately 20 to 45 weeks.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "This question is related to estimation and range. Estimates should have a broad range at the start of the project, starting at -25% to +75% when there is not much information. Once the project team has a smooth delivery cadence and experience in the product, a smaller range such as -5% to +10% can be used. A 0% range is used when everything is known – and the product has been delivered.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "55"
+      ],
+      "principle": "Estimating, Range"
+    }
+  },
+  {
+    "id": 35,
+    "question": "After gathering your project requirements, project scope, and breaking it down into activities, you need to estimate the project schedule with your team. After some analysis and discussion, your team come up with a range of 53 to 75 days assigned across all tasks. What will you do next?",
+    "options": [
+      {
+        "text": "The estimate is high accuracy but low precision - ask the team to come back with a more precise estimate.",
+        "isCorrect": false
+      },
+      {
+        "text": "The estimate is low accuracy but high precision - ensure the estimates become more accurate as the project unfolds.",
+        "isCorrect": true
+      },
+      {
+        "text": "The estimate is in high confidence but low precision - proceed as is and adjust using an incremental approach.",
+        "isCorrect": false
+      },
+      {
+        "text": "The estimate is in low confidence but high accuracy - allow the team to become more confident as the project unfolds.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question is on estimates and their accuracy. The lower the accuracy, the larger the potential range in values. Precision is different from accuracy, as it refers to the exactness of the estimate, for example '2 days' is more precise than 'sometime this week'.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "54"
+      ],
+      "principle": "Estimating: accuracy, precision, confidence"
+    }
+  },
+  {
+    "id": 36,
+    "question": "You are working on a business case where you know that the industry is undergoing a significant change at the moment, and there could be many different impacts to your project benefits before it is delivered completely. The project sponsor asks you for the best estimate of benefits you can give under the circumstances. What will you do next?",
+    "options": [
+      {
+        "text": "Ask your team for a probabilistic estimate.",
+        "isCorrect": true
+      },
+      {
+        "text": "Ask your team for a deterministic estimate.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask your team for an absolute estimate.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask your team for a relative estimate.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Probabilistic estimates include a range of estimates, along with the associated probabilities within the range such as a confidence level or a probability distribution. If the estimate is uncertain, this is the best approach. Deterministic is a number, absolute is specific, actual numbers and relative estimates are shown in comparison to other estimates.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "57"
+      ],
+      "principle": "Presenting estimates"
+    }
+  },
+  {
+    "id": 37,
+    "question": "You have noted nine epics for delivery as part of your most recent project. Your team have broken down these epics into user stories, and would like to see the effort involved for these deliverables. You ask your team to find the smallest user story, size it with a '1,' and then determine the size of the other cards based on how they compare to the original card. What approach are you taking?",
+    "options": [
+      {
+        "text": "Relative estimating with your team.",
+        "isCorrect": true
+      },
+      {
+        "text": "Deterministic estimating to determine the effort.",
+        "isCorrect": false
+      },
+      {
+        "text": "Absolute estimating to get an estimate with absolute certainty.",
+        "isCorrect": false
+      },
+      {
+        "text": "Probabilistic estimating with the highest probability items.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question is about estimating, and making an estimate in comparison to other estimates is relative estimating.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "57"
+      ],
+      "principle": "Relative Estimating"
+    }
+  },
+  {
+    "id": 38,
+    "question": "You are working on a project where a competitor is also working on a similar feature, and being first to the market will have a significant impact on this year’s profit. Your product owner would like to measure how quickly story cards are being completed, once they start being developed. What will you do next?",
+    "options": [
+      {
+        "text": "Check the Lead time of the story cards.",
+        "isCorrect": false
+      },
+      {
+        "text": "Check the Gantt chart with assigned schedule activities.",
+        "isCorrect": false
+      },
+      {
+        "text": "Check the Cycle time of the story cards.",
+        "isCorrect": true
+      },
+      {
+        "text": "Check the schedule network and precedence diagram.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Cycle time is the total elapsed time it takes one unit to get through a process. Lead time is the time from when the customer makes the order (or the requirement is noted) to the time the item is delivered or released. Schedule network diagram is useful for finding the Critical Path, and precedence diagramming is used to find what deliverable or activity relies on others.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "58"
+      ],
+      "principle": "Flow-based estimating"
+    }
+  },
+  {
+    "id": 39,
+    "question": "You are working on a project that has recently moved to a more agile way of work. The team have not completely taken on the Scrum approach however, and are comfortable working with a more flow-based approach moving user stories across a Kanban board. You are wanting to get an estimate on how much work can be completed in the next three months, based on the team’s existing progress. What will you do next?",
+    "options": [
+      {
+        "text": "Multiply the velocity by the number of remaining user stories.",
+        "isCorrect": false
+      },
+      {
+        "text": "Multiply the cycle time by the throughput.",
+        "isCorrect": true
+      },
+      {
+        "text": "Multiply the lead time by the schedule performance index.",
+        "isCorrect": false
+      },
+      {
+        "text": "Multiply the planned value by the actual value.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Scrum uses velocity – Kanban or Flow-based estimates are developed by determining the cycle time and throughput. Cycle time is the total elapsed time it takes one unit to get through a process. Throughput is the number of items that can complete a process in a given amount of time.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "58"
+      ],
+      "principle": "Flow-based estimating"
+    }
+  },
+  {
+    "id": 40,
+    "question": "Your product owner wants to bring the next feature forward so that it is done in parallel to the current feature, but is still released in the existing feature order. You make the necessary adjustments to the product backlog, and decide to adjust the product roadmap, which you have visualized as a Gantt chart. What will you do next?",
+    "options": [
+      {
+        "text": "Use a schedule lead on the feature, and change the feature to finish-to-start.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use a schedule lag on the feature, and change the feature to start-to-start.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use a schedule lead on the feature, and change the feature to finish-to-finish.",
+        "isCorrect": true
+      },
+      {
+        "text": "Use a schedule lag on the feature, and change the feature to start-to-finish.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "A schedule lag is moving an item back, a schedule lead is bringing an item forward. Precedence diagramming method states for Finish-to-Finish items, the next item cannot finish until the previous item has finished. This allows the items to be worked on in parallel, while still keeping the same delivery order.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "59"
+      ],
+      "principle": "Schedules; Lead; Lag",
+      "additionalSources": [
+        {
+          "guide": "PMBOK Guide – Sixth Edition",
+          "year": 2017,
+          "pages": [
+            "180"
+          ],
+          "principle": "Precedence diagramming method"
+        }
+      ]
+    }
   }
 ]
