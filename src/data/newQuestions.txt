@@ -717,3 +717,173 @@ PMBOK Guide – Sixth Edition, 2017, p180, “Precedence diagramming method”
 
 ---
 
+Question 41:
+
+You are working on a project where you have been completing the deliverables in sequence, and the project work is starting to fall behind. The project sponsor asks you to speed up the work and reduce the time for the project to be delivered, but also makes it very clear that there is no more money to use when speeding up the work. What will you do next?
+
+A. Apply leads and lags to your project schedule.  
+B. Apply fast tracking to your project schedule.  
+C. Apply schedule crashing to your project.  
+D. Apply resource leveling to your project.  
+
+Answer: B  
+
+Project fast tracking is a schedule compression method in which activities or tasks that are normally done in sequence are performed in parallel. Schedule crashing includes adding people to activities, working overtime, or paying to expedite deliveries.
+
+PMBOK Guide – Seventh Edition, 2021, p59, “Schedules; Fast tracking, crashing.”
+
+---
+
+Question 42:
+
+After reviewing your project schedule you notice you are behind by three weeks and the schedule will need to be compressed. Your project does not have enough budget to crash the schedule. You check with the lead for each area and review the schedule as to whether they can fast track their deliverables. What will you do next?
+
+A. Fast track team items with discretionary dependencies.  
+B. Fast track team items with mandatory dependencies.  
+C. Fast track team items with external dependencies.  
+D. Fast track team items based on industry regulation.  
+
+Answer: A  
+
+When compressing the schedule, some activities cannot be fast-tracked because of the nature of the work, others can. A discretionary dependency is based on project preferences, and may be modifiable. External and mandatory dependencies usually cannot be modified. Internal dependencies may be modifiable, except when based on specific regulatory needs.
+
+PMBOK Guide – Seventh Edition, 2021, p60, “Four types of dependencies.”
+
+---
+
+Question 43:
+
+Your team are new to agile, and had previously been working with Waterfall. Your key customer asks you for a project schedule. The project team believes using a project schedule is from the old waterfall way of working and they shouldn't have to create one. What will you do next?
+
+A. Create a project Gantt chart to visualise the activities within the project.  
+B. Determine the project’s planned versus actual value, instead of working with a schedule directly.  
+C. Advise the customer that we don’t need to plan ahead in an adaptive way of work.  
+D. Ask your team to develop a high level release plan like a product roadmap, showing the features to be included in each release.  
+
+Answer: D  
+
+Adaptive schedule planning uses incremental planning. A high level release plan is developed that indicates basic features and functionality to be included in each release.
+
+PMBOK Guide – Seventh Edition, 2021, p61, “Adaptive schedule planning.”
+
+---
+
+Question 44:
+
+You are working in a project team that has recently moved to an Agile way of work. Your business analysts want to gather the requirements, solutions, match them to the scope and do a WBS for the whole deliverable. Your product owner says this will take too long, and is not agile enough for their needs. What will you do next?
+
+A. Ask your team to review the scope management plan for the proper process.  
+B. Break the deliverable down into smaller pieces so you can deliver those faster.  
+C. Ask your team to timebox work on the highest priority items in the backlog, update the estimates then reprioritise as necessary.  
+D. Review the project charter for the high level scope, and use this to begin delivery quickly.  
+
+Answer: C  
+
+Adaptive approaches often use timeboxes. The work is based on a prioritised backlog. The project team determines the amount of work they can do in each timebox, estimates the work and self-manages to accomplish the work. At this point, the backlog may be reprioritised for the next timebox.
+
+PMBOK Guide – Seventh Edition, 2021, p62, “Timeboxes”
+
+---
+
+Question 45:
+
+When reviewing the current progress with your project sponsor, they notice that the system solution is missing a critical piece that will impact the benefit of the project. The project sponsor approves this scope. Your project has a Planned Value of $520,000 and an Actual Cost of $535,000. What will you do next?
+
+A. Work with the PMO to unlock the project management reserves for the extra work.  
+B. Ask the Product Owner to reprioritise the backlog and see if the new work will fit.  
+C. Perform the work within your normal budget as your project is on track.  
+D. Raise a change request for the changes and gain approval from the Change Control Board.  
+
+Answer: A  
+
+Management reserves are set aside for unexpected activities related to in-scope work. Depending on the organisation’s policies, management reserves may be managed by the PMO at the program or portfolio level.
+
+PMBOK Guide – Seventh Edition, 2021, p62, “Budget”
+
+---
+
+Question 46:
+
+You are in the planning stages of an Agile project where the functional manager and senior users have provided the high-level requirements and scope. You have been asked to put together a project team that will be able to deliver quickly. What will you do next?
+
+A. Select project members from each city to ensure diversity of knowledge within the team.  
+B. Put together a resource management plan outlining the resources required.  
+C. Ask your PMO for current available resources and assign them to the work.  
+D. Select a small team that can work in the same area so they can solve problems as they arise.  
+
+Answer: D  
+
+When planning for the team, the project manager considers the ability and necessity for them to work in the same location. Small project teams that can work in the same room are able to take advantage of osmotic communication and can solve problems as they arise.
+
+PMBOK Guide – Seventh Edition, 2021, p64, “Project Team Composition and Structure”
+
+---
+
+Question 47:
+
+You are putting together a project team to deliver an accounting system to offices around the country. The accounting system you are moving to has not been used by anyone in your organization before. The project is quite high risk, and the delivery needs to be right the first time. What will you do next?
+
+A. Select a small team that can work in the same area so they can solve problems as they arise.  
+B. Use a predictive project approach and source part of your team externally if they have skillsets in the new system.  
+C. Train existing internal staff in the new system then have them work on the project.  
+D. Perform a make or buy analysis on the different software options.  
+
+Answer: B  
+
+The benefit that outside skills bring to the project are weighed against the costs that will be incurred. With higher risk and a single delivery, a waterfall or predictive project delivery approach is best.
+
+PMBOK Guide – Seventh Edition, 2021, p63, “Project Team Composition and Structure”
+
+---
+
+Question 48:
+
+You are putting together a project plan for a change that affects nearly ten thousand stakeholders in your organization. You have identified the affected stakeholders, analyzed and prioritized them, and are putting together a communication plan to ensure the right engagement is made. What will you NOT include in your plan?
+
+A. Why should information be shared with stakeholders?  
+B. What is the best way to provide information?  
+C. How can they make changes to the communication plan?  
+D. When and how often is information needed?  
+
+Answer: C  
+
+Planning communication for the project entails considering the following: Who needs information? Who has the information needed? Why should information be shared with stakeholders? When and how often is information needed? What is the best way to provide information? What information does each stakeholder need?  
+
+PMBOK Guide – Seventh Edition, 2021, p64, “Communication”
+
+---
+
+Question 49:
+
+You put together a resource plan for a large amount of physical inventory to be purchased from overseas. You ordered the inventory during project execution, however global supply chains were impacted and the shipment was delayed by three months, significantly impacting your project. What should you have done differently?
+
+A. Hired a resource manager to take care of the resource tasks on your project.  
+B. Planned strategically about the timing from order to delivery to usage, managing resource risks and their responses.  
+C. Ensured a means to track the inventory from arrival on site to the delivery of an integrated product.  
+D. Sourced the inventory locally to reduce the impact of global supply chains.  
+
+Answer: B  
+
+Project teams whose projects require significant physical materials think and plan strategically about the timing from order, to delivery, to usage. This can include evaluation of bulk ordering versus the cost of storage, global logistics and more.  
+
+PMBOK Guide – Seventh Edition, 2021, p65, “Physical resources”
+
+---
+
+Question 50:
+
+You are halfway through your agile project when there is a significant change to the project scope, after it was found that the project would not be able to deliver the benefits it had promised. You check your project budget and there are contingency and management reserves available. What will you do next?
+
+A. Take the project scope change to the change control board for approval.  
+B. Use the available contingency reserves to make the appropriate change to project scope.  
+C. Review the change management plan for the change control process.  
+D. Reprioritise the product backlog, including the new scope and begin work on the highest priority straight away.  
+
+Answer: D  
+
+Changes may occur as a result of a risk event, environment change, a deeper understanding of requirements, customer requests and more. Project teams should prepare a process for adapting plans throughout the project. In an Agile team, this may take the form of reprioritising the backlog instead of a change control process with project baselines.  
+
+PMBOK Guide – Seventh Edition, 2021, p66, “Changes”
+
+---
+
