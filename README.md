@@ -1,8 +1,38 @@
-# React + Vite
+# Quiz App Design Layout
+- Display multiple-choice(4) quiz questions
+- Categorize questions into the new 3 PMP knowledge areas
+- Provide feedback on answers during the session
+- Track and display session-based scores
+- Establish Leaderboard for further gamification
+- Operate on both desktop and mobile devices with responsive design.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# What is installed:
+ - ReactJS
+ - Vite
+ - PostCSS
+ - TailwindCSS
+ - Material UI "standard" libraries + @mui/icons-material
 
-Currently, two official plugins are available:
+# BACKLOG
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Work on some sort of randomization of questions
+  - "People" only questions
+  - "Process" only questions
+  - "Business Environment" only questions
+  - "Random Quiz" - develop logic
+2. Bring up UX/UI in parallel with code base/functionality
+  - Settle on UX/UI solution and style
+  - Write code! (with help)
+3. Refactor as I go (technical debt mitigation) since I have the luxury of no business requirements or bosses breathing down my neck
+4. Learn how to refactor
+5. Scorekeeping functionality - leaderboard???
+6. Instant feedback on questions
+7. ~~I dunno, maybe build an MVP???~~
+
+# Sprint Items
+
+1. MVP
+  - Decide on styling (Tailwind)
+  - Page navigation (links, buttons, etc.)
+  - Collect questions
+  - ~~Setup Trello~~

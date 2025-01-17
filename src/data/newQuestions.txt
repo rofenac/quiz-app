@@ -1,0 +1,19 @@
+Question 1:
+
+You have been assigned to a new project, where the work is behind schedule and the team are not working together well. The team is relatively new, and conflicts are arising. Team members are blaming each other for work not done, and some people are not showing up to work on the project at all. What will you do next?
+
+A. Meet with the functional manager to agree on the team members’ time requirement  
+B. Meet with your team to set a team charter and define roles & responsibilities. ✅  
+
+C. Meet with the project sponsor to gain additional funding for resources who can work together. ❌  
+
+D. Escalate the issue to the steering committee as soon as possible as a project risk. ❌  
+
+**Answer: B**  
+
+The Standard for Project Management asks that we create a collaborative team environment, including team agreements, definitions of roles & responsibilities, formal committees tasked with specific objectives, and standing meetings that regularly review a given topic.
+
+*(PMBOK Guide – Seventh Edition, 2021, p28, p29, “Create a Collaborative Team Environment”)*  
+
+---
+
