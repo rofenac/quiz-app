@@ -1,3 +1,11 @@
+# Quiz App Design Layout
+- Display multiple-choice(4) quiz questions
+- Categorize questions into the new 3 PMP knowledge areas
+- Provide feedback on answers during the session
+- Track and display session-based scores
+- Establish Leaderboard for further gamification
+- Operate on both desktop and mobile devices with responsive design.
+
 # What is installed:
  - ReactJS
  - Vite
@@ -7,7 +15,7 @@
 
 # BACKLOG
 
-1. Install DaisyUI - (Supposedly this makes working with TailwindCSS easier)
+1. ~~Install DaisyUI - (Supposedly this makes working with TailwindCSS easier)~~
 2. Work on some sort of randomization of questions
   - "People" only questions
   - "Process" only questions
