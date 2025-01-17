@@ -1,0 +1,630 @@
+[
+  {
+    "id": 1,
+    "question": "You have been assigned to a new project, where the work is behind schedule and the team are not working together well. The team is relatively new, and conflicts are arising. Team members are blaming each other for work not done, and some people are not showing up to work on the project at all. What will you do next?",
+    "options": [
+      {
+        "text": "Meet with the functional manager to agree on the team members’ time requirement",
+        "isCorrect": false
+      },
+      {
+        "text": "Meet with your team to set a team charter and define roles & responsibilities.",
+        "isCorrect": true
+      },
+      {
+        "text": "Meet with the project sponsor to gain additional funding for resources who can work together.",
+        "isCorrect": false
+      },
+      {
+        "text": "Escalate the issue to the steering committee as soon as possible as a project risk.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "The Standard for Project Management asks that we create a collaborative team environment, including team agreements, definitions of roles & responsibilities, formal committees tasked with specific objectives, and standing meetings that regularly review a given topic.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "28",
+        "29"
+      ],
+      "principle": "Create a Collaborative Team Environment"
+    }
+  },
+  {
+    "id": 2,
+    "question": "You have recently completed a project for a new product and have been asked to manage it after its release to keep it relevant in today’s marketplace. Half of your existing project team are rolling off to other projects soon, and your project budget is nearly depleted. What will you do next?",
+    "options": [
+      {
+        "text": "Create a business case and project charter for your project sponsor to approve.",
+        "isCorrect": false
+      },
+      {
+        "text": "Retain as many of your current project staff to continue work on the product.",
+        "isCorrect": false
+      },
+      {
+        "text": "Raise a change request for your current project to add scope and continue making changes.",
+        "isCorrect": false
+      },
+      {
+        "text": "Secure funding for a stable team, then use current research to form a suite of projects to improve the product.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "This question is referring to product management. Product management involves the integration of people, data, processes, and business systems to develop or maintain a product or service throughout its lifecycle.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "17",
+        "19"
+      ],
+      "principle": "Product Management"
+    }
+  },
+  {
+    "id": 3,
+    "question": "You are delivering a critical change and several key stakeholders in your organisation have added seemingly unnecessary steps for you to take, with extra approvals, reports and meetings. They are also restricting the people you need from working on your project in a larger capacity. What will you do next?",
+    "options": [
+      {
+        "text": "Go directly to the people you need to avoid extra back-and-forth with the stakeholders.",
+        "isCorrect": false
+      },
+      {
+        "text": "Raise a risk in the risk register on the lack of access to sufficient resources.",
+        "isCorrect": false
+      },
+      {
+        "text": "Communicate more often with the stakeholders and gain a deeper awareness of their ideas and situation.",
+        "isCorrect": true
+      },
+      {
+        "text": "Show your stakeholders the Resource Assignment Matrix and project roles & responsibilities.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question refers to the principle of Effectively Engaging with Stakeholders. Stakeholders may add steps or requirements, or restrict team members if not engaged appropriately. Communication and awareness of their ideas, through knowledge sharing and regular meetings (ideally face to face) help.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "32",
+        "33"
+      ],
+      "principle": "Effectively Engage with Stakeholders"
+    }
+  },
+  {
+    "id": 4,
+    "question": "You are managing a project team mostly made up of men. Recently Jane was hired for her high expertise in the brands that make up your industry. You notice she has been left out of some key meetings, and others are overlooking her opinions. You also notice she is paid significantly less than her male colleagues. What will you do next?",
+    "options": [
+      {
+        "text": "Make steps to update her pay to the same range as the others on your project, and ask her opinion and advice specifically during each meeting (along with others in your team).",
+        "isCorrect": true
+      },
+      {
+        "text": "Take the lower pay as a win for your project, as it will help keep costs low and her colleagues don’t need to know.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask Jane to write down her knowledge of the industry, just in case she leaves.",
+        "isCorrect": false
+      },
+      {
+        "text": "No need to rock the boat — this is just how people work in this industry.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question is on Integrity and Stewardship. We should have respectful engagement of project team members, including their compensation, access to opportunity, and fair treatment.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "25"
+      ],
+      "principle": "Be a diligent, respectful and caring steward"
+    }
+  },
+  {
+    "id": 5,
+    "question": "During one of your working group meetings, a stakeholder raises the concern that the product you are working on will be discontinued in the next five months. You were not aware of this, and your project budget has already been approved until the scheduled delivery, which is in five months also. What will you do next?",
+    "options": [
+      {
+        "text": "Keep the project going as it is — the discontinued product isn’t your responsibility.",
+        "isCorrect": false
+      },
+      {
+        "text": "Set a meeting with your project sponsor to share the information and a recommendation to terminate the project.",
+        "isCorrect": true
+      },
+      {
+        "text": "Change the scope of the project to meet a different product so your project can remain relevant.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask for additional funding to see if you can improve the product instead of discontinuing it.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question is about delivering value — the primary motivator for a project. If the project is no longer aligned with the business need or it seems unlikely to provide value, the organisation may choose to terminate the effort.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "35"
+      ],
+      "principle": "Focus on Value"
+    }
+  },
+  {
+    "id": 6,
+    "question": "You have collected the requirements for your project and are creating the scope statement and work breakdown structure. During this process, you notice some functionality in your database system that will help a different project you are aware of within your Project Management Office (PMO). What will you do next?",
+    "options": [
+      {
+        "text": "Place the feature in the other project’s backlog, and ask them to prioritise it as soon as possible.",
+        "isCorrect": false
+      },
+      {
+        "text": "Raise the functionality in your risk register as a threat, with the response to “mitigate.”",
+        "isCorrect": false
+      },
+      {
+        "text": "Add the scope to your project and complete it as soon as possible.",
+        "isCorrect": false
+      },
+      {
+        "text": "Raise the functionality in your risk register as an opportunity with the response to “exploit,” and meet with the other project team and sponsor to discuss.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "Systems thinking involves taking a holistic view of how project parts interact with each other and external systems. Projects operate within programs, and small systems affect larger ones. Finding a previously unknown opportunity, the next best step is to make it known and exploit the opportunity.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "39",
+        "125"
+      ],
+      "principle": "Respond to System Interactions: Systems Thinking"
+    }
+  },
+  {
+    "id": 7,
+    "question": "You are working on a high-profile project. Several high-ranking senior executives want to take the credit for this initiative, while limiting the impact to their own resources. This has led to several conflicts and a scope statement that is unclear, leading to a risk of project failure. What will you do next?",
+    "options": [
+      {
+        "text": "Create a scope statement yourself to avoid further conflict.",
+        "isCorrect": false
+      },
+      {
+        "text": "Facilitate a discussion with the executives as a neutral third party, focusing on agreed project goals.",
+        "isCorrect": true
+      },
+      {
+        "text": "Limit your project resources to the executives until they can agree on a way forward.",
+        "isCorrect": false
+      },
+      {
+        "text": "Escalate the issue to the project steering committee and ask them to resolve the problem.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Leadership is not the same as authority. When senior managers suffer conflict over priorities, neutral facilitation helps more than detailed recommendations. Leadership acumen involves focusing a team around agreed goals, generating consensus on the way forward, negotiating and resolving conflict, and more.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "42"
+      ],
+      "principle": "Demonstrate Leadership Behaviours"
+    }
+  },
+  {
+    "id": 8,
+    "question": "You are managing a project where the majority of the product has been planned up-front, but an external system is needed from a vendor in partial pieces where the requirements are unclear. Half of your stakeholders want to use a waterfall approach, and the other half are advocating for an Agile approach. What will you do next?",
+    "options": [
+      {
+        "text": "Use an Agile methodology. The fixed scope is low risk, and you can capture changes using Agile.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use a Waterfall methodology and ask the team to plan the uncertain scope better.",
+        "isCorrect": false
+      },
+      {
+        "text": "Proceed with a hybrid method to start, with pre-planned scope but Agile ceremonies that promote feedback.",
+        "isCorrect": true
+      },
+      {
+        "text": "Use a combination of Waterfall and Agile to capture all the requirements and keep stakeholders happy.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Each project is unique, and success is based on adapting to the unique context of the project to determine the most appropriate methods. The tailoring approach is iterative in nature and refined during the project cycle. This project requires a hybrid of waterfall and agile, with the option to improve it over time.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "44",
+        "46"
+      ],
+      "principle": "Tailoring"
+    }
+  },
+  {
+    "id": 9,
+    "question": "You are working on a project where senior users have been testing the product as parts are released. They have found some missing requirements and defects. Their manager is worried that the project won’t deliver a product that is fit for purpose, without defects and within the timeframe needed. What will you do next?",
+    "options": [
+      {
+        "text": "Perform some of the testing yourself to ensure a quality product.",
+        "isCorrect": false
+      },
+      {
+        "text": "Help every team member to focus on quality, from correct acceptance criteria to a developed and tested product.",
+        "isCorrect": true
+      },
+      {
+        "text": "Limit testing until the very end of the project so you can do it all in one go when the product is completely ready.",
+        "isCorrect": false
+      },
+      {
+        "text": "Increase the testing on your project and add more testing resources so no defect goes unnoticed.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Quality focuses on meeting acceptance criteria for deliverables and satisfying stakeholders’ expectations on product requirements. Quality is everyone’s responsibility in an Adaptive (Agile) project.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "47",
+        "49"
+      ],
+      "principle": "Build Quality into Processes and Deliverables"
+    }
+  },
+  {
+    "id": 10,
+    "question": "You are working through the risk assessment with your team, who are having trouble coming up with ideas for risks. You decide to give them some guidance on types of complexity that might affect your new product. What will you do next?",
+    "options": [
+      {
+        "text": "Ask them to brainstorm Qualitative and Quantitative risks.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask them to perform the Five Whys and Ishikawa analysis.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask them to brainstorm around possible unwanted human behaviour, system behaviour, ambiguity, and technical innovation impacts.",
+        "isCorrect": true
+      },
+      {
+        "text": "Ask them to perform a retrospective to discover what isn\u2019t working well, and what still puzzles us.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Complexity is often the result of human behaviour, system interactions, technical innovation, uncertainty, and ambiguity. Complexity can be introduced by events or conditions that affect value, scope, stakeholders, risk, and more.",
+    "reference": {
+      "guide": "PMBOK Guide - Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "50",
+        "51"
+      ],
+      "principle": "Navigate Complexity"
+    }
+  },
+  {
+    "id": 11,
+    "question": "You are working on a project where you discover a certain negative risk with a potential impact of $2,000,000. You meet with your project stakeholders who determine that this is within their risk appetite, provided you meet a risk threshold of 10%. What will you do next?",
+    "options": [
+      {
+        "text": "Note the acceptable risk level as a threat of $200,000 (10%).",
+        "isCorrect": false
+      },
+      {
+        "text": "Note the acceptable risk level as a threat of $1,800,000 to $2,200,000 (10% variance).",
+        "isCorrect": true
+      },
+      {
+        "text": "Note the impact as outside the acceptable risk level of $2,000,000.",
+        "isCorrect": false
+      },
+      {
+        "text": "Note the impact as an opportunity of $200,000 (10%).",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Risk appetite describes the level of uncertainty or risk your stakeholders are willing to accept. Risk threshold is the measure of acceptable variation around an objective that reflects the risk appetite. In this scenario, a 10% variation around $2m is $1.8m to $2.2m.",
+    "reference": {
+      "guide": "PMBOK Guide - Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "54"
+      ],
+      "principle": "Risk"
+    }
+  },
+  {
+    "id": 12,
+    "question": "A risk has been raised in your project around insufficient building materials. One risk response assigned to the functional manager suggests using a brand new material, which has not been fully tested in a building project. Half of your stakeholder group are happy with this risk response, but the other half are not and refuse to sign off on it. What will you do next?",
+    "options": [
+      {
+        "text": "Suggest a quantitative risk approach to give a more accurate financial impact.",
+        "isCorrect": false
+      },
+      {
+        "text": "Suggest they proceed with the proposed risk response, and ensure it is followed through.",
+        "isCorrect": false
+      },
+      {
+        "text": "Suggest a different risk owner, as an executive may have more power to respond to the risk.",
+        "isCorrect": false
+      },
+      {
+        "text": "Suggest a different risk response, as they should be timely, cost-effective, realistic, and agreed to by relevant stakeholders.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "This question refers to risk responses. Risk responses should be appropriate and timely to the significance of the risk, cost-effective, realistic within the project context, agreed to by relevant stakeholders, and owned by a responsible person.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "54"
+      ],
+      "principle": "Risk"
+    }
+  },
+  {
+    "id": 13,
+    "question": "Your project is starting to go off track due to a large amount of uncertainty in the requirements and resources. At a significant cost, you have managed to reign in these issues; however, your project management office would like you to brainstorm ways to improve with your team so that they do not happen again. What will you do next?",
+    "options": [
+      {
+        "text": "Ask your team to increase the project Contingency Reserve, to allow for these impacts.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask your team to change the project methodology from Waterfall to Agile.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask your team to use short feedback loops, continuous improvement, and transparent planning.",
+        "isCorrect": true
+      },
+      {
+        "text": "Ask your team to check their work twice before sending it to the next part of the process.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "A project team needs to embrace adaptability and resiliency with methods such as using short feedback loops, continuous learning and improvement, regular inspection and adaptation of project work, diverse project teams, transparent planning, using prototypes, and more.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "56"
+      ],
+      "principle": "Embrace Adaptability and Resiliency"
+    }
+  },
+  {
+    "id": 14,
+    "question": "As your project progresses, many of the business stakeholders are starting to voice their concerns, to question some of the changes, and even miss key meetings while trying to sabotage your efforts. What will you do next?",
+    "options": [
+      {
+        "text": "Communicate the vision and benefits for the change clearly, along with the impact to their work.",
+        "isCorrect": true
+      },
+      {
+        "text": "Create an impact over influence chart to determine who should be engaged appropriately.",
+        "isCorrect": false
+      },
+      {
+        "text": "Escalate the matter with your project sponsor, and arrange for different stakeholders.",
+        "isCorrect": false
+      },
+      {
+        "text": "Map the current state and the proposed future state of the change for the stakeholders.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question is on change management, which is a structured approach to transitioning groups to a future state. Too much change or lack of understanding can lead to resistance and change fatigue. Methods include communicating the vision, goals, and benefits of the change early, along with the impact to work processes.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "59"
+      ],
+      "principle": "Enable Change to Achieve the Envisioned Future State"
+    }
+  },
+  {
+    "id": 15,
+    "question": "You are analysing your stakeholder through an impact over influence chart and have found more than 100 different groups of people, and over 3000 impacted stakeholders. Other parts of your project are starting to fall behind as you try to keep up with the large amount of people. What will you do next?",
+    "options": [
+      {
+        "text": "Ask your project team to engage different groups of stakeholders so everyone is covered.",
+        "isCorrect": false
+      },
+      {
+        "text": "Clearly prioritise the stakeholders then engage and communicate with the highly impacted and influential groups early and often.",
+        "isCorrect": true
+      },
+      {
+        "text": "Monitor the stakeholders for signs of stress and respond to groups most stressed about the project.",
+        "isCorrect": false
+      },
+      {
+        "text": "Create a SharePoint page for changes that any stakeholder can gather information from anytime.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question is about engaging stakeholders. The process includes: Identify, Understand and Analyse, Prioritise, Engage and Monitor your stakeholders. Where you have too many to engage effectively, prioritisation is the key. Impact and influence are two ways, as well as Power, Beliefs, Expectations, proximity to the project, interest and more.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "11",
+        "12"
+      ],
+      "principle": "Stakeholder Engagement: Prioritise and Engage"
+    }
+  },
+  {
+    "id": 16,
+    "question": "You are managing a project which communicates to the customer using mostly pull communication so far. When monitoring the engagement of your stakeholders, you notice a trend that they are not clear on the impacts or benefits of the project. You decide to add push communication to your communication plan. What will you do next?",
+    "options": [
+      {
+        "text": "Create a webpage using SharePoint with all the project information, that your stakeholders can see.",
+        "isCorrect": false
+      },
+      {
+        "text": "Push for more funding on your project, and communicate this to your project sponsor.",
+        "isCorrect": false
+      },
+      {
+        "text": "Push your stakeholders to engage in more two-way communication.",
+        "isCorrect": false
+      },
+      {
+        "text": "Send a weekly email to stakeholders with a project update, including the impacts and benefits.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "Push communication is sent to stakeholders, using memos, emails, status reports, voice mail and more. Pull communication is something a customer can pull at any time — from a bulletin, a web page, a white board, etc.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "13"
+      ],
+      "principle": "Types of Communication"
+    }
+  },
+  {
+    "id": 17,
+    "question": "You have taken over on a project with a vendor where scope and requirements have been missed. You notice that miscommunication and mixed messages are common. You set a meeting with your team and the vendor’s team. The meeting is extremely important to get right. What will you do next?",
+    "options": [
+      {
+        "text": "Speak slowly and clearly with the vendor’s team, at a louder volume if necessary.",
+        "isCorrect": false
+      },
+      {
+        "text": "Confirm they hear your message, determine if they agree, and identify nuanced or unintended messages they may have received.",
+        "isCorrect": true
+      },
+      {
+        "text": "Only communicate with the vendor in writing, so you have a trail of proof if anything goes wrong in the future.",
+        "isCorrect": false
+      },
+      {
+        "text": "Prepare a claim for the mishandled scope of your project through your procurement team.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question is asking about communication. With all forms of communication, quick feedback loops provide the information you need by confirming they heard the message, determining if they agree, and identifying any nuances or additions to the message they may have added or heard.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "13"
+      ],
+      "principle": "Stakeholder Engagement: Engage"
+    }
+  },
+  {
+    "id": 18,
+    "question": "Your stakeholders seem to be engaged, however, there are frequent changes to scope and requirements, causing delays. Issues are often raised and result in multiple rounds of feedback. You are not sure who or what could be the cause. What will you do next?",
+    "options": [
+      {
+        "text": "Perform root cause analysis with your project team on the problem to brainstorm ideas.",
+        "isCorrect": false
+      },
+      {
+        "text": "Raise a risk in the risk register for the project delay, and review responses with your team.",
+        "isCorrect": false
+      },
+      {
+        "text": "Review the issue log, risk register, and change log for the most frequent requestors, then update your stakeholder engagement approach for those people.",
+        "isCorrect": true
+      },
+      {
+        "text": "Ensure your project budget has enough contingency reserves to meet the multiple reviews and delays.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "A significant number of changes or modifications to the project requirements or scope may indicate stakeholders are not engaged or aligned with the project objectives. A review of the project issue register or risk register can identify challenges associated with individual stakeholders.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "15"
+      ],
+      "principle": "Checking Outcomes — Stakeholder Performance"
+    }
+  },
+  {
+    "id": 19,
+    "question": "You have been working on a project where the manager leads in a dictatorship style. Over time, the team have stopped making suggestions, sick days and mental health days have become more frequent, and the pace of work has slowed. The manager comes to you for help. You suggest a servant leadership style instead. What will they do next?",
+    "options": [
+      {
+        "text": "Serve the team as much as they can, ensuring their every need is met.",
+        "isCorrect": false
+      },
+      {
+        "text": "Focus on obstacle removal, encouragement, and development opportunities.",
+        "isCorrect": true
+      },
+      {
+        "text": "Ensure their team are serving other team members and helping each other succeed.",
+        "isCorrect": false
+      },
+      {
+        "text": "Serve the team new ways to do the work and engage them through additional variety.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Servant leaders allow project teams to self-organise when possible, and increase levels of autonomy by passing appropriate decision-making opportunities to project team members. Servant leadership behaviours also include obstacle removal, being a diversion shield, and development opportunities.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "18"
+      ],
+      "principle": "Distributed Management and Leadership"
+    }
+  },
+  {
+    "id": 20,
+    "question": "You have been allocated to a new project team with members from different parts of the functional business area. It soon becomes clear that very few of them have worked on a project before. There is also a lot of miscommunication and re-work occurring amongst the team, which is starting to cause delays. What will you do next?",
+    "options": [
+      {
+        "text": "Set a daily stand-up with your team to ensure they update what they completed.",
+        "isCorrect": false
+      },
+      {
+        "text": "Review the Resource Assignment Matrix with your team and ensure they are doing their job.",
+        "isCorrect": false
+      },
+      {
+        "text": "Help the team set their vision and objectives, roles and responsibilities, and team operations.",
+        "isCorrect": true
+      },
+      {
+        "text": "Send your team members on training in their roles to increase their capability.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "When project teams form across different organisations, more work may be required up front to establish a 'one-team' mindset, ensuring everyone understands how they contribute. Team development such as establishing a vision, clear roles & responsibilities, and a way of working are key.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "18"
+      ],
+      "principle": "Common Aspects of Team Development"
+    }
+  }
+]
