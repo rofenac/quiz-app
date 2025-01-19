@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import PageTemplate from '../pagetemplate'
 
 function HomePage() {
@@ -11,9 +12,9 @@ function HomePage() {
         pageFlavorText="So you want to be a PMP..."
         pageTitle="Welcome to the Darn Fine PMP Quiz App!"
         pageSubTitle="Learn about the PMP certification exam and take our fabulous quiz!"
-        titleBoxOne={<a href="/people" className="hover:text-purple-400">People</a>}
-        titleBoxTwo={<a href="/process" className="hover:text-purple-400">Process</a>}
-        titleBoxThree={<a href="/business" className="hover:text-purple-400">Business Environment</a>}
+        titleBoxOne={<Link to="/people" className="hover:text-purple-400">People</Link>}
+        titleBoxTwo={<Link to="/process" className="hover:text-purple-400">Process</Link>}
+        titleBoxThree={<Link to="/business" className="hover:text-purple-400">Business Environment</Link>}
         titleBoxFour=""
         titleBoxFive=""
         titleBoxSix=""
