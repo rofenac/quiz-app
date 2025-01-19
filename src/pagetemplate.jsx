@@ -1,10 +1,10 @@
 function PageTemplate(props) {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <HeaderTemplate {...props} />
-      <BodyTemplate {...props} />
+      <BodyTemplate {...props} className="flex-grow" />
       <FooterTemplate />
-    </>
+    </div>
   )
 }
 
@@ -59,6 +59,7 @@ function BodyTemplate({
   descriptionBoxFour,
   descriptionBoxFive,
   descriptionBoxSix,
+  className,
 }) {
   const boxes = [
     { title: titleBoxOne, description: descriptionBoxOne, svgPath: 'M22 12h-4l-3 9L9 3l-3 9H2' },
@@ -71,7 +72,7 @@ function BodyTemplate({
   const boxesToRender = boxes.filter((box) => box.title)
 
   return (
-    <section className="text-gray-400 body-font bg-gray-900">
+    <section className={`text-gray-400 body-font bg-gray-900 ${className}`}>
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
           <p className="lg:w-1/2 w-full text-purple-400 leading-relaxed text-opacity-80">
