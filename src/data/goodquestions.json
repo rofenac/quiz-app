@@ -1577,5 +1577,625 @@
       ],
       "principle": "Changes"
     }
+  },
+  {
+    "id": 51,
+    "question": "You have recently taken over on a project that is behind schedule, and slightly over budget. You raise an issue at the steering committee meeting, where they advise that there is no additional funding available and the project must finish on time. You believe you can optimise the project process to try and bring the project back on track. What will you do next?",
+    "options": [
+      {
+        "text": "Add additional people and resources to the project to speed it up.",
+        "isCorrect": false
+      },
+      {
+        "text": "Utilise the project’s contingency reserve to source the resources you need.",
+        "isCorrect": false
+      },
+      {
+        "text": "Perform project activities in parallel, completing multiple items at once instead of one at a time.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use Lean production methods to reduce non-value add activities, and retrospectives for the team to suggest improvements.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "Ways of optimising the project processes for the environment include Lean production methods, retrospectives or lessons learned, and finding where the next best funding is spent. Adding people and resources may not always improve things — it can also increase the complexity and communication channels.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "71"
+      ],
+      "principle": "Project Processes"
+    }
+  },
+  {
+    "id": 52,
+    "question": "Your Project Management Office (PMO) is optimising all the projects within their portfolio. They ask for your advice in tracking the type of work each team member is doing and how long it takes, suggesting that they categorise and record their work in addition to the work itself. What will you do next?",
+    "options": [
+      {
+        "text": "Ask your team to record and categorise their work, as gathering project data is important.",
+        "isCorrect": false
+      },
+      {
+        "text": "Recommend an automated reporting tool where possible, as categorising their work is NVA.",
+        "isCorrect": true
+      },
+      {
+        "text": "Recommend an automated reporting tool where possible, as recording their work is VA.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask your team to ignore the request and focus on delivering customer value only.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "The time taken to track or record time can be viewed as “non-value added” work, that does not directly benefit the output or the receiving customer. We should respect the PMO request, but in addition to being efficient, processes should be effective.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "72"
+      ],
+      "principle": "Project Processes"
+    }
+  },
+  {
+    "id": 53,
+    "question": "You are working on an agile project as a scrum master, where the functional manager has worked with some people in your development team before. She approaches them directly to see if they can add a feature to the product in the current sprint. What will you do next?",
+    "options": [
+      {
+        "text": "Adjust the sprint backlog to allow for the additional feature.",
+        "isCorrect": false
+      },
+      {
+        "text": "Adjust the product backlog to add the customer requirement.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask the manager to speak with the Product Owner for product priorities, then protect the team from direct requests in the future.",
+        "isCorrect": true
+      },
+      {
+        "text": "Ask the manager to create a change request so it can go through the proper process.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Project Managers have a responsibility for assessing and balancing project team focus and attention. This may involve protecting the team’s production capability — their team health and satisfaction. In Agile, this also means being a diversion shield for the team and removing blockers that get in the way of them making progress in their work.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "73"
+      ],
+      "principle": "Maintaining Project Team Focus"
+    }
+  },
+  {
+    "id": 54,
+    "question": "Part of your project management plan is a detailed communications plan, which has the stakeholders on the project, their communication needs, and how information will be communicated. While this is being signed off by the project sponsor, you receive many ad-hoc requests for information from new stakeholders. What will you do next?",
+    "options": [
+      {
+        "text": "Review the communications management plan to include the stakeholders, the information they need and their communication preferences.",
+        "isCorrect": true
+      },
+      {
+        "text": "Create an information radiator and ask the stakeholders to pull the information they need.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ignore the new requests, as you have captured all the stakeholders you need to in your plan.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask the new stakeholders to review your communications management plan to see how you are distributing information.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Once collected, information is distributed as indicated in the project management communications plan. An abundance of ad-hoc communication requests may indicate that the communication planning was not sufficient to meet stakeholder needs — it is a good idea to review it.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "72"
+      ],
+      "principle": "Project Communications and Engagement"
+    }
+  },
+  {
+    "id": 55,
+    "question": "You are working on a high-value construction project to include smart-home components within multi-million dollar buildings. After completing a make-or-buy analysis, you find that it will cost $700,000 to make the new system, or $500,000 to buy it from a vendor. You prepare a procurement management plan to purchase it. What will you do before conducting a procurement?",
+    "options": [
+      {
+        "text": "Work with your project team to complete as much of the system in-house as possible.",
+        "isCorrect": false
+      },
+      {
+        "text": "Work with contracting professionals to develop RFP (SOW) and terms and conditions.",
+        "isCorrect": true
+      },
+      {
+        "text": "Adjust your stakeholder register to include the new vendor, and add the scope to your work breakdown dictionary.",
+        "isCorrect": false
+      },
+      {
+        "text": "Work with your project team to develop an RMP, SMP, and list of resources.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Prior to conducting a procurement, the project manager and technically qualified project team members work with contracting professionals to develop the Request for Proposals (RFP), Statement of Work (SOW), terms and conditions, and other necessary documents to go out to bid.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "74"
+      ],
+      "principle": "Working with Procurements"
+    }
+  },
+  {
+    "id": 56,
+    "question": "A missing item has been uncovered in the project scope that your project team cannot deliver. The item is not complex and seems to be fairly readily available from various sources. You are ready to move to source selection and choose a vendor that will meet their needs. What will you do before sending out bid documents to vendors?",
+    "options": [
+      {
+        "text": "Prepare a Request for Proposal for vendors to provide a solution to your needs.",
+        "isCorrect": false
+      },
+      {
+        "text": "Prepare a Request for Quote to determine the best price from the vendors.",
+        "isCorrect": false
+      },
+      {
+        "text": "Prepare a Request for Information to gather more information and viable sources from the market.",
+        "isCorrect": true
+      },
+      {
+        "text": "Review the procurement management plan for your project’s procurement process.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "A Request for Information is used to gather more information from the market prior to sending out bid documents to a set of selected vendors. A Request for Proposal is used where scope is complex or the buyer is looking for the vendor to provide a solution. Request for Quote is when price is the deciding factor.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "75"
+      ],
+      "principle": "The Bid Process"
+    }
+  },
+  {
+    "id": 57,
+    "question": "You are working on a project where part of the work is planned carefully upfront, and another part is subject to change. You negotiate terms and conditions, including cost, delivery, and payment dates. The vendor is concerned about confusion that might occur between the pre-planned and changeable work. What will you do next?",
+    "options": [
+      {
+        "text": "Use a Firm Fixed Price contract, to ensure cost is fixed but scope can remain flexible.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use a time and materials contract, to ensure only the time and materials used are paid for.",
+        "isCorrect": false
+      },
+      {
+        "text": "Adjust your project plan to suit either a predictive or adaptive approach to reduce the confusion.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use a master agreement for the overall contract, with adaptive work placed in an appendix.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "For projects that use an adaptive approach for some deliverables and a predictive approach for others, a master agreement is used, and the adaptive work may be placed in an appendix or supplement. This allows the changes to occur on the adaptive scope without impacting the overall contract.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "76"
+      ],
+      "principle": "The Bid Process: Contracting"
+    }
+  },
+  {
+    "id": 58,
+    "question": "You are working on an agile project where there are vastly differing levels of product knowledge within your team. The scrum master suggests that you try to gain knowledge by osmosis, because the project information may be lost when only communicating by email. What will you do next?",
+    "options": [
+      {
+        "text": "Co-locate the team to capture the benefit of each person’s tacit knowledge.",
+        "isCorrect": true
+      },
+      {
+        "text": "Refer to the organisational process assets to capture the team’s explicit knowledge.",
+        "isCorrect": false
+      },
+      {
+        "text": "Refer to the project’s knowledge management system to capture the project’s explicit knowledge.",
+        "isCorrect": false
+      },
+      {
+        "text": "Create a process to capture the team’s tacit knowledge.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Learning by osmosis is capturing information from the immediate surroundings, such as co-locating the team. Tacit knowledge is information that is not straightforward, such as experience, insights, and practical knowledge or skill. Explicit knowledge can be readily codified using words, a process, or pictures.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "77"
+      ],
+      "principle": "Explicit and Tacit Knowledge"
+    }
+  },
+  {
+    "id": 59,
+    "question": "You are working as a Product Owner, and have placed high-level information about the product in the product backlog, and the highest priority feature at the top. Senior users informing the project are unable to clearly articulate their requirements and are concerned that the product will not truly meet their needs. What will you do next?",
+    "options": [
+      {
+        "text": "Proceed with the highest priority item during the first sprint.",
+        "isCorrect": false
+      },
+      {
+        "text": "Work with the customer to create mock-ups and prototypes to discover what works for them.",
+        "isCorrect": true
+      },
+      {
+        "text": "Ask your stakeholders to submit a change request and update the project scope accordingly.",
+        "isCorrect": false
+      },
+      {
+        "text": "Begin breaking the work down into user stories to place in the sprint.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "On projects that do not have clearly defined requirements, prototypes, demonstrations, storyboards, and mock-ups can be used to evolve the requirements. In these situations, stakeholders are more likely to take an “I’ll know it when I see it” approach.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "83"
+      ],
+      "principle": "Evolving and Discovering Requirements"
+    }
+  },
+  {
+    "id": 60,
+    "question": "You are gathering requirements for a new feature in a customer management system. The product owner has given a user interface feature as the next highest priority, and you are co-located with the team receiving the benefits. What will you do next?",
+    "options": [
+      {
+        "text": "Show the customer team how the new user interface will look, as they will be using it.",
+        "isCorrect": false
+      },
+      {
+        "text": "Communicate the requirements to developers with a coherent, logical flow of ideas.",
+        "isCorrect": false
+      },
+      {
+        "text": "Elicit requirements into user stories using acceptance criteria that is clear, verifiable, and traceable.",
+        "isCorrect": true
+      },
+      {
+        "text": "Show the mock-up or prototype to the developers and ask them to develop based on that.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Elicitation means to draw out. Well-documented requirements are Clear, Concise, Verifiable, Consistent, Complete, and Traceable. A prototype may be useful but may need more information for developers to turn into a product. Clear purpose, coherent ideas, controlling flow, concise expression, and correct grammar are part of the Five C’s of communication.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "83"
+      ],
+      "principle": "Requirements Elicitation"
+    }
+  },
+  {
+    "id": 61,
+    "question": "You are working in an agile team who are trying to break down the project requirements and scope. They have created a scope statement and work breakdown structure, but are not sure how it will work now that they are using sprints and user stories. What will you do next?",
+    "options": [
+      {
+        "text": "Assign activities to each of the scope items in the WBS, and place them on a Gantt Chart.",
+        "isCorrect": false
+      },
+      {
+        "text": "Create a product roadmap with the team, using the lowest, most detailed part of the WBS.",
+        "isCorrect": false
+      },
+      {
+        "text": "Group the work by large themes of customer value, shown as Epics, then break them down into smaller user stories to complete in each sprint.",
+        "isCorrect": true
+      },
+      {
+        "text": "Ask the team to trace the requirements properly using a Requirements Traceability Matrix.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "One way to identify scope is by identifying the themes of customer value, associated by a common factor such as functionality, data source, or security level. These are shown as Epics, which are too big to complete in a sprint, and have smaller user stories within them.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "84"
+      ],
+      "principle": "Scope Decomposition"
+    }
+  },
+  {
+    "id": 62,
+    "question": "Your project team are trialing an agile way of work. The Product Owner has a clear vision for the product. There is confusion in the team as to how much work should be done on a user story before it is taken to the sprint review, and how they will know a story is complete. What will you do next?",
+    "options": [
+      {
+        "text": "Refer to the user story acceptance criteria and your team’s Definition of Done.",
+        "isCorrect": true
+      },
+      {
+        "text": "Review the user story with multiple customers and senior users to ensure it is correct.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask the Product Owner to sign off on the completed user story.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure quality testing on the user story is completed and passed.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Different ways to describe component completion include acceptance or completion criteria, technical performance measures, and Definition of Done. Quality testing will be done to the acceptance criteria, as will Product Owner sign-off.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "85"
+      ],
+      "principle": "Completion of Deliverables"
+    }
+  },
+  {
+    "id": 63,
+    "question": "You have been working closely with the quality manager of your project, planning the budget for the project phase that is due to begin in the next two months. They mention the need to budget for appraisal costs, to avoid quality issues in the future. What will you do next?",
+    "options": [
+      {
+        "text": "Ensure there is enough for training the staff to reduce the number of errors.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure there is enough for a quality tester to verify the deliverables against agreed specifications.",
+        "isCorrect": true
+      },
+      {
+        "text": "Ensure there is enough to create a quality assurance plan.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure there is enough to allow for rework or rectification when defects are found.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question is on the Cost of Quality. Prevention costs are training or quality planning. Appraisal costs are verification or audits. Internal failure is waste, defects, and rework. External failure is customer complaints, repairs and servicing, and warranty claims.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "89"
+      ],
+      "principle": "Cost of Quality"
+    }
+  },
+  {
+    "id": 64,
+    "question": "Your agile project has recently had multiple quality issues. Project features have been prioritized by the Product Owner and broken down into user stories. What will you do to help reduce the cost of quality issues the most?",
+    "options": [
+      {
+        "text": "Quality test each user story according to its acceptance criteria before release.",
+        "isCorrect": false
+      },
+      {
+        "text": "Advise the team that any quality defects will come out of their bonus.",
+        "isCorrect": false
+      },
+      {
+        "text": "Perform testing all in one go at the end, to reduce the cost of testing resources.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure a “triad” of developer, tester, and customer is involved during requirements and design.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "This question is about the Cost of Change. The cost is least during requirements and design, is 20x during build, 50x during test, and 150x if a defect has to be rectified in production. If the requirements, design, and acceptance criteria are incorrect, extra quality testing will not help.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "90"
+      ],
+      "principle": "Cost of Change"
+    }
+  },
+  {
+    "id": 65,
+    "question": "You are working in an agile team where executives in the team you are delivering to are asking for a large display of reports to be created every two weeks, showing how the project is tracking and updating them on the cost and benefits. What will you do next?",
+    "options": [
+      {
+        "text": "Collect the planned value versus earned value to show the executives any variance in the plan.",
+        "isCorrect": false
+      },
+      {
+        "text": "Co-locate the team with the executives so they can answer any questions as they arise.",
+        "isCorrect": false
+      },
+      {
+        "text": "Suggest a demonstration of the feature developed during each sprint instead, and a burndown chart of future product features.",
+        "isCorrect": true
+      },
+      {
+        "text": "Create the desired reports for the executives to keep them happy.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "The value of measurements is not in the collection and dissemination of the data, but is in how to use the data to take appropriate action. Agile projects demonstrate usable value and features delivered and use live information radiators instead of large reports to stakeholders.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "94"
+      ],
+      "principle": "Measurement Performance Domain"
+    }
+  },
+  {
+    "id": 66,
+    "question": "Multiple features have been released, but they are not having the effect the product owner believes they should. Your team is using some Key Performance Indicators to track performance, and you agree to move to more Leading indicators. What could you use as examples of Leading indicators for your project?",
+    "options": [
+      {
+        "text": "An increase in customer usage once the feature is released, such as sales and repeat purchasing.",
+        "isCorrect": false
+      },
+      {
+        "text": "Stakeholders who are not engaged and lack of a risk management process.",
+        "isCorrect": true
+      },
+      {
+        "text": "Velocity of the work completed each sprint and cycle time of user stories.",
+        "isCorrect": false
+      },
+      {
+        "text": "Variance in the schedule between planned and actual time taken.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "There are two types of Key Performance Indicators (KPIs): Leading and Lagging. Leading indicators predict changes or trends in the project, and include lack of a risk management process, stakeholders who are not engaged, and poorly defined project success criteria. Lagging indicators include work completed or schedule variance.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "96"
+      ],
+      "principle": "Leading Indicators"
+    }
+  },
+  {
+    "id": 67,
+    "question": "You are working in an agile project team that has increased in size and complexity since the project began. In reviewing the throughput of work with your team, you notice fewer and fewer user stories being completed, and the roadmap of features scheduled to go live is being pushed out. What will you do next?",
+    "options": [
+      {
+        "text": "Place a limit on the work in progress and work with the team to reduce the cycle time.",
+        "isCorrect": true
+      },
+      {
+        "text": "Increase meetings with the team so everyone can collaborate together.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask the team to work overtime until the number of features reduces.",
+        "isCorrect": false
+      },
+      {
+        "text": "Put a Pull system in place, where the team can pull work only when they are ready.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "With more work, different tasks, and increased complexity, the team is likely context-switching between too many different things. Kanban aims to limit the work in progress to avoid multi-tasking. Other things we can use are reducing queue size and batch sizes, and reviewing process efficiency.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "99"
+      ],
+      "principle": "What to Measure: Delivery"
+    }
+  },
+  {
+    "id": 68,
+    "question": "You are working on an agile project where the project customer wants a reliable way to measure the project performance, and you know you first need a baseline. What measures will you show to your customer as part of your agile project?",
+    "options": [
+      {
+        "text": "Start and finish dates.",
+        "isCorrect": false
+      },
+      {
+        "text": "Project team velocity.",
+        "isCorrect": false
+      },
+      {
+        "text": "Rate of Features completed.",
+        "isCorrect": true
+      },
+      {
+        "text": "Schedule and Cost variance.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "An agile project tracks and demonstrates actual features delivered. With a stable team, cost is most often fixed. The schedule is also fixed, and the scope is variable depending on what the customer wants to prioritize in the given time.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "100"
+      ],
+      "principle": "Baseline Performance"
+    }
+  },
+  {
+    "id": 69,
+    "question": "The product owner has worked with a team of senior users to gather feature ideas. They now have a list of more than fifty ideas for your team to develop, which is far too many to complete in the timeframe you have. What will you do next?",
+    "options": [
+      {
+        "text": "Ask the new product owner to return to the senior users and ask for a shortened list.",
+        "isCorrect": false
+      },
+      {
+        "text": "Start work on the smallest features first, to ensure you are delivering value quickly.",
+        "isCorrect": false
+      },
+      {
+        "text": "Workshop the features with a wider audience to get a completely diverse view on their priority.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask the new product owner to prioritize the features using cost to benefit, then deliver in priority order until time or money runs out.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "Product Owners prioritize features based on business value. Metrics that measure business value include Cost-benefit ratio, planned to actual benefits delivery, return on investment, and Net Present Value.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "102"
+      ],
+      "principle": "Business Value"
+    }
+  },
+  {
+    "id": 70,
+    "question": "Your agile project team has only recently formed. The product is still unclear, and there have been disagreements and minor conflicts over the past two weeks as the team finds their rhythm. You would like things to improve, but can’t quite pinpoint or address the problem. What will you do next?",
+    "options": [
+      {
+        "text": "Hold a workshop with your team to ask them why they are unhappy.",
+        "isCorrect": false
+      },
+      {
+        "text": "Have the team complete a Net Promoter Score with comments, and ask for improvement ideas at the next retrospective.",
+        "isCorrect": true
+      },
+      {
+        "text": "Raise the issue with their line managers, to ensure all levels are aware of and working on the issue.",
+        "isCorrect": false
+      },
+      {
+        "text": "Have the team pair up together for their tasks, so they can learn from each other.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Measuring stakeholders can be done with a Net Promoter Score or satisfaction score, especially with a comment, or a mood chart. Improvement ideas are captured during retrospectives for most agile teams. Pairing is another agile practice, but is not as relevant here.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "103"
+      ],
+      "principle": "Measuring: Stakeholders"
+    }
   }
 ]
