@@ -11,6 +11,7 @@
  - Vite
  - PostCSS
  - TailwindCSS
+ - DaisyUI
  - Material UI "standard" libraries + @mui/icons-material
 
 # BACKLOG
@@ -27,12 +28,11 @@
 4. Learn how to refactor
 5. Scorekeeping functionality - leaderboard???
 6. Instant feedback on questions
-7. ~~I dunno, maybe build an MVP???~~
 
 # Sprint Items
 
 1. MVP
-  - Decide on styling (Tailwind)
+  - ~~Decide on styling (Tailwind)~~
   - Page navigation (links, buttons, etc.)
-  - Collect questions
+  - Collect questions (in progress)
   - ~~Setup Trello~~
