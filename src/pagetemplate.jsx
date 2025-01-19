@@ -16,7 +16,7 @@ function HeaderTemplate({
 }) {
   return (
     <header className="bg-gray-900">
-      <div className="navbar container mx-auto">
+      <div className="navbar container mx-auto px-5 flex items-center justify-between">
         {/* Logo and text */}
         <div className="flex items-center">
           <a className="btn btn-ghost normal-case text-xl flex items-center">
