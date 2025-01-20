@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageTemplate from '../pagetemplate'
 
-function HomePage() {
+function LeaderBoard() {
   return (
     <>
       <PageTemplate
@@ -23,11 +23,9 @@ function HomePage() {
         descriptionBoxThree="Description Three"
         descriptionBoxFour=""
         descriptionBoxFive=""
-        descriptionBoxSix=""
-        showQuizButton={true}
-      />
+        descriptionBoxSix="" />
     </>
   )
 }
 
-export default HomePage
+export default LeaderBoard

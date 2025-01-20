@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function PageTemplate(props) {
   return (
     <div className="min-h-screen flex flex-col">
@@ -19,7 +21,7 @@ function HeaderTemplate({
       <div className="navbar container mx-auto px-5 flex items-center justify-between">
         {/* Logo and text */}
         <div className="flex items-center">
-          <a className="btn btn-ghost normal-case text-xl flex items-center">
+          <Link to="/" className="btn btn-ghost normal-case text-xl flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -33,7 +35,7 @@ function HeaderTemplate({
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg>
             <span className="ml-3">DFPMPQA</span>
-          </a>
+          </Link>
           {/* Vertical line */}
           <div className="divider-horizontal h-10 w-[1px] bg-gray-700"></div>
           {/* Navigation links */}
@@ -65,6 +67,7 @@ function BodyTemplate({
   descriptionBoxFour,
   descriptionBoxFive,
   descriptionBoxSix,
+  showQuizButton,
   className,
 }) {
   const boxes = [
@@ -85,7 +88,6 @@ function BodyTemplate({
           <h1 className="text-3xl font-bold text-white">{pageTitle}</h1>
           <p>{pageSubTitle}</p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {boxesToRender.map((item, index) => (
             <div key={index} className="card shadow-lg border border-gray-700">
@@ -101,10 +103,11 @@ function BodyTemplate({
             </div>
           ))}
         </div>
-
-        <div className="flex justify-center mt-16">
-          <button className="btn btn-primary">Button</button>
-        </div>
+        {showQuizButton && (
+          <div className="flex justify-center mt-16">
+            <Link to="/quiz" className="btn btn-primary">Start Quiz</Link>
+          </div>
+        )}
       </div>
     </section>
   )
@@ -132,7 +135,6 @@ function FooterTemplate() {
             <span className="ml-3">DFPMPQA</span>
           </a>
         </div>
-
         {/* Links */}
         <nav className="menu menu-horizontal px-1">
           <li><a>© 2025 David Derr</a></li>
