@@ -10,7 +10,7 @@ function PageTemplate(props) {
   )
 }
 
-function HeaderTemplate({
+export function HeaderTemplate({
   firstLink,
   secondLink,
   thirdLink,
