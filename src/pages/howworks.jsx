@@ -8,7 +8,6 @@ function HowWorks() {
         firstLink={<Link to="/howworks" className="hover:text-purple-400">How the Quiz Works</Link>}
         secondLink={<Link to="/yourscores" className="hover:text-purple-400">Your Scores</Link>}
         thirdLink={<Link to="/leaderboard" className="hover:text-purple-400">Leaderboard</Link>}
-        fourthLink="Contact"
         pageTitle="Title"
         pageSubTitle="SubTitle"
         titleBoxOne="Box One"

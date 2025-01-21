@@ -22,21 +22,14 @@ export function HeaderTemplate({
         {/* Logo + Text */}
         <div className="flex items-center">
           <Link to="/" className="btn btn-ghost normal-case text-xl flex items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-10 h-10 text-neutral-content p-2 bg-accent rounded-full"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
+            <div className="avatar">
+              <div className="w-12 h-8 rounded bg-accent flex items-center justify-center">
+                <span className="text-black text-lg font-bold leading-none">PMP</span>
+              </div>
+            </div>
             <span className="ml-3 text-neutral-content">DFPMPQA</span>
           </Link>
-          <div className="h-10 w-[1px] bg-base-300 mx-4" />
+          <div className="divider divider-horizontal" />
           <nav className="flex items-center space-x-5">
             <a className="text-neutral-content/60 hover:text-neutral-content">{firstLink}</a>
             <a className="text-neutral-content/60 hover:text-neutral-content">{secondLink}</a>
@@ -126,21 +119,14 @@ export function FooterTemplate() {
       <div className="container mx-auto px-5 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <a className="btn btn-ghost normal-case text-xl flex items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-10 h-10 text-neutral-content p-2 bg-accent rounded-full"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
+          <Link to="/" className="btn btn-ghost normal-case text-xl flex items-center">
+            <div className="avatar">
+              <div className="w-12 h-8 rounded bg-accent flex items-center justify-center">
+                <span className="text-black text-lg font-bold leading-none">PMP</span>
+              </div>
+            </div>
             <span className="ml-3 text-neutral-content">DFPMPQA</span>
-          </a>
+          </Link>
         </div>
         <nav className="menu menu-horizontal px-1">
           <li>

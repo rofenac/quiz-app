@@ -6,6 +6,7 @@ import Business from './pages/business'
 import HowWorks from './pages/howworks'
 import YourScores from './pages/yourscores'
 import Leaderboard from './pages/leaderboard'
+import Quiz from './pages/quiz'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/howworks" element={<HowWorks />} />
         <Route path="/yourscores" element={<YourScores />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/quiz" element={<Quiz />} />
       </Routes>
     </div>
   )
