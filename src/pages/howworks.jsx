@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageTemplate from '../pagetemplate'
 
-function Business() {
+function HowWorks() {
   return (
     <>
       <PageTemplate
@@ -26,4 +26,4 @@ function Business() {
   )
 }
 
-export default Business
+export default HowWorks

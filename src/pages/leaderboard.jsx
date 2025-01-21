@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageTemplate from '../pagetemplate'
 
-function HomePage() {
+function LeaderBoard() {
   return (
     <>
       <PageTemplate
@@ -18,16 +18,14 @@ function HomePage() {
         titleBoxFour=""
         titleBoxFive=""
         titleBoxSix=""
-        descriptionBoxOne="Focuses on effectively leading and empowering teams. It includes stakeholder management, conflict resolution, motivation, and building an environment where team members can excel."
-        descriptionBoxTwo="Covers the technical aspects of managing a project from start to finish. It includes planning, executing, monitoring, and controlling processes using proven methodologies and best practices."
-        descriptionBoxThree="Addresses the broader context impacting projects, including organizational strategy, compliance, and external factors. It ensures alignment with business goals and promotes an understanding of the project’s role within the bigger picture."
+        descriptionBoxOne="Description One"
+        descriptionBoxTwo="Description Two"
+        descriptionBoxThree="Description Three"
         descriptionBoxFour=""
         descriptionBoxFive=""
-        descriptionBoxSix=""
-        showQuizButton={true}
-      />
+        descriptionBoxSix="" />
     </>
   )
 }
 
-export default HomePage
+export default LeaderBoard

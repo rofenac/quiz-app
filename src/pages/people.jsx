@@ -1,28 +1,13 @@
-import PageTemplate from '../pagetemplate'
+import { Link } from 'react-router-dom'
+import { HeaderTemplate } from '../pagetemplate'
 
 function People() {
   return (
-    <>
-      <PageTemplate
-        firstLink="Home"
-        secondLink="About"
-        thirdLink="Services"
-        fourthLink="Contact"
-        pageTitle="Title"
-        pageSubTitle="SubTitle"
-        titleBoxOne="Box One"
-        titleBoxTwo="Box Two"
-        titleBoxThree="Box Three"
-        titleBoxFour="Box Four"
-        titleBoxFive="Box Five"
-        titleBoxSix="Box Six"
-        descriptionBoxOne="Description One"
-        descriptionBoxTwo="Description Two"
-        descriptionBoxThree="Description Three"
-        descriptionBoxFour="Description Four"
-        descriptionBoxFive="Description Five"
-        descriptionBoxSix="Description Six" />
-    </>
+    <HeaderTemplate
+      firstLink={<Link to="/howworks" className="hover:text-purple-400">How the Quiz Works</Link>}
+      secondLink={<Link to="/yourscores" className="hover:text-purple-400">Your Scores</Link>}
+      thirdLink={<Link to="/leaderboard" className="hover:text-purple-400">Leaderboard</Link>}
+    />
   )
 }
 
