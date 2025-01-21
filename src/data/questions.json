@@ -2197,5 +2197,315 @@
       ],
       "principle": "Measuring: Stakeholders"
     }
+  },
+  {
+    "id": 71,
+    "question": "The project has faced serious impacts in getting materials, with supply chains being disrupted and a global pandemic, and is currently three weeks behind schedule. You take this information to the next project steering committee meeting, where they advise they need more information on how much the project will end up costing. What will you do next?",
+    "options": [
+      {
+        "text": "Use the current project budget with no deviations until it runs out.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use the project burndown chart to see the burn-rate of accounting funds.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use a regression analysis on the current rate of spending to see where the final cost will end up.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use the project's estimate at completion to show the steering committee the most likely final cost.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "This question is talking about budget forecasts. Regression analysis may work but the best answer is the Estimate at Completion, which is the (BAC / (EV / AC)).",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "104"
+      ],
+      "principle": "Forecasts"
+    }
+  },
+  {
+    "id": 72,
+    "question": "You are working on an agile project where the project sponsor and executive managers require lengthy reports about the project work each week. This takes you and the project team a considerable amount of time to do, and reduces time spent creating the actual product. What will you do next?",
+    "options": [
+      {
+        "text": "Reuse most of the information each week so your time spent on them is reduced.",
+        "isCorrect": false
+      },
+      {
+        "text": "Suggest the leaders come to the sprint review and gather what they need from the information radiator.",
+        "isCorrect": true
+      },
+      {
+        "text": "Ask your project sponsor to wait until a steering committee meeting for the information.",
+        "isCorrect": false
+      },
+      {
+        "text": "Share your working project schedule and budget with the executives instead of creating the reports.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "Agile teams showcase actual work completed at the sprint review. Information radiators, also known as big visible charts, are visible displays that allow anyone to “pull” the information from. They are often “low tech and high touch” and contain information on work completed or remaining, risks, and things like a Kanban board and burndown chart.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "108"
+      ],
+      "principle": "Information Radiators"
+    }
+  },
+  {
+    "id": 73,
+    "question": "You are working on a project that has planned as much as they can up-front. You would like them to move to a more agile way of work. Currently, the work is hidden, the team catches up only once a week in a working group, and it is hard to see what each person is working on and keep track of it. What will you do next?",
+    "options": [
+      {
+        "text": "Ask your team to report on their work in a written status update each day so you can keep track.",
+        "isCorrect": false
+      },
+      {
+        "text": "Have more working group meetings so you are always up to date on what your team is working on.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask the team to move their work to a central, visible task board, then have a short meeting each day to discuss progress on the cards.",
+        "isCorrect": true
+      },
+      {
+        "text": "Remove the team meetings altogether and trust your team to get the work done.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question is talking about stand-ups and a Kanban board. “Task boards” are part of the visual controls used, where an increment of work moves from To Do to In Progress to Done. The team meets for 15 minutes each day to discuss progress and raise any impediments.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "109"
+      ],
+      "principle": "Visual Controls: Task boards"
+    }
+  },
+  {
+    "id": 74,
+    "question": "You are working on a hybrid project, where the majority of the work has been planned up front. The team manages their work via a Kanban board, and report on progress and blockers each day. As the project evolves, stakeholders have added more and more scope to the product, with one executive raising an urgent feature that needs to be added. What will you do next?",
+    "options": [
+      {
+        "text": "Limit the number of cards in the 'Ready' or 'To Do' column, and ask the Product Owner to work with stakeholder requests, noting the need to swap the new item for an existing item.",
+        "isCorrect": true
+      },
+      {
+        "text": "Match the number of user stories to the team's velocity, to ensure a sustainable pace.",
+        "isCorrect": false
+      },
+      {
+        "text": "Work with the stakeholder to raise a change request, and note the outcome in the change log.",
+        "isCorrect": false
+      },
+      {
+        "text": "Review the impact of the scope change with the stakeholder using the WBS dictionary.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "As a hybrid project using Kanban and some Agile ceremonies, the most appropriate way to manage the work and scope is by using a WIP Limit on the board. The Product Owner has the final say on prioritizing features and scope, so works with stakeholders to ensure they understand something may be de-prioritized by adding a new feature.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "110"
+      ],
+      "principle": "Kanban Board"
+    }
+  },
+  {
+    "id": 75,
+    "question": "You are working as a product owner in an agile team, where the main measure of project success is the number of features delivered into production. Over the past six months, the team have delivered the highest number of features your organization has ever seen, however, customers are starting to complain about issues and bugs in the product. What will you do next?",
+    "options": [
+      {
+        "text": "Ask the team to work harder in delivering more features, to fix the product issues.",
+        "isCorrect": false
+      },
+      {
+        "text": "Adjust the product metrics to include customer satisfaction and quality measures.",
+        "isCorrect": true
+      },
+      {
+        "text": "Add a slack card of 5 points into the sprint backlog, to deal with the technical debt.",
+        "isCorrect": false
+      },
+      {
+        "text": "Remove customer comments and feedback until you have finished delivering all the features.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question is about the Hawthorne Effect, where what we measure influences the behavior of our team. In this case, we measured the number of features only, and the team delivered, but at the cost of quality and customer satisfaction. Adding measures for those two things will balance the team’s behavior.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "112"
+      ],
+      "principle": "Measurement pitfalls: Hawthorne Effect"
+    }
+  },
+  {
+    "id": 76,
+    "question": "You have been working on a project for the past eight months. Your project team have been approached by multiple stakeholders for reporting on various performance measures about the project and the product area. Now, a large amount of their time is spent on creating these reports for others. They have escalated this issue to you. What will you do next?",
+    "options": [
+      {
+        "text": "Ask the project stakeholders to stop interacting with your project team.",
+        "isCorrect": false
+      },
+      {
+        "text": "Spend a portion of your project budget to automate the reports for your stakeholders.",
+        "isCorrect": false
+      },
+      {
+        "text": "Work with the team, including the stakeholders, to only measure things that will facilitate a decision, help avoid an issue, or increase project performance.",
+        "isCorrect": true
+      },
+      {
+        "text": "Invite your stakeholders to your sprint reviews, so they can see a working feature in practice.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "The intent in measuring and displaying data is to learn and improve. To optimize project performance and efficiency, only measure and report information that will allow the project team to learn, facilitate a decision, improve some aspect of performance, help avoid an issue, or help prevent performance deterioration.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "114"
+      ],
+      "principle": "Growing and Improving"
+    }
+  },
+  {
+    "id": 77,
+    "question": "You are working on a project where there is a significant amount of uncertainty about the requirements. There is also a legislative change coming, and no one knows what it will mean for your industry. As a project manager, how will you deal with this uncertainty?",
+    "options": [
+      {
+        "text": "Perform additional planning for your project to improve your view on scope management.",
+        "isCorrect": false
+      },
+      {
+        "text": "Hold additional retrospectives, to capture challenges and improvements from your team.",
+        "isCorrect": false
+      },
+      {
+        "text": "Create a risk assessment of all possible project risks, with their risk ratings and owners.",
+        "isCorrect": false
+      },
+      {
+        "text": "Gather information and prepare for multiple outcomes, and build team resilience through processes and training.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswerExplanation": "This question is about general uncertainty and risk. Uncertainty cannot be predicted precisely, and methods for responding to uncertainty include gathering information, preparing for multiple outcomes, using set-based design, and building in resilience.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "118"
+      ],
+      "principle": "General Uncertainty"
+    }
+  },
+  {
+    "id": 78,
+    "question": "You are working on a project with a vendor where there is significant ambiguity involved and multiple options the team could go with. Many outcomes are possible that have varying degrees of impact to improve the situation. What will you do next?",
+    "options": [
+      {
+        "text": "Use experiments and prototypes, and progressive elaboration to work your way through it.",
+        "isCorrect": true
+      },
+      {
+        "text": "Ask your team for additional reporting around the different options so you can make an informed decision.",
+        "isCorrect": false
+      },
+      {
+        "text": "Add all the different options into your project scope, so all your bases are covered.",
+        "isCorrect": false
+      },
+      {
+        "text": "Work more closely with your senior users so they can inform you of the product requirements.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question is on Ambiguity. There are two types of ambiguity: Conceptual (where it is hard to understand) and situational (where there are multiple options and outcomes). Use progressive elaboration, experiments, and prototypes to work through this ambiguity.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "120"
+      ],
+      "principle": "Ambiguity"
+    }
+  },
+  {
+    "id": 79,
+    "question": "You are working on a project to improve some software that has been in production for over 17 years and has been modified extensively over that time. It also integrates with many other systems within your organization. You cannot decide which features to deliver first. How will you deal with the complexity?",
+    "options": [
+      {
+        "text": "List out the possible features you can deliver and prioritize them by cost over benefit.",
+        "isCorrect": false
+      },
+      {
+        "text": "Simulate decoupling connecting parts to simplify the number of variables, then reframe your view by brainstorming with a diverse set of stakeholders.",
+        "isCorrect": true
+      },
+      {
+        "text": "Provide an incentive for your project team for whoever can solve this complex problem.",
+        "isCorrect": false
+      },
+      {
+        "text": "Form a business case for a third-party system to replace the existing complex system, to transfer the risk of delivery.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question is about Complexity. Methods for dealing with complexity include Systems-based approaches (decoupling and simulation); Reframing (diversity and balanced views); Process-based approaches (iterating, engaging stakeholders, and using a fail-safe or error-proofing).",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "121"
+      ],
+      "principle": "Complexity"
+    }
+  },
+  {
+    "id": 80,
+    "question": "You are working on a project that requires a very particular programming skillset that is not very common. It is also the hottest job market the industry has seen in two decades; people are hard to come by and leave often. The programming language is also evolving at a quick pace. What will you do next?",
+    "options": [
+      {
+        "text": "Develop the product from scratch in a more common programming language.",
+        "isCorrect": false
+      },
+      {
+        "text": "Ask your whole team to learn the programming skillset, to cover the risk.",
+        "isCorrect": false
+      },
+      {
+        "text": "Use alternatives analysis to gather different options, and ensure a sufficient cost reserve to help complete your project.",
+        "isCorrect": true
+      },
+      {
+        "text": "Raise a risk to your project completion, with the threat of project team member skillsets.",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswerExplanation": "This question is referring to Volatility, which is an environment that is subject to rapid and unpredictable change, including ongoing fluctuations in available skillsets or materials. Alternatives analysis and cost reserves are ways to deal with volatility.",
+    "reference": {
+      "guide": "PMBOK Guide – Seventh Edition",
+      "year": 2021,
+      "pages": [
+        "122"
+      ],
+      "principle": "Volatility"
+    }
   }
 ]
