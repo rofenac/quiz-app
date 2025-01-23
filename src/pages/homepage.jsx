@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import PageTemplate from '../pagetemplate'
+import PageTemplate from './pagetemplate'
 
 function HomePage() {
   return (

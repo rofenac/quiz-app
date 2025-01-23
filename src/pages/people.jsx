@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { HeaderTemplate } from '../pagetemplate'
+import { HeaderTemplate } from './pagetemplate'
 
 function People() {
   return (

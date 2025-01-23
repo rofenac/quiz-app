@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 function PageTemplate(props) {
   return (
@@ -7,7 +7,7 @@ function PageTemplate(props) {
       <BodyTemplate {...props} className="flex-grow" />
       <FooterTemplate />
     </div>
-  );
+  )
 }
 
 export function HeaderTemplate({
@@ -39,10 +39,10 @@ export function HeaderTemplate({
         </div>
       </div>
     </header>
-  );
+  )
 }
 
-function BodyTemplate({
+export function BodyTemplate({
   pageFlavorText,
   pageTitle,
   pageSubTitle,
@@ -68,7 +68,7 @@ function BodyTemplate({
     { title: titleBoxFour, description: descriptionBoxFour, svgPath: 'M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7' },
     { title: titleBoxFive, description: descriptionBoxFive, svgPath: 'M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z' },
     { title: titleBoxSix, description: descriptionBoxSix, svgPath: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' }
-  ];
+  ]
   const boxesToRender = boxes.filter((box) => box.title);
 
   return (
@@ -145,7 +145,7 @@ export function FooterTemplate() {
         </nav>
       </div>
     </footer>
-  );
+  )
 }
 
 export default PageTemplate
