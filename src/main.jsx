@@ -9,5 +9,5 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter basename="/quiz-app">
       <App />
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )
