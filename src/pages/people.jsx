@@ -23,6 +23,7 @@ function People() {
         quizType="Take the People Quiz"
       />
       <PmpContext
+        quizType="People"
         lineOne="Manage conflict effectively"
         lineTwo="Lead teams with emotional intelligence"
         lineThree="Support and guide stakeholders throughout the project lifecycle"

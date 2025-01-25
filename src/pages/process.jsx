@@ -23,6 +23,7 @@ function Process() {
         quizType="Take the Process Quiz"
       />
       <PmpContext
+        quizType="Process"
         lineOne="Plan and define project scope effectively"
         lineTwo="Develop and manage project schedules with precision"
         lineThree="Ensure quality management across all deliverables"

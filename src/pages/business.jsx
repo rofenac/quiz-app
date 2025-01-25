@@ -23,6 +23,7 @@ function Business() {
         quizType="Take the Business Environment Quiz"
       />
       <PmpContext
+        quizType="Business Environment"
         lineOne="Evaluate the impact of external business environments on projects"
         lineTwo="Ensure organizational compliance with regulations and standards"
         lineThree="Align project objectives with organizational goals"
