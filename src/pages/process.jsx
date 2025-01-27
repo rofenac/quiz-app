@@ -20,7 +20,8 @@ function Process() {
         backgroundImage={Gantt2}
         title="Mastering the Process Domain"
         subtitle="Optimizing workflows and ensuring project success through process mastery"
-        quizType="Take the Process Quiz"
+        quizName="Take the Process Quiz"
+        quizDomain="../quiz/process"
       />
       <PmpContext
         quizType="Process"
@@ -46,7 +47,8 @@ function Process() {
         tacticsThree="Review case studies to apply theoretical knowledge in practical settings"
       />
       <Cta
-        quizType="Take the Process Quiz"
+        quizName="Take the Process Quiz"
+        quizDomain='../quiz/process'
       />
       <Footer />
     </div>

@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "domain": "People",
     "question": "You have been assigned to a new project, where the work is behind schedule and the team are not working together well. The team is relatively new, and conflicts are arising. Team members are blaming each other for work not done, and some people are not showing up to work on the project at all. What will you do next?",
     "options": [
       {
@@ -33,6 +34,7 @@
   },
   {
     "id": 2,
+    "domain": "Business Environment",
     "question": "You have recently completed a project for a new product and have been asked to manage it after its release to keep it relevant in today’s marketplace. Half of your existing project team are rolling off to other projects soon, and your project budget is nearly depleted. What will you do next?",
     "options": [
       {
@@ -65,6 +67,7 @@
   },
   {
     "id": 3,
+    "domain": "People",
     "question": "You are delivering a critical change and several key stakeholders in your organisation have added seemingly unnecessary steps for you to take, with extra approvals, reports and meetings. They are also restricting the people you need from working on your project in a larger capacity. What will you do next?",
     "options": [
       {
@@ -97,6 +100,7 @@
   },
   {
     "id": 4,
+    "domain": "People",
     "question": "You are managing a project team mostly made up of men. Recently Jane was hired for her high expertise in the brands that make up your industry. You notice she has been left out of some key meetings, and others are overlooking her opinions. You also notice she is paid significantly less than her male colleagues. What will you do next?",
     "options": [
       {
@@ -128,6 +132,7 @@
   },
   {
     "id": 5,
+    "domain": "Business Environment",
     "question": "During one of your working group meetings, a stakeholder raises the concern that the product you are working on will be discontinued in the next five months. You were not aware of this, and your project budget has already been approved until the scheduled delivery, which is in five months also. What will you do next?",
     "options": [
       {
@@ -159,6 +164,7 @@
   },
   {
     "id": 6,
+    "domain": "Process",
     "question": "You have collected the requirements for your project and are creating the scope statement and work breakdown structure. During this process, you notice some functionality in your database system that will help a different project you are aware of within your Project Management Office (PMO). What will you do next?",
     "options": [
       {
@@ -191,6 +197,7 @@
   },
   {
     "id": 7,
+    "domain": "People",
     "question": "You are working on a high-profile project. Several high-ranking senior executives want to take the credit for this initiative, while limiting the impact to their own resources. This has led to several conflicts and a scope statement that is unclear, leading to a risk of project failure. What will you do next?",
     "options": [
       {
@@ -222,6 +229,7 @@
   },
   {
     "id": 8,
+    "domain": "Process",
     "question": "You are managing a project where the majority of the product has been planned up-front, but an external system is needed from a vendor in partial pieces where the requirements are unclear. Half of your stakeholders want to use a waterfall approach, and the other half are advocating for an Agile approach. What will you do next?",
     "options": [
       {
@@ -254,6 +262,7 @@
   },
   {
     "id": 9,
+    "domain": "Business Environment",
     "question": "You are working on a project where senior users have been testing the product as parts are released. They have found some missing requirements and defects. Their manager is worried that the project won’t deliver a product that is fit for purpose, without defects and within the timeframe needed. What will you do next?",
     "options": [
       {
@@ -286,6 +295,7 @@
   },
   {
     "id": 10,
+    "domain": "Process",
     "question": "You are working through the risk assessment with your team, who are having trouble coming up with ideas for risks. You decide to give them some guidance on types of complexity that might affect your new product. What will you do next?",
     "options": [
       {
@@ -301,7 +311,7 @@
         "isCorrect": true
       },
       {
-        "text": "Ask them to perform a retrospective to discover what isn\u2019t working well, and what still puzzles us.",
+        "text": "Ask them to perform a retrospective to discover what isn’t working well, and what still puzzles us.",
         "isCorrect": false
       }
     ],
@@ -318,6 +328,7 @@
   },
   {
     "id": 11,
+    "domain": "Process",
     "question": "You are working on a project where you discover a certain negative risk with a potential impact of $2,000,000. You meet with your project stakeholders who determine that this is within their risk appetite, provided you meet a risk threshold of 10%. What will you do next?",
     "options": [
       {
@@ -349,6 +360,7 @@
   },
   {
     "id": 12,
+    "domain": "Process",
     "question": "A risk has been raised in your project around insufficient building materials. One risk response assigned to the functional manager suggests using a brand new material, which has not been fully tested in a building project. Half of your stakeholder group are happy with this risk response, but the other half are not and refuse to sign off on it. What will you do next?",
     "options": [
       {
@@ -368,9 +380,9 @@
         "isCorrect": true
       }
     ],
-    "correctAnswerExplanation": "This question refers to risk responses. Risk responses should be appropriate and timely to the significance of the risk, cost-effective, realistic within the project context, agreed to by relevant stakeholders, and owned by a responsible person.",
+    "correctAnswerExplanation": "Risk responses should be appropriate and timely to the significance of the risk, cost-effective, realistic within the project context, agreed to by relevant stakeholders, and owned by a responsible person.",
     "reference": {
-      "guide": "PMBOK Guide – Seventh Edition",
+      "guide": "PMBOK Guide - Seventh Edition",
       "year": 2021,
       "pages": [
         "54"
@@ -380,6 +392,7 @@
   },
   {
     "id": 13,
+    "domain": "Process",
     "question": "Your project is starting to go off track due to a large amount of uncertainty in the requirements and resources. At a significant cost, you have managed to reign in these issues; however, your project management office would like you to brainstorm ways to improve with your team so that they do not happen again. What will you do next?",
     "options": [
       {
@@ -401,7 +414,7 @@
     ],
     "correctAnswerExplanation": "A project team needs to embrace adaptability and resiliency with methods such as using short feedback loops, continuous learning and improvement, regular inspection and adaptation of project work, diverse project teams, transparent planning, using prototypes, and more.",
     "reference": {
-      "guide": "PMBOK Guide – Seventh Edition",
+      "guide": "PMBOK Guide - Seventh Edition",
       "year": 2021,
       "pages": [
         "56"
@@ -411,6 +424,7 @@
   },
   {
     "id": 14,
+    "domain": "People",
     "question": "As your project progresses, many of the business stakeholders are starting to voice their concerns, to question some of the changes, and even miss key meetings while trying to sabotage your efforts. What will you do next?",
     "options": [
       {
@@ -432,7 +446,7 @@
     ],
     "correctAnswerExplanation": "This question is on change management, which is a structured approach to transitioning groups to a future state. Too much change or lack of understanding can lead to resistance and change fatigue. Methods include communicating the vision, goals, and benefits of the change early, along with the impact to work processes.",
     "reference": {
-      "guide": "PMBOK Guide – Seventh Edition",
+      "guide": "PMBOK Guide - Seventh Edition",
       "year": 2021,
       "pages": [
         "59"
@@ -442,6 +456,7 @@
   },
   {
     "id": 15,
+    "domain": "People",
     "question": "You are analysing your stakeholder through an impact over influence chart and have found more than 100 different groups of people, and over 3000 impacted stakeholders. Other parts of your project are starting to fall behind as you try to keep up with the large amount of people. What will you do next?",
     "options": [
       {
@@ -461,9 +476,9 @@
         "isCorrect": false
       }
     ],
-    "correctAnswerExplanation": "This question is about engaging stakeholders. The process includes: Identify, Understand and Analyse, Prioritise, Engage and Monitor your stakeholders. Where you have too many to engage effectively, prioritisation is the key. Impact and influence are two ways, as well as Power, Beliefs, Expectations, proximity to the project, interest and more.",
+    "correctAnswerExplanation": "The process includes: Identify, Understand and Analyse, Prioritise, Engage and Monitor your stakeholders. Where you have too many to engage effectively, prioritisation is the key. Impact and influence are two ways, as well as Power, Beliefs, Expectations, proximity to the project, interest and more.",
     "reference": {
-      "guide": "PMBOK Guide – Seventh Edition",
+      "guide": "PMBOK Guide - Seventh Edition",
       "year": 2021,
       "pages": [
         "11",
@@ -474,6 +489,7 @@
   },
   {
     "id": 16,
+    "domain": "People",
     "question": "You are managing a project which communicates to the customer using mostly pull communication so far. When monitoring the engagement of your stakeholders, you notice a trend that they are not clear on the impacts or benefits of the project. You decide to add push communication to your communication plan. What will you do next?",
     "options": [
       {
@@ -505,6 +521,7 @@
   },
   {
     "id": 17,
+    "domain": "People",
     "question": "You have taken over on a project with a vendor where scope and requirements have been missed. You notice that miscommunication and mixed messages are common. You set a meeting with your team and the vendor’s team. The meeting is extremely important to get right. What will you do next?",
     "options": [
       {
@@ -536,6 +553,7 @@
   },
   {
     "id": 18,
+    "domain": "People",
     "question": "Your stakeholders seem to be engaged, however, there are frequent changes to scope and requirements, causing delays. Issues are often raised and result in multiple rounds of feedback. You are not sure who or what could be the cause. What will you do next?",
     "options": [
       {
@@ -567,6 +585,7 @@
   },
   {
     "id": 19,
+    "domain": "People",
     "question": "You have been working on a project where the manager leads in a dictatorship style. Over time, the team have stopped making suggestions, sick days and mental health days have become more frequent, and the pace of work has slowed. The manager comes to you for help. You suggest a servant leadership style instead. What will they do next?",
     "options": [
       {
@@ -598,6 +617,7 @@
   },
   {
     "id": 20,
+    "domain": "People",
     "question": "You have been allocated to a new project team with members from different parts of the functional business area. It soon becomes clear that very few of them have worked on a project before. There is also a lot of miscommunication and re-work occurring amongst the team, which is starting to cause delays. What will you do next?",
     "options": [
       {
@@ -629,6 +649,7 @@
   },
   {
     "id": 21,
+    "domain": "People",
     "question": "You have collected the requirements for your project, matched them to project scope, and broken them down into smaller parts and the activities required. In doing this, you notice that the manager of the marketing department has added extra scope that is unrelated to your current project. What will you do next?",
     "options": [
       {
@@ -660,6 +681,7 @@
   },
   {
     "id": 22,
+    "domain": "People",
     "question": "Your project team are protected by a union agreement. You notice that they don’t know how to use the product you are improving, are slow to respond, and regularly complain about the work. Your project sponsor has had enough and threatens to shut the project down if improvements can’t be made. What will you do next?",
     "options": [
       {
@@ -692,6 +714,7 @@
   },
   {
     "id": 23,
+    "domain": "People",
     "question": "During a key scope meeting, an argument arises. The business manager accuses the technology manager of not delivering to their needs on past projects, and the technology manager accuses the business manager of changing requirements that impact the delivery schedule. The meeting is at risk, with the stakeholders being closed off to any further discussion. What will you do next?",
     "options": [
       {
@@ -723,6 +746,7 @@
   },
   {
     "id": 24,
+    "domain": "People",
     "question": "You are working on a project where the project team is completely distributed around the country in multiple sites, including working from home. Some of the project team members have not been able to contribute to the project, and there are concerns from the program that the project will fall behind. What will you do next?",
     "options": [
       {
@@ -754,6 +778,7 @@
   },
   {
     "id": 25,
+    "domain": "Process",
     "question": "You are initiating a project to a sales team where the process will change significantly, even though the outcome of a completed sale will remain the same. The functional manager is concerned about the change and any disruption it might bring. What will you do next?",
     "options": [
       {
@@ -785,6 +810,7 @@
   },
   {
     "id": 26,
+    "domain": "Process",
     "question": "You are working on a project where the requirements are clear but the solution ideas are uncertain. The product owner and the technical experts can’t be sure which ideas will work in practice, and which ones won’t. The organisation cannot afford to get this project wrong, as they have previously made mistakes and customers are starting to leave. What will you do next?",
     "options": [
       {
@@ -826,6 +852,7 @@
   },
   {
     "id": 27,
+    "domain": "Process",
     "question": "You are working on a new product for your organisation where the requirements are complex and are likely to change a few times as the project progresses. The organisation also needs usable parts of the product to be released as soon as possible to try and capture some of the market they are aiming for, away from their competitors. What will you do next?",
     "options": [
       {
@@ -857,6 +884,7 @@
   },
   {
     "id": 28,
+    "domain": "Process",
     "question": "A new project has been kicked off in your organisation due to a recent government inquiry into your industry, which found multiple processes with significant regulatory oversight that need to change. The inquiry ordering these changes has given you a due date of 10 months’ time before you start incurring penalties. What will you do next?",
     "options": [
       {
@@ -888,6 +916,7 @@
   },
   {
     "id": 29,
+    "domain": "People",
     "question": "Your organisation is moving to an Agile way of work. Your project team are strongly opposed to using Agile as they have been burned using iterations, when executives used the team velocity to try and force the team to work faster instead of keeping a sustainable pace. What will you do next?",
     "options": [
       {
@@ -919,6 +948,7 @@
   },
   {
     "id": 30,
+    "domain": "Process",
     "question": "Your team have not worked on projects before, and don’t know about waterfall, agile, or any of the different models. Your project may also have requirements that are certain or uncertain, with varying levels of risk, so are not sure which approach to use as you begin this new project. What will you do next?",
     "options": [
       {
@@ -950,6 +980,7 @@
   },
   {
     "id": 31,
+    "domain": "Process",
     "question": "You are a project manager in an organization with a directive Project Management Office, and are currently in between projects. The PMO asks you to prepare for an upcoming project in the accounting area by meeting with the functional manager there. You have no team, no scope or requirements and no timeline as yet. What will you do next?",
     "options": [
       {
@@ -981,6 +1012,7 @@
   },
   {
     "id": 32,
+    "domain": "Process",
     "question": "You are working on a project where part of the project delivers a high value, high risk component. Another part of the project delivers a routine change to the system. Your project sponsor wants to gain the business value as quickly as possible, but your project team wants to start with the work they are familiar with first. What will you do next?",
     "options": [
       {
@@ -1012,6 +1044,7 @@
   },
   {
     "id": 33,
+    "domain": "Process",
     "question": "You are working on an agile project where the functional area you are delivering to only has a high-level idea of the system requirements they will need. The functional manager suggests a Work Breakdown Structure, however your team feels that is more for a predictive (waterfall) delivery approach. What will you do next?",
     "options": [
       {
@@ -1043,6 +1076,7 @@
   },
   {
     "id": 34,
+    "domain": "Process",
     "question": "You are at the beginning of planning a new project, and have researched and gathered the requirements from the area, broken them down into deliverables and activities, which you believe could take 26 weeks to deliver. The project sponsor is asking you for an estimate on how long the project will take. What will you do next?",
     "options": [
       {
@@ -1074,6 +1108,7 @@
   },
   {
     "id": 35,
+    "domain": "Process",
     "question": "After gathering your project requirements, project scope, and breaking it down into activities, you need to estimate the project schedule with your team. After some analysis and discussion, your team come up with a range of 53 to 75 days assigned across all tasks. What will you do next?",
     "options": [
       {
@@ -1105,6 +1140,7 @@
   },
   {
     "id": 36,
+    "domain": "Process",
     "question": "You are working on a business case where you know that the industry is undergoing a significant change at the moment, and there could be many different impacts to your project benefits before it is delivered completely. The project sponsor asks you for the best estimate of benefits you can give under the circumstances. What will you do next?",
     "options": [
       {
@@ -1136,6 +1172,7 @@
   },
   {
     "id": 37,
+    "domain": "Process",
     "question": "You have noted nine epics for delivery as part of your most recent project. Your team have broken down these epics into user stories, and would like to see the effort involved for these deliverables. You ask your team to find the smallest user story, size it with a '1,' and then determine the size of the other cards based on how they compare to the original card. What approach are you taking?",
     "options": [
       {
@@ -1167,6 +1204,7 @@
   },
   {
     "id": 38,
+    "domain": "Process",
     "question": "You are working on a project where a competitor is also working on a similar feature, and being first to the market will have a significant impact on this year’s profit. Your product owner would like to measure how quickly story cards are being completed, once they start being developed. What will you do next?",
     "options": [
       {
@@ -1198,6 +1236,7 @@
   },
   {
     "id": 39,
+    "domain": "Process",
     "question": "You are working on a project that has recently moved to a more agile way of work. The team have not completely taken on the Scrum approach however, and are comfortable working with a more flow-based approach moving user stories across a Kanban board. You are wanting to get an estimate on how much work can be completed in the next three months, based on the team’s existing progress. What will you do next?",
     "options": [
       {
@@ -1229,6 +1268,7 @@
   },
   {
     "id": 40,
+    "domain": "Process",
     "question": "Your product owner wants to bring the next feature forward so that it is done in parallel to the current feature, but is still released in the existing feature order. You make the necessary adjustments to the product backlog, and decide to adjust the product roadmap, which you have visualized as a Gantt chart. What will you do next?",
     "options": [
       {
@@ -1270,6 +1310,7 @@
   },
   {
     "id": 41,
+    "domain": "Process",
     "question": "You are working on a project where you have been completing the deliverables in sequence, and the project work is starting to fall behind. The project sponsor asks you to speed up the work and reduce the time for the project to be delivered, but also makes it very clear that there is no more money to use when speeding up the work. What will you do next?",
     "options": [
       {
@@ -1301,6 +1342,7 @@
   },
   {
     "id": 42,
+    "domain": "Process",
     "question": "After reviewing your project schedule you notice you are behind by three weeks and the schedule will need to be compressed. Your project does not have enough budget to crash the schedule. You check with the lead for each area and review the schedule as to whether they can fast track their deliverables. What will you do next?",
     "options": [
       {
@@ -1332,6 +1374,7 @@
   },
   {
     "id": 43,
+    "domain": "Process",
     "question": "Your team are new to agile, and had previously been working with Waterfall. Your key customer asks you for a project schedule. The project team believes using a project schedule is from the old waterfall way of working and they shouldn't have to create one. What will you do next?",
     "options": [
       {
@@ -1363,6 +1406,7 @@
   },
   {
     "id": 44,
+    "domain": "Process",
     "question": "You are working in a project team that has recently moved to an Agile way of work. Your business analysts want to gather the requirements, solutions, match them to the scope and do a WBS for the whole deliverable. Your product owner says this will take too long, and is not agile enough for their needs. What will you do next?",
     "options": [
       {
@@ -1394,6 +1438,7 @@
   },
   {
     "id": 45,
+    "domain": "Process",
     "question": "When reviewing the current progress with your project sponsor, they notice that the system solution is missing a critical piece that will impact the benefit of the project. The project sponsor approves this scope. Your project has a Planned Value of $520,000 and an Actual Cost of $535,000. What will you do next?",
     "options": [
       {
@@ -1425,6 +1470,7 @@
   },
   {
     "id": 46,
+    "domain": "People",
     "question": "You are in the planning stages of an Agile project where the functional manager and senior users have provided the high-level requirements and scope. You have been asked to put together a project team that will be able to deliver quickly. What will you do next?",
     "options": [
       {
@@ -1456,6 +1502,7 @@
   },
   {
     "id": 47,
+    "domain": "People",
     "question": "You are putting together a project team to deliver an accounting system to offices around the country. The accounting system you are moving to has not been used by anyone in your organization before. The project is quite high risk, and the delivery needs to be right the first time. What will you do next?",
     "options": [
       {
@@ -1487,6 +1534,7 @@
   },
   {
     "id": 48,
+    "domain": "People",
     "question": "You are putting together a project plan for a change that affects nearly ten thousand stakeholders in your organization. You have identified the affected stakeholders, analyzed and prioritized them, and are putting together a communication plan to ensure the right engagement is made. What will you NOT include in your plan?",
     "options": [
       {
@@ -1518,6 +1566,7 @@
   },
   {
     "id": 49,
+    "domain": "Process",
     "question": "You put together a resource plan for a large amount of physical inventory to be purchased from overseas. You ordered the inventory during project execution, however global supply chains were impacted and the shipment was delayed by three months, significantly impacting your project. What should you have done differently?",
     "options": [
       {
@@ -1549,6 +1598,7 @@
   },
   {
     "id": 50,
+    "domain": "Process",
     "question": "You are halfway through your agile project when there is a significant change to the project scope, after it was found that the project would not be able to deliver the benefits it had promised. You check your project budget and there are contingency and management reserves available. What will you do next?",
     "options": [
       {
@@ -1580,6 +1630,7 @@
   },
   {
     "id": 51,
+    "domain": "Process",
     "question": "You have recently taken over on a project that is behind schedule, and slightly over budget. You raise an issue at the steering committee meeting, where they advise that there is no additional funding available and the project must finish on time. You believe you can optimise the project process to try and bring the project back on track. What will you do next?",
     "options": [
       {
@@ -1611,6 +1662,7 @@
   },
   {
     "id": 52,
+    "domain": "Process",
     "question": "Your Project Management Office (PMO) is optimising all the projects within their portfolio. They ask for your advice in tracking the type of work each team member is doing and how long it takes, suggesting that they categorise and record their work in addition to the work itself. What will you do next?",
     "options": [
       {
@@ -1642,6 +1694,7 @@
   },
   {
     "id": 53,
+    "domain": "People",
     "question": "You are working on an agile project as a scrum master, where the functional manager has worked with some people in your development team before. She approaches them directly to see if they can add a feature to the product in the current sprint. What will you do next?",
     "options": [
       {
@@ -1673,6 +1726,7 @@
   },
   {
     "id": 54,
+    "domain": "People",
     "question": "Part of your project management plan is a detailed communications plan, which has the stakeholders on the project, their communication needs, and how information will be communicated. While this is being signed off by the project sponsor, you receive many ad-hoc requests for information from new stakeholders. What will you do next?",
     "options": [
       {
@@ -1704,6 +1758,7 @@
   },
   {
     "id": 55,
+    "domain": "Process",
     "question": "You are working on a high-value construction project to include smart-home components within multi-million dollar buildings. After completing a make-or-buy analysis, you find that it will cost $700,000 to make the new system, or $500,000 to buy it from a vendor. You prepare a procurement management plan to purchase it. What will you do before conducting a procurement?",
     "options": [
       {
@@ -1735,6 +1790,7 @@
   },
   {
     "id": 56,
+    "domain": "Process",
     "question": "A missing item has been uncovered in the project scope that your project team cannot deliver. The item is not complex and seems to be fairly readily available from various sources. You are ready to move to source selection and choose a vendor that will meet their needs. What will you do before sending out bid documents to vendors?",
     "options": [
       {
@@ -1766,6 +1822,7 @@
   },
   {
     "id": 57,
+    "domain": "Process",
     "question": "You are working on a project where part of the work is planned carefully upfront, and another part is subject to change. You negotiate terms and conditions, including cost, delivery, and payment dates. The vendor is concerned about confusion that might occur between the pre-planned and changeable work. What will you do next?",
     "options": [
       {
@@ -1797,6 +1854,7 @@
   },
   {
     "id": 58,
+    "domain": "People",
     "question": "You are working on an agile project where there are vastly differing levels of product knowledge within your team. The scrum master suggests that you try to gain knowledge by osmosis, because the project information may be lost when only communicating by email. What will you do next?",
     "options": [
       {
@@ -1828,6 +1886,7 @@
   },
   {
     "id": 59,
+    "domain": "Process",
     "question": "You are working as a Product Owner, and have placed high-level information about the product in the product backlog, and the highest priority feature at the top. Senior users informing the project are unable to clearly articulate their requirements and are concerned that the product will not truly meet their needs. What will you do next?",
     "options": [
       {
@@ -1859,6 +1918,7 @@
   },
   {
     "id": 60,
+    "domain": "Process",
     "question": "You are gathering requirements for a new feature in a customer management system. The product owner has given a user interface feature as the next highest priority, and you are co-located with the team receiving the benefits. What will you do next?",
     "options": [
       {
@@ -1890,6 +1950,7 @@
   },
   {
     "id": 61,
+    "domain": "Process",
     "question": "You are working in an agile team who are trying to break down the project requirements and scope. They have created a scope statement and work breakdown structure, but are not sure how it will work now that they are using sprints and user stories. What will you do next?",
     "options": [
       {
@@ -1921,6 +1982,7 @@
   },
   {
     "id": 62,
+    "domain": "Process",
     "question": "Your project team are trialing an agile way of work. The Product Owner has a clear vision for the product. There is confusion in the team as to how much work should be done on a user story before it is taken to the sprint review, and how they will know a story is complete. What will you do next?",
     "options": [
       {
@@ -1952,6 +2014,7 @@
   },
   {
     "id": 63,
+    "domain": "Process",
     "question": "You have been working closely with the quality manager of your project, planning the budget for the project phase that is due to begin in the next two months. They mention the need to budget for appraisal costs, to avoid quality issues in the future. What will you do next?",
     "options": [
       {
@@ -1983,6 +2046,7 @@
   },
   {
     "id": 64,
+    "domain": "Process",
     "question": "Your agile project has recently had multiple quality issues. Project features have been prioritized by the Product Owner and broken down into user stories. What will you do to help reduce the cost of quality issues the most?",
     "options": [
       {
@@ -2014,6 +2078,7 @@
   },
   {
     "id": 65,
+    "domain": "Process",
     "question": "You are working in an agile team where executives in the team you are delivering to are asking for a large display of reports to be created every two weeks, showing how the project is tracking and updating them on the cost and benefits. What will you do next?",
     "options": [
       {
@@ -2045,6 +2110,7 @@
   },
   {
     "id": 66,
+    "domain": "Process",
     "question": "Multiple features have been released, but they are not having the effect the product owner believes they should. Your team is using some Key Performance Indicators to track performance, and you agree to move to more Leading indicators. What could you use as examples of Leading indicators for your project?",
     "options": [
       {
@@ -2076,6 +2142,7 @@
   },
   {
     "id": 67,
+    "domain": "Process",
     "question": "You are working in an agile project team that has increased in size and complexity since the project began. In reviewing the throughput of work with your team, you notice fewer and fewer user stories being completed, and the roadmap of features scheduled to go live is being pushed out. What will you do next?",
     "options": [
       {
@@ -2107,6 +2174,7 @@
   },
   {
     "id": 68,
+    "domain": "Process",
     "question": "You are working on an agile project where the project customer wants a reliable way to measure the project performance, and you know you first need a baseline. What measures will you show to your customer as part of your agile project?",
     "options": [
       {
@@ -2138,6 +2206,7 @@
   },
   {
     "id": 69,
+    "domain": "Process",
     "question": "The product owner has worked with a team of senior users to gather feature ideas. They now have a list of more than fifty ideas for your team to develop, which is far too many to complete in the timeframe you have. What will you do next?",
     "options": [
       {
@@ -2169,6 +2238,7 @@
   },
   {
     "id": 70,
+    "domain": "People",
     "question": "Your agile project team has only recently formed. The product is still unclear, and there have been disagreements and minor conflicts over the past two weeks as the team finds their rhythm. You would like things to improve, but can’t quite pinpoint or address the problem. What will you do next?",
     "options": [
       {
@@ -2200,6 +2270,7 @@
   },
   {
     "id": 71,
+    "domain": "Process",
     "question": "The project has faced serious impacts in getting materials, with supply chains being disrupted and a global pandemic, and is currently three weeks behind schedule. You take this information to the next project steering committee meeting, where they advise they need more information on how much the project will end up costing. What will you do next?",
     "options": [
       {
@@ -2231,6 +2302,7 @@
   },
   {
     "id": 72,
+    "domain": "Process",
     "question": "You are working on an agile project where the project sponsor and executive managers require lengthy reports about the project work each week. This takes you and the project team a considerable amount of time to do, and reduces time spent creating the actual product. What will you do next?",
     "options": [
       {
@@ -2262,6 +2334,7 @@
   },
   {
     "id": 73,
+    "domain": "Process",
     "question": "You are working on a project that has planned as much as they can up-front. You would like them to move to a more agile way of work. Currently, the work is hidden, the team catches up only once a week in a working group, and it is hard to see what each person is working on and keep track of it. What will you do next?",
     "options": [
       {
@@ -2293,6 +2366,7 @@
   },
   {
     "id": 74,
+    "domain": "Process",
     "question": "You are working on a hybrid project, where the majority of the work has been planned up front. The team manages their work via a Kanban board, and report on progress and blockers each day. As the project evolves, stakeholders have added more and more scope to the product, with one executive raising an urgent feature that needs to be added. What will you do next?",
     "options": [
       {
@@ -2324,6 +2398,7 @@
   },
   {
     "id": 75,
+    "domain": "Process",
     "question": "You are working as a product owner in an agile team, where the main measure of project success is the number of features delivered into production. Over the past six months, the team have delivered the highest number of features your organization has ever seen, however, customers are starting to complain about issues and bugs in the product. What will you do next?",
     "options": [
       {
@@ -2355,6 +2430,7 @@
   },
   {
     "id": 76,
+    "domain": "Process",
     "question": "You have been working on a project for the past eight months. Your project team have been approached by multiple stakeholders for reporting on various performance measures about the project and the product area. Now, a large amount of their time is spent on creating these reports for others. They have escalated this issue to you. What will you do next?",
     "options": [
       {
@@ -2386,6 +2462,7 @@
   },
   {
     "id": 77,
+    "domain": "Process",
     "question": "You are working on a project where there is a significant amount of uncertainty about the requirements. There is also a legislative change coming, and no one knows what it will mean for your industry. As a project manager, how will you deal with this uncertainty?",
     "options": [
       {
@@ -2417,6 +2494,7 @@
   },
   {
     "id": 78,
+    "domain": "Process",
     "question": "You are working on a project with a vendor where there is significant ambiguity involved and multiple options the team could go with. Many outcomes are possible that have varying degrees of impact to improve the situation. What will you do next?",
     "options": [
       {
@@ -2448,6 +2526,7 @@
   },
   {
     "id": 79,
+    "domain": "Process",
     "question": "You are working on a project to improve some software that has been in production for over 17 years and has been modified extensively over that time. It also integrates with many other systems within your organization. You cannot decide which features to deliver first. How will you deal with the complexity?",
     "options": [
       {
@@ -2479,6 +2558,7 @@
   },
   {
     "id": 80,
+    "domain": "Process",
     "question": "You are working on a project that requires a very particular programming skillset that is not very common. It is also the hottest job market the industry has seen in two decades; people are hard to come by and leave often. The programming language is also evolving at a quick pace. What will you do next?",
     "options": [
       {

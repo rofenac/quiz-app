@@ -20,7 +20,8 @@ function People() {
         backgroundImage={Boardroom1}
         title="Mastering the People Domain"
         subtitle="Building strong leadership and collaboration skills to ensure project success"
-        quizType="Take the People Quiz"
+        quizName="Take the People Quiz"
+        quizDomain="../quiz/people"
       />
       <PmpContext
         quizType="People"
@@ -46,7 +47,8 @@ function People() {
         tacticsThree="Join a study group to discuss leadership challenges"
       />
       <Cta
-        quizType="Take the People Quiz"
+        quizName="Take the People Quiz"
+        quizDomain='../quiz/people'
       />
       <Footer />
     </div>

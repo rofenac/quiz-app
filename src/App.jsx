@@ -19,7 +19,7 @@ function App() {
         <Route path="/howworks" element={<HowWorks />} />
         <Route path="/yourscores" element={<YourScores />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
-        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/quiz/:domain" element={<Quiz />} />
       </Routes>
     </div>
   )

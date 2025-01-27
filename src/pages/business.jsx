@@ -20,7 +20,8 @@ function Business() {
         backgroundImage={worldOrange}
         title="Mastering the Business Environment Domain"
         subtitle="Navigate external influences and ensure organizational success"
-        quizType="Take the Business Environment Quiz"
+        quizName="Take the Business Environment Quiz"
+        quizDomain="../quiz/business"
       />
       <PmpContext
         quizType="Business Environment"
@@ -46,7 +47,8 @@ function Business() {
         tacticsThree="Use flashcards to memorize critical regulations and standards"
       />
       <Cta
-        quizType="Take the Business Environment Quiz"
+        quizName="Take the Business Environment Quiz"
+        quizDomain='../quiz/business'
       />
       <Footer />
     </div>

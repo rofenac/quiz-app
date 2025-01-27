@@ -4,7 +4,8 @@ function Hero({
   backgroundImage,
   title,
   subtitle,
-  quizType
+  quizName,
+  quizDomain
 }) {
   return (
     <>
@@ -16,7 +17,7 @@ function Hero({
             <p className="mb-5">
               {subtitle}
             </p>
-            <Link to='/quiz' className="btn btn-accent">{quizType}</Link>
+            <Link to={quizDomain} className="btn btn-accent">{quizName}</Link>
           </div>
         </div>
       </div>
