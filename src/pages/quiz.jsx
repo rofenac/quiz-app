@@ -8,6 +8,11 @@ function Quiz() {
   const [score, setScore] = useState(0)
   const [quizQuestions, setQuizQuestions] = useState([])
 
+  // Utility function to shuffle questions
+  const shuffleArray = (array) => {
+    return array.sort(() => Math.random() - 0.5)
+  }
+
   useEffect(() => {
     let filteredQuestions
 
@@ -18,10 +23,10 @@ function Quiz() {
     } else if (domain === 'business') {
       filteredQuestions = questions.filter(q => q.domain === 'Business Environment')
     } else {
-      filteredQuestions = [...questions].sort(() => 0.5 - Math.random()) // Randomize
+      filteredQuestions = [...questions] // Random for "All" quizzes
     }
 
-    setQuizQuestions(filteredQuestions.slice(0, 10)) // Limit to 10 questions
+    setQuizQuestions(shuffleArray(filteredQuestions)) // Randomize questions
   }, [domain])
 
   function handleAnswer(isCorrect) {
@@ -44,7 +49,9 @@ function Quiz() {
 
   return (
     <div className="p-4">
-      <h1 className="text-xl font-bold mb-4">{domain.toUpperCase()} Quiz</h1>
+      <h1 className="text-xl font-bold mb-4">
+        {domain ? domain.toUpperCase() : 'RANDOM'} Quiz
+      </h1>
       <p>
         Question {currentQuestionIndex + 1} / {quizQuestions.length}
       </p>
