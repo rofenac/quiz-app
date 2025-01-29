@@ -38,6 +38,7 @@ Bring up UX/UI in parallel with code base/functionality
 
 1. MVP
   - ~~Decide on styling (Tailwind)~~
-  - Page navigation (links, buttons, etc.) - (in progress)
+  - ~~Page navigation (links, buttons, etc.) - (in progress)~~
   - Collect questions - (in progress)
   - ~~Setup Trello~~
+  - Expand Backlog
