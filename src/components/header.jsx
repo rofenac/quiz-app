@@ -1,11 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function Header({
-  firstLink,
-  secondLink,
-  thirdLink,
-  fourthLink,
-}) {
+function Header({ firstLink, secondLink, thirdLink }) {
   return (
     <header className="bg-neutral">
       <div className="navbar container mx-auto px-5 flex items-center justify-between">
@@ -21,10 +16,9 @@ function Header({
           </Link>
           <div className="divider divider-horizontal" />
           <nav className="flex items-center space-x-5">
-            <a className="text-neutral-content/60 hover:text-neutral-content">{firstLink}</a>
-            <a className="text-neutral-content/60 hover:text-neutral-content">{secondLink}</a>
-            <a className="text-neutral-content/60 hover:text-neutral-content">{thirdLink}</a>
-            <a className="text-neutral-content/60 hover:text-neutral-content">{fourthLink}</a>
+            {firstLink}
+            {secondLink}
+            {thirdLink}
           </nav>
         </div>
       </div>

@@ -2,11 +2,11 @@ import Header from './header'
 import Body from './body'
 import Footer from './footer'
 
-function PageTemplate(props) {
+function PageTemplate({ bodyProps, ...headerProps }) {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header {...props} />
-      <Body {...props} className="flex-grow" />
+      <Header {...headerProps} />
+      <Body {...bodyProps} className="flex-grow" />
       <Footer />
     </div>
   )

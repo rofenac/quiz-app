@@ -8,36 +8,42 @@ function HomePage() {
     { to: '/leaderboard', text: 'Leaderboard' },
   ]
 
-  const titleBoxes = [
-    { to: '/people', text: 'People' },
-    { to: '/process', text: 'Process' },
-    { to: '/business', text: 'Business Environment' },
+  const boxes = [
+    {
+      title: <Link to="/people" className="hover:text-purple-400">People</Link>,
+      description:
+        'Focuses on effectively leading and empowering teams. It includes stakeholder management, conflict resolution, motivation, and building an environment where team members can excel.',
+      svgPath: 'M22 12h-4l-3 9L9 3l-3 9H2',
+    },
+    {
+      title: <Link to="/process" className="hover:text-purple-400">Process</Link>,
+      description:
+        'Covers the technical aspects of managing a project from start to finish. It includes planning, executing, monitoring, and controlling processes using proven methodologies and best practices.',
+      svgPath: 'M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12',
+    },
+    {
+      title: <Link to="/business" className="hover:text-purple-400">Business Environment</Link>,
+      description:
+        'Addresses the broader context impacting projects, including organizational strategy, compliance, and external factors. It ensures alignment with business goals and promotes an understanding of the project’s role within the bigger picture.',
+      svgPath: 'M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 7a4 4 0 100-8 4 4 0 000 8z',
+    },
   ]
 
-  const descriptions = [
-    'Focuses on effectively leading and empowering teams. It includes stakeholder management, conflict resolution, motivation, and building an environment where team members can excel.',
-    'Covers the technical aspects of managing a project from start to finish. It includes planning, executing, monitoring, and controlling processes using proven methodologies and best practices.',
-    'Addresses the broader context impacting projects, including organizational strategy, compliance, and external factors. It ensures alignment with business goals and promotes an understanding of the project’s role within the bigger picture.'
-  ]
+  const bodyProps = {
+    pageFlavorText: 'So you want to be a PMP...',
+    pageTitle: 'Welcome to the Darn Fine PMP Quiz App!',
+    pageSubTitle: 'Learn about the PMP certification exam and take our fabulous quiz!',
+    boxes: boxes,
+    showQuizButton: true,
+  }
 
   return (
-    <>
-      <PageTemplate
-        firstLink={<Link to={links[0].to} className="hover:text-purple-400">{links[0].text}</Link>}
-        secondLink={<Link to={links[1].to} className="hover:text-purple-400">{links[1].text}</Link>}
-        thirdLink={<Link to={links[2].to} className="hover:text-purple-400">{links[2].text}</Link>}
-        pageFlavorText="So you want to be a PMP..."
-        pageTitle="Welcome to the Darn Fine PMP Quiz App!"
-        pageSubTitle="Learn about the PMP certification exam and take our fabulous quiz!"
-        titleBoxOne={<Link to={titleBoxes[0].to} className="hover:text-purple-400">{titleBoxes[0].text}</Link>}
-        titleBoxTwo={<Link to={titleBoxes[1].to} className="hover:text-purple-400">{titleBoxes[1].text}</Link>}
-        titleBoxThree={<Link to={titleBoxes[2].to} className="hover:text-purple-400">{titleBoxes[2].text}</Link>}
-        descriptionBoxOne={descriptions[0]}
-        descriptionBoxTwo={descriptions[1]}
-        descriptionBoxThree={descriptions[2]}
-        showQuizButton={true}
-      />
-    </>
+    <PageTemplate
+      bodyProps={bodyProps}
+      firstLink={<Link to={links[0].to} className="hover:text-purple-400">{links[0].text}</Link>}
+      secondLink={<Link to={links[1].to} className="hover:text-purple-400">{links[1].text}</Link>}
+      thirdLink={<Link to={links[2].to} className="hover:text-purple-400">{links[2].text}</Link>}
+    />
   )
 }
 

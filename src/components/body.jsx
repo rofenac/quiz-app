@@ -4,30 +4,11 @@ function Body({
   pageFlavorText,
   pageTitle,
   pageSubTitle,
-  titleBoxOne,
-  titleBoxTwo,
-  titleBoxThree,
-  titleBoxFour,
-  titleBoxFive,
-  titleBoxSix,
-  descriptionBoxOne,
-  descriptionBoxTwo,
-  descriptionBoxThree,
-  descriptionBoxFour,
-  descriptionBoxFive,
-  descriptionBoxSix,
+  boxes = [],
   showQuizButton,
   className,
 }) {
-  const boxes = [
-    { title: titleBoxOne, description: descriptionBoxOne, svgPath: 'M22 12h-4l-3 9L9 3l-3 9H2' },
-    { title: titleBoxTwo, description: descriptionBoxTwo, svgPath: 'M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12' },
-    { title: titleBoxThree, description: descriptionBoxThree, svgPath: 'M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 7a4 4 0 100-8 4 4 0 000 8z' },
-    { title: titleBoxFour, description: descriptionBoxFour, svgPath: 'M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7' },
-    { title: titleBoxFive, description: descriptionBoxFive, svgPath: 'M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z' },
-    { title: titleBoxSix, description: descriptionBoxSix, svgPath: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' }
-  ]
-  const boxesToRender = boxes.filter((box) => box.title);
+  const boxesToRender = boxes.filter((box) => box.title)
 
   return (
     <section className={`bg-neutral ${className}`}>
