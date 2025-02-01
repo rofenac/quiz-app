@@ -66,7 +66,7 @@ function Quiz() {
     } else {
       const userName = prompt(`Quiz Over! Your score is ${score} / ${quizQuestions.length}. Enter your name for the leaderboard:`)
       if (userName) {
-        addScoreToLeaderboard(userName, score) // Ensure only username & score are saved
+        addScoreToLeaderboard(userName, score) // Save to leaderboard & localStorage
       }
       resetScore()
       setCurrentQuestionIndex(0)

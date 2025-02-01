@@ -1,25 +1,20 @@
-import Header from '../components/header'
-import Footer from '../components/footer'
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-
+import Header from '../components/header'
+import Footer from '../components/footer'
 import { ScoreContext } from '../data/scorecontext'
 
 function LeaderBoard() {
-  const { leaderboard } = useContext(ScoreContext)
-
-  const links = [
-    { to: '/howworks', text: 'How the Quiz Works' },
-    { to: '/', text: 'Home Page' },
-  ]
+  const { leaderboard, clearLeaderboard } = useContext(ScoreContext)
 
   return (
     <>
       <div className="min-h-screen flex flex-col">
         <Header
-          firstLink={<Link to={links[0].to} className="hover:text-purple-400">{links[0].text}</Link>}
-          secondLink={<Link to={links[1].to} className="hover:text-purple-400">{links[1].text}</Link>}
+          firstLink={<Link to="/howworks" className="hover:text-purple-400">How the Quiz Works</Link>}
+          secondLink={<Link to="/leaderboard" className="hover:text-purple-400">Leaderboard</Link>}
         />
+
         <section className="flex-grow bg-neutral py-24">
           <div className="container mx-auto px-5">
             <div className="text-center w-full mb-10">
@@ -50,6 +45,13 @@ function LeaderBoard() {
                   )}
                 </tbody>
               </table>
+            </div>
+
+            {/* Clear Leaderboard Button */}
+            <div className="flex justify-center mt-6">
+              <button className="btn btn-secondary" onClick={clearLeaderboard}>
+                Clear Leaderboard
+              </button>
             </div>
           </div>
         </section>
