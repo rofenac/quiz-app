@@ -1,21 +1,22 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import questions from '../data/questions.json' // Adjust path as needed
+import { ScoreContext } from '../components/scorecontext'
+import questions from '../data/questions.json'
 
 function Quiz() {
   const { domain } = useParams()
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-  const [score, setScore] = useState(0)
   const [quizQuestions, setQuizQuestions] = useState([])
   const [feedback, setFeedback] = useState(null)
   const [showNext, setShowNext] = useState(false)
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(null)
 
+  // Use our score context instead of a local state for score
+  const { score, updateScore, resetScore, addScoreToLeaderboard } = useContext(ScoreContext)
+
   const letters = ['A', 'B', 'C', 'D']
 
-  const shuffleArray = (array) => {
-    return array.sort(() => Math.random() - 0.5)
-  }
+  const shuffleArray = (array) => array.sort(() => Math.random() - 0.5)
 
   useEffect(() => {
     let filteredQuestions
@@ -39,7 +40,7 @@ function Quiz() {
     const correctOption = quizQuestions[currentQuestionIndex].options[correctOptionIndex]
 
     if (isCorrect) {
-      setScore(prev => prev + 1)
+      updateScore(1) // Increase the score by 1 for a correct answer
       setFeedback({
         message: 'Correct!',
         explanation,
@@ -63,8 +64,11 @@ function Quiz() {
       setShowNext(false)
       setSelectedOptionIndex(null)
     } else {
-      alert(`Quiz Over! Your score is ${score} / ${quizQuestions.length}`)
-      setScore(0)
+      const userName = prompt(`Quiz Over! Your score is ${score} / ${quizQuestions.length}. Enter your name for the leaderboard:`)
+      if (userName) {
+        addScoreToLeaderboard(userName, score) // Save to leaderboard & localStorage
+      }
+      resetScore()
       setCurrentQuestionIndex(0)
       setFeedback(null)
       setShowNext(false)

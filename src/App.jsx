@@ -4,7 +4,6 @@ import People from './pages/people'
 import Process from './pages/process'
 import Business from './pages/business'
 import HowWorks from './pages/howworks'
-import YourScores from './pages/yourscores'
 import Leaderboard from './pages/leaderboard'
 import Quiz from './pages/quiz'
 
@@ -17,7 +16,6 @@ function App() {
         <Route path="/process" element={<Process />} />
         <Route path="/business" element={<Business />} />
         <Route path="/howworks" element={<HowWorks />} />
-        <Route path="/yourscores" element={<YourScores />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/quiz/:domain" element={<Quiz />} />
       </Routes>

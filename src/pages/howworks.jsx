@@ -4,7 +4,6 @@ import PageTemplate from '../components/pagetemplate'
 function HowWorks() {
   const links = [
     { to: '/howworks', text: 'How the Quiz Works' },
-    { to: '/yourscores', text: 'Your Scores' },
     { to: '/leaderboard', text: 'Leaderboard' },
   ]
 
@@ -21,7 +20,6 @@ function HowWorks() {
     <PageTemplate
       firstLink={<Link to={links[0].to} className="hover:text-purple-400">{links[0].text}</Link>}
       secondLink={<Link to={links[1].to} className="hover:text-purple-400">{links[1].text}</Link>}
-      thirdLink={<Link to={links[2].to} className="hover:text-purple-400">{links[2].text}</Link>}
       bodyProps={{
         pageTitle: 'Title',
         pageSubTitle: 'SubTitle',
