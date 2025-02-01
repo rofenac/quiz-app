@@ -1,43 +1,61 @@
+import Header from '../components/header'
+import Footer from '../components/footer'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import PageTemplate from '../components/pagetemplate'
+
+import { ScoreContext } from '../data/scorecontext'
 
 function LeaderBoard() {
+  const { leaderboard } = useContext(ScoreContext)
+
   const links = [
     { to: '/howworks', text: 'How the Quiz Works' },
-    { to: '/yourscores', text: 'Your Scores' },
-    { to: '/leaderboard', text: 'Leaderboard' },
-  ]
-
-  const boxes = [
-    {
-      title: <Link to="/people" className="hover:text-purple-400">People</Link>,
-      description: 'Description One',
-      svgPath: 'M22 12h-4l-3 9L9 3l-3 9H2',
-    },
-    {
-      title: <Link to="/process" className="hover:text-purple-400">Process</Link>,
-      description: 'Description Two',
-      svgPath: 'M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12',
-    },
-    {
-      title: <Link to="/business" className="hover:text-purple-400">Business Environment</Link>,
-      description: 'Description Three',
-      svgPath: 'M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 7a4 4 0 100-8 4 4 0 000 8z',
-    },
+    { to: '/', text: 'Home Page' },
   ]
 
   return (
-    <PageTemplate
-      firstLink={<Link to={links[0].to} className="hover:text-purple-400">{links[0].text}</Link>}
-      secondLink={<Link to={links[1].to} className="hover:text-purple-400">{links[1].text}</Link>}
-      thirdLink={<Link to={links[2].to} className="hover:text-purple-400">{links[2].text}</Link>}
-      bodyProps={{
-        pageFlavorText: 'So you want to be a PMP...',
-        pageTitle: 'Welcome to the Darn Fine PMP Quiz App!',
-        pageSubTitle: 'Learn about the PMP certification exam and take our fabulous quiz!',
-        boxes: boxes,
-      }}
-    />
+    <>
+      <div className="min-h-screen flex flex-col">
+        <Header
+          firstLink={<Link to={links[0].to} className="hover:text-purple-400">{links[0].text}</Link>}
+          secondLink={<Link to={links[1].to} className="hover:text-purple-400">{links[1].text}</Link>}
+        />
+        <section className="flex-grow bg-neutral py-24">
+          <div className="container mx-auto px-5">
+            <div className="text-center w-full mb-10">
+              <h1 className="text-2xl sm:text-3xl font-medium text-neutral-content mb-4">Leaderboard</h1>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="table w-full bg-base-100 shadow-xl">
+                <thead className="bg-neutral-focus text-neutral-content">
+                  <tr>
+                    <th>Rank</th>
+                    <th>Username</th>
+                    <th>Score</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {leaderboard.length > 0 ? (
+                    leaderboard.map((entry, index) => (
+                      <tr key={index} className="hover:bg-neutral-focus">
+                        <td className="text-neutral-content">{entry.rank}</td>
+                        <td className="text-neutral-content">{entry.userName}</td>
+                        <td className="text-neutral-content">{entry.score}</td>
+                      </tr>
+                    ))
+                  ) : (
+                    <tr>
+                      <td colSpan="3" className="text-center text-neutral-content">No scores yet!</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <Footer />
+      </div>
+    </>
   )
 }
 
