@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { ScoreContext } from '../data/scorecontext'
+import { ScoreContext } from '../components/scorecontext'
 import questions from '../data/questions.json'
 
 function Quiz() {

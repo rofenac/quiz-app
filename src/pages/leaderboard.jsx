@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import { ScoreContext } from '../data/scorecontext'
+import { ScoreContext } from '../components/scorecontext'
 
 function LeaderBoard() {
   const { leaderboard, clearLeaderboard } = useContext(ScoreContext)

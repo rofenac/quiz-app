@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
-import { ScoreProvider } from './data/scorecontext.jsx'
+import { ScoreProvider } from './components/scorecontext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
