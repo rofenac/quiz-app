@@ -2,7 +2,7 @@
 - Display multiple-choice(4) quiz questions
 - Categorize questions into the new 3 PMP knowledge areas
 - Provide feedback on answers during the session
-- Track and display session-based scores
+- Track and store scores
 - Establish Leaderboard for further gamification
 - Operate on both desktop and mobile devices with responsive design.
 
@@ -16,29 +16,20 @@
 
 # BACKLOG
 
-1. *"As someone studying for the PMP exam, I want quizzes that focus on one or more exam domains."*
-Work on some sort of randomization of questions
-  - "People" only questions
-  - "Process" only questions
-  - "Business Environment" only questions
-  - "Random Quiz" - develop logic
+1. *"As a user, I want to be able to have my scores persist between reloads and see my rank on the leaderboard."*
+Implement a method to record and store user scores. Add a reset button to clear the leaderboard.
 
 2. *"As a new frontend dev, I want to simulate a real world Aglie project as possible."*
 Bring up UX/UI in parallel with code base/functionality
   - Settle on UX/UI solution and style
   - Write code! (with help)
-3. Refactor as I go (technical debt mitigation) since I have the luxury of no business requirements or bosses breathing down my neck
-4. Learn how to refactor
 
-*"As someone studying for the PMP exam, I want to be able to track my progress and how I improve over time."*
-5. Scorekeeping functionality - leaderboard???
-6. Instant feedback on questions
+3. Refactor as I go (technical debt mitigation) since I have the luxury of no business requirements or bosses breathing down my neck
 
 # Sprint Items
 
-1. MVP
-  - ~~Decide on styling (Tailwind)~~
-  - ~~Page navigation (links, buttons, etc.) - (in progress)~~
-  - Collect questions - (in progress)
-  - ~~Setup Trello~~
-  - Expand Backlog
+1. Collect questions
+2. UX/UI
+3. Leaderboard Functionality
+4. Scorekeeping
+5. Expand Backlog
