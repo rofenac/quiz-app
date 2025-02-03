@@ -9,13 +9,22 @@ import Footer from '../components/footer'
 import Boardroom1 from '../assets/boardroom1.jpg'
 
 function People() {
+  const links = [
+    { to: '/people', text: 'People' },
+    { to: '/process', text: 'Process' },
+    { to: '/business', text: 'Business Environment' },
+  ]
+
+  const headerLinks = links.map((link, index) => (
+    <Link key={index} to={link.to} className="hover:text-purple-400">
+      {link.text}
+    </Link>
+  ))
+
   return (
     <div className="min-h-screen flex flex-col bg-base-200">
-      <Header
-        firstLink={<Link to='/people' className="hover:text-purple-400">People</Link>}
-        secondLink={<Link to='/process' className="hover:text-purple-400">Process</Link>}
-        thirdLink={<Link to='/business' className="hover:text-purple-400">Business Environment</Link>}
-      />
+      <Header>{headerLinks}</Header>
+
       <Hero
         backgroundImage={Boardroom1}
         title="Mastering the People Domain"
@@ -23,6 +32,7 @@ function People() {
         quizName="Take the People Quiz"
         quizDomain="../quiz/people"
       />
+
       <PmpContext
         quizType="People"
         lineOne="Manage conflict effectively"
@@ -32,12 +42,14 @@ function People() {
         typeTwo="Questions about managing diverse team dynamics"
         typeThree="Techniques for stakeholder engagement and conflict resolution"
       />
+
       <RealLife
         scenarioOne="Resolving team conflicts during tight deadlines, motivating underperforming team members, and handling stakeholder disagreements in a collaborative manner"
         tipOne="Use stakeholder mapping to identify key influencers"
         tipTwo="Practice active listening during meetings to gain trust and buy-in"
         tipThree="Leverage tools like Slack or Microsoft Teams for communication"
       />
+
       <Strategies
         materialsOne="PMBOK Guide (7th Edition) - Focus on Chapter 2"
         materialsTwo="“Emotional Intelligence 2.0” by Travis Bradberry"
@@ -46,10 +58,9 @@ function People() {
         tacticsTwo="Practice situational questions to refine critical thinking"
         tacticsThree="Join a study group to discuss leadership challenges"
       />
-      <Cta
-        quizName="Take the People Quiz"
-        quizDomain='../quiz/people'
-      />
+
+      <Cta quizName="Take the People Quiz" quizDomain="../quiz/people" />
+
       <Footer />
     </div>
   )

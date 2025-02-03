@@ -9,13 +9,22 @@ import Footer from '../components/footer'
 import Gantt2 from '../assets/gantt2.jpg'
 
 function Process() {
+  const links = [
+    { to: '/people', text: 'People' },
+    { to: '/process', text: 'Process' },
+    { to: '/business', text: 'Business Environment' },
+  ]
+
+  const headerLinks = links.map((link, index) => (
+    <Link key={index} to={link.to} className="hover:text-purple-400">
+      {link.text}
+    </Link>
+  ))
+
   return (
     <div className="min-h-screen flex flex-col bg-base-200">
-      <Header
-        firstLink={<Link to='/people' className="hover:text-purple-400">People</Link>}
-        secondLink={<Link to='/process' className="hover:text-purple-400">Process</Link>}
-        thirdLink={<Link to='/business' className="hover:text-purple-400">Business Environment</Link>}
-      />
+      <Header>{headerLinks}</Header>
+
       <Hero
         backgroundImage={Gantt2}
         title="Mastering the Process Domain"
@@ -23,6 +32,7 @@ function Process() {
         quizName="Take the Process Quiz"
         quizDomain="../quiz/process"
       />
+
       <PmpContext
         quizType="Process"
         lineOne="Plan and define project scope effectively"
@@ -32,12 +42,14 @@ function Process() {
         typeTwo="Scenarios involving risk mitigation strategies"
         typeThree="Queries on quality assurance processes and compliance"
       />
+
       <RealLife
         scenarioOne="Developing a realistic project schedule and keeping stakeholders informed of any changes"
         tipOne="Use Gantt charts or Kanban boards for visualizing project timelines"
         tipTwo="Regularly assess and update the risk register to stay proactive"
         tipThree="Incorporate quality audits at key project milestones"
       />
+
       <Strategies
         materialsOne="PMBOK Guide (7th Edition) - Focus on Chapters 3 and 4"
         materialsTwo="Project Management Professional (PMP) Exam Prep by Rita Mulcahy"
@@ -46,10 +58,9 @@ function Process() {
         tacticsTwo="Focus on understanding process flowcharts and their applications"
         tacticsThree="Review case studies to apply theoretical knowledge in practical settings"
       />
-      <Cta
-        quizName="Take the Process Quiz"
-        quizDomain='../quiz/process'
-      />
+
+      <Cta quizName="Take the Process Quiz" quizDomain="../quiz/process" />
+
       <Footer />
     </div>
   )
