@@ -3,9 +3,15 @@ import PageTemplate from '../components/pagetemplate'
 
 function HowWorks() {
   const links = [
-    { to: '/howworks', text: 'How the Quiz Works' },
+    { to: '/', text: 'Back Home' },
     { to: '/leaderboard', text: 'Leaderboard' },
   ]
+
+  const headerLinks = links.map((link, index) => (
+    <Link key={index} to={link.to} className="hover:text-purple-400">
+      {link.text}
+    </Link>
+  ))
 
   const boxes = [
     { title: 'Box One', description: 'Description One', svgPath: 'M22 12h-4l-3 9L9 3l-3 9H2' },
@@ -18,15 +24,17 @@ function HowWorks() {
 
   return (
     <PageTemplate
-      firstLink={<Link to={links[0].to} className="hover:text-purple-400">{links[0].text}</Link>}
-      secondLink={<Link to={links[1].to} className="hover:text-purple-400">{links[1].text}</Link>}
       bodyProps={{
-        pageTitle: 'Title',
-        pageSubTitle: 'SubTitle',
-        boxes: boxes,
+        pageFlavorText: 'So you want to be a PMP...',
+        pageTitle: 'Welcome to the Darn Fine PMP Quiz App!',
+        pageSubTitle: 'Learn about the PMP certification exam and take our fabulous quiz!',
+        boxes,
+        showQuizButton: false,
       }}
+      headerLinks={headerLinks}
     />
   )
+
 }
 
 export default HowWorks
