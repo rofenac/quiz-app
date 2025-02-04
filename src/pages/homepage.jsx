@@ -7,6 +7,12 @@ function HomePage() {
     { to: '/leaderboard', text: 'Leaderboard' },
   ]
 
+  const headerLinks = links.map((link, index) => (
+    <Link key={index} to={link.to} className="hover:text-purple-400">
+      {link.text}
+    </Link>
+  ))
+
   const boxes = [
     {
       title: <Link to="/people" className="hover:text-purple-400">People</Link>,
@@ -24,25 +30,23 @@ function HomePage() {
       title: <Link to="/business" className="hover:text-purple-400">Business Environment</Link>,
       description:
         'Addresses the broader context impacting projects, including organizational strategy, compliance, and external factors. It ensures alignment with business goals and promotes an understanding of the project’s role within the bigger picture.',
-      svgPath: 'M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 7a4 4 0 100-8 4 4 0 000 8z',
+      svgPath: 'M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 7a4 4 0 100-8 4 4 0000 8z',
     },
   ]
 
-  const bodyProps = {
-    pageFlavorText: 'So you want to be a PMP...',
-    pageTitle: 'Welcome to the Darn Fine PMP Quiz App!',
-    pageSubTitle: 'Learn about the PMP certification exam and take our fabulous quiz!',
-    boxes: boxes,
-    showQuizButton: true,
-  }
-
   return (
     <PageTemplate
-      bodyProps={bodyProps}
-      firstLink={<Link to={links[0].to} className="hover:text-purple-400">{links[0].text}</Link>}
-      secondLink={<Link to={links[1].to} className="hover:text-purple-400">{links[1].text}</Link>}
+      bodyProps={{
+        pageFlavorText: 'So you want to be a PMP...',
+        pageTitle: 'Welcome to the Darn Fine PMP Quiz App!',
+        pageSubTitle: 'Learn about the PMP certification exam and take our fabulous quiz!',
+        boxes,
+        showQuizButton: false,
+      }}
+      headerLinks={headerLinks}
     />
   )
+
 }
 
 export default HomePage

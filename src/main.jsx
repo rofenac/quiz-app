@@ -7,7 +7,7 @@ import { ScoreProvider } from './components/scorecontext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/quiz-app">
+    <BrowserRouter basename="/quiz-app/">
       <ScoreProvider>
         <App />
       </ScoreProvider>

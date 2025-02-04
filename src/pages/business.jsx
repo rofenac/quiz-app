@@ -9,13 +9,22 @@ import Footer from '../components/footer'
 import worldOrange from '../assets/worldorange.jpg'
 
 function Business() {
+  const links = [
+    { to: '/people', text: 'People' },
+    { to: '/process', text: 'Process' },
+    { to: '/business', text: 'Business Environment' },
+  ]
+
+  const headerLinks = links.map((link, index) => (
+    <Link key={index} to={link.to} className="hover:text-purple-400">
+      {link.text}
+    </Link>
+  ))
+
   return (
     <div className="min-h-screen flex flex-col bg-base-200">
-      <Header
-        firstLink={<Link to='/people' className="hover:text-purple-400">People</Link>}
-        secondLink={<Link to='/process' className="hover:text-purple-400">Process</Link>}
-        thirdLink={<Link to='/business' className="hover:text-purple-400">Business Environment</Link>}
-      />
+      <Header>{headerLinks}</Header>
+
       <Hero
         backgroundImage={worldOrange}
         title="Mastering the Business Environment Domain"
@@ -23,6 +32,7 @@ function Business() {
         quizName="Take the Business Environment Quiz"
         quizDomain="../quiz/business"
       />
+
       <PmpContext
         quizType="Business Environment"
         lineOne="Evaluate the impact of external business environments on projects"
@@ -32,12 +42,14 @@ function Business() {
         typeTwo="Scenarios involving adapting to market changes or external pressures"
         typeThree="Queries about aligning project strategies with organizational objectives"
       />
+
       <RealLife
         scenarioOne="Adjusting project priorities to accommodate new regulations or market demands"
         tipOne="Stay updated on relevant laws and industry regulations affecting your projects"
         tipTwo="Conduct regular stakeholder reviews to align on strategic goals"
         tipThree="Use compliance management tools to track regulatory adherence"
       />
+
       <Strategies
         materialsOne="PMBOK Guide (7th Edition) - Focus on Chapter 5"
         materialsTwo="Rita Mulcahy's PMP Exam Prep - Sections on governance and compliance"
@@ -46,10 +58,9 @@ function Business() {
         tacticsTwo="Study case studies on how companies adapt to external challenges"
         tacticsThree="Use flashcards to memorize critical regulations and standards"
       />
-      <Cta
-        quizName="Take the Business Environment Quiz"
-        quizDomain='../quiz/business'
-      />
+
+      <Cta quizName="Take the Business Environment Quiz" quizDomain="../quiz/business" />
+
       <Footer />
     </div>
   )
