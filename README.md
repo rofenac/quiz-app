@@ -1,9 +1,8 @@
 ## What is installed:
  - ReactJS
  - Vite
- - PostCSS
- - TailwindCSS
- - DaisyUI
+ - TailwindCSS 4.0 (new)
+ - DaisyUI 5.0beta (new)
  - Material UI "standard" libraries + @mui/icons-material
 
 ---
