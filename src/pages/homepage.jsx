@@ -41,7 +41,7 @@ function HomePage() {
         pageTitle: 'Welcome to the Darn Fine PMP Quiz App!',
         pageSubTitle: 'Learn about the PMP certification exam and take our fabulous quiz!',
         boxes,
-        showQuizButton: false,
+        showQuizButton: true,
       }}
       headerLinks={headerLinks}
     />

@@ -49,26 +49,26 @@ Build a responsive PMP Quiz App that:
 
 ### **Epic 2: Scorekeeping & Leaderboard**
 
-- **User Story 4:**  
+- **User Story 1:**  
   **As a user, I want my score to be tracked during the quiz so that I know my performance in real time.**  
   **Acceptance Criteria:**
   - Correct answers increment the score by a fixed value (e.g., 1 point per correct answer).
   - The score is updated and visible on the quiz page.
 
-- **User Story 5:**  
+- **User Story 2:**  
   **As a user, I want my score to persist between reloads so that I can continue or review my performance later.**  
   **Acceptance Criteria:**
   - The score is saved (e.g., using local storage) so that a page refresh does not reset it.
   - On quiz completion, the final score is retained and can be referenced by the leaderboard.
 
-- **User Story 6:**  
+- **User Story 3:**  
   **As a user, I want to see a leaderboard that displays top scores so that I can compare my performance with others.**  
   **Acceptance Criteria:**
   - The leaderboard displays a ranked list of users with their names and scores.
   - Leaderboard entries are sorted in descending order by score.
   - The leaderboard data is stored persistently (e.g., in local storage or via an API).
 
-- **User Story 7:**  
+- **User Story 4:**  
   **As a user, I want a reset button to clear the leaderboard so that I can start over if needed.**  
   **Acceptance Criteria:**
   - A reset option/button is provided on the leaderboard page.
@@ -78,7 +78,7 @@ Build a responsive PMP Quiz App that:
 
 ### **Epic 3: Domain Categorization**
 
-- **User Story 8:**  
+- **User Story 1:**  
   **As a user, I want to choose a quiz domain (People, Process, Business Environment) so that I can focus on specific PMP knowledge areas.**  
   **Acceptance Criteria:**
   - The quiz landing page (or navigation) allows selecting one of the three domains.
@@ -89,32 +89,46 @@ Build a responsive PMP Quiz App that:
 
 ### **Epic 4: UX/UI & Responsive Design**
 
-- **User Story 9:**  
+- **User Story 1:**  
   **As a user, I want the app to be visually appealing and responsive on both desktop and mobile devices so that I have a seamless experience.**  
   **Acceptance Criteria:**
   - The UI leverages TailwindCSS, DaisyUI, and Material UI components for a modern look.
   - The layout adapts to various screen sizes (responsive design).
   - Interactive elements (buttons, progress bars) are easily accessible on touch devices.
 
-- **User Story 10:**  
+- **User Story 2:**  
   **As a new frontend developer, I want to simulate a real-world Agile project by evolving the UX/UI in parallel with code functionality so that my project reflects industry practices.**  
   **Acceptance Criteria:**
   - Regular design reviews and iterations are scheduled.
   - A design system or style guide is established early on.
   - User feedback (or self-review) is incorporated into subsequent design refinements.
 
+- **User Story 3:**
+  **As a user, I want the entire home page card to be clickable so that navigation to specific domains is more intuitive.**
+  **Acceptance Criteria:**
+   - Each card on the home page is fully clickable, not just the domain text.
+   - Hover effects or visual cues indicate the card's interactivity.
+   - The update is consistent across all devices and screen sizes.
+
+- **User Story 4:**
+  **As a user, I want the "Take Quiz" button to be visible on the home page so that I can start the quiz without issues.**
+  **Acceptance Criteria:**
+   - The "Take Quiz" button is present and prominently displayed on the home page.
+   - The button is styled consistently with the app's design.
+   - The button is functional and directs users to the quiz section.
+
 ---
 
 ### **Epic 5: Project Maintenance & Technical Debt**
 
-- **User Story 11:**  
+- **User Story 1:**  
   **As a developer, I want to continuously refactor my codebase and mitigate technical debt so that my project remains maintainable and scalable.**  
   **Acceptance Criteria:**
   - Refactoring sessions are planned after each sprint.
   - The code is well documented and follows a consistent style.
   - Code reviews or self-audits are performed periodically.
 
-- **User Story 12:**  
+- **User Story 2:**  
   **As a developer, I want to add tests for core functionality so that I can ensure stability as I refactor and add new features.**  
   **Acceptance Criteria:**
   - Unit tests are written for critical components (e.g., quiz logic, score tracking, leaderboard).
@@ -207,15 +221,16 @@ These are additional features and improvements that are not critical for the cor
 
 ---
 
-### **Sprint 5 (Stretch Sprint): Additional Features**
+### Sprint 5: UAT Feedback Implementation
 - **Tasks:**
-  - Implement one or more stretch goals such as adding a timer for each question or animations/transitions.
-  - (Optional) Integrate social sharing options.
-  - (Optional) Prototype backend integration for storing leaderboard data.
+  - Modify home page cards to be fully clickable.
+  - Ensure visual feedback (e.g., hover effects) is applied to clickable cards.
+  - Investigate the disappearance of the "Take Quiz" button and restore it.
+  - Test the changes across various devices and screen sizes for consistency.
 - **Goals:**
-  - Enhance user engagement with advanced features.
-  - Provide an opportunity to work on additional technology stacks or integrations.
-
+  - Enhance user navigation by making home page cards fully interactive.
+  - Ensure the "Take Quiz" button is visible and functional, allowing users to start the quiz seamlessly.
+  
 ---
 
 ## **Next Steps**
