@@ -8,7 +8,7 @@ function HomePage() {
   ]
 
   const headerLinks = links.map((link, index) => (
-    <Link key={index} to={link.to} className="hover:text-purple-400">
+    <Link key={index} to={link.to} className="hover:text-accent">
       {link.text}
     </Link>
   ))

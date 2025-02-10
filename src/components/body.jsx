@@ -61,7 +61,7 @@ function Body({
 
         {showQuizButton && (
           <div className="flex justify-center mt-16">
-            <Link to="/quiz/random" className="btn btn-accent">
+            <Link to="/quiz/all question" className="btn btn-accent">
               Start Quiz
             </Link>
           </div>
