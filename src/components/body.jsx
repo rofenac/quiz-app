@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom'
 
-function BoxCard({ svgPath, title, description }) {
+function BoxCard({ svgPath, title, description, to }) {
   return (
-    <div className="card shadow-lg border border-base-300">
+    <Link
+      to={to}
+      className="group card shadow-lg bg-base-300 border border-base-300 hover:shadow-xl hover:scale-105 transition-transform duration-200"
+    >
       <div className="card-body items-center text-center">
         <div className="rounded-full bg-neutral-focus p-3">
           <svg
@@ -16,10 +19,12 @@ function BoxCard({ svgPath, title, description }) {
             <path d={svgPath}></path>
           </svg>
         </div>
-        <h2 className="card-title text-neutral-content">{title}</h2>
-        <p className="text-neutral-content/70">{description}</p>
+        <h2 className="card-title group-hover:text-accent">
+          {title}
+        </h2>
+        <p>{description}</p>
       </div>
-    </div>
+    </Link>
   )
 }
 
@@ -34,12 +39,12 @@ function Body({
   const boxesToRender = boxes.filter((box) => box.title)
 
   return (
-    <section className={`bg-neutral ${className}`}>
+    <section className={`${className}`}>
       <div className="container mx-auto px-5 py-24">
         <div className="text-center mb-12">
           <p className="text-accent">{pageFlavorText}</p>
-          <h1 className="text-3xl font-bold text-neutral-content">{pageTitle}</h1>
-          <p className="text-neutral-content/70">{pageSubTitle}</p>
+          <h1 className="text-3xl font-bold">{pageTitle}</h1>
+          <p>{pageSubTitle}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -49,6 +54,7 @@ function Body({
               svgPath={item.svgPath}
               title={item.title}
               description={item.description}
+              to={item.to}
             />
           ))}
         </div>
