@@ -8,7 +8,7 @@ function LeaderBoard() {
   const { leaderboard, clearLeaderboard } = useContext(ScoreContext)
 
   const links = [
-    { to: '/', text: 'Back Home' },
+    { to: '/', text: 'Home Page' },
     { to: '/howworks', text: 'How the Quiz Works' },
   ]
 

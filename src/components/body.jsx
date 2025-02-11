@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function BoxCard({ svgPath, title, description, to }) {
+export function BoxCard({ svgPath, title, description, to }) {
   return (
     <Link
       to={to}
@@ -47,7 +47,7 @@ function Body({
           <p>{pageSubTitle}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
           {boxesToRender.map((item, index) => (
             <BoxCard
               key={index}
