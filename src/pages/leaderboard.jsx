@@ -37,7 +37,7 @@ function LeaderBoard() {
 
 function LeaderboardTable({ leaderboard }) {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto py-6">
       <table className="table w-full bg-base-300 shadow-xl">
         <thead className="bg-neutral-focus">
           <tr>
@@ -68,7 +68,7 @@ function LeaderboardTable({ leaderboard }) {
 
 function ClearLeaderboardButton({ clearLeaderboard }) {
   return (
-    <div className="flex justify-center mt-6">
+    <div className="flex justify-center mt-6 pt-6">
       <button className="btn btn-secondary" onClick={clearLeaderboard}>
         Clear Leaderboard
       </button>

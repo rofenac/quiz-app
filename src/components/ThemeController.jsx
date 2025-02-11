@@ -4,7 +4,7 @@ import { themes } from '../data/themes'
 function ThemeController() {
   // Initialize state with the <html>'s current data-theme attribute (or fallback)
   const [currentTheme, setCurrentTheme] = useState(() => {
-    return localStorage.getItem('theme') || document.documentElement.getAttribute('data-theme') || 'dim'
+    return localStorage.getItem('theme') || document.documentElement.getAttribute('data-theme') || 'light'
   })
 
   // Update the document's data-theme attribute and localStorage when currentTheme changes
