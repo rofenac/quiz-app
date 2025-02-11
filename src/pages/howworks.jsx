@@ -46,11 +46,11 @@ function HowWorks() {
 
   const pageSubTitle = (
     <div className="hero">
-      <div className="hero-content flex-col lg:flex-row">
+      <div className="hero-content grid grid-cols-3">
         <img
           src={businessWoman}
-          class="max-w-sm rounded-lg shadow-2x justify-items-center" />
-        <div>
+          class="max-w-sm rounded-lg shadow-2x" />
+        <div className="col-span-2">
           <h1 className="text-5xl font-bold">How the Quiz Works</h1>
           <p className="py-6">
             The Darn Fine PMP Quiz App—your interactive gateway to mastering project management. Whether you choose the comprehensive <strong>All Questions Quiz</strong> or hone your skills with a domain-specific challenge in People, Process, or Business Environment, every quiz propels you closer to PMP mastery.
@@ -66,7 +66,7 @@ function HowWorks() {
       bodyProps={{
         pageSubTitle,
         boxes,
-        className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+        className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-18"
       }}
       headerLinks={headerLinks}
     />

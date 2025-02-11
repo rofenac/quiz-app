@@ -45,7 +45,7 @@ function HomePage() {
         pageSubTitle: 'Learn about the PMP certification exam and take our fabulous quizzes!',
         boxes,
         showQuizButton: true,
-        className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+        className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-18"
       }}
       headerLinks={headerLinks}
     />

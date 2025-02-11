@@ -41,7 +41,7 @@ function Body({
 
   return (
     <section className={`${classNameSection}`}>
-      <div className="container mx-auto px-5 py-24">
+      <div className="container mx-auto px-5 py-32">
         <div className="text-center mb-12">
           <p className="text-accent">{pageFlavorText}</p>
           <h1 className="text-3xl font-bold">{pageTitle}</h1>
@@ -62,7 +62,7 @@ function Body({
 
         {showQuizButton && (
           <div className="flex justify-center mt-16">
-            <Link to="/quiz/all question" className="btn btn-accent">
+            <Link to="/quiz/all question" className="btn btn-lg btn-accent">
               Start Quiz
             </Link>
           </div>

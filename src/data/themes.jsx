@@ -3,24 +3,18 @@ export const themes = [
   { label: 'Dark', value: 'dark' },
   { label: 'Abyss', value: 'abyss' },
   { label: 'Aqua', value: 'aqua' },
-  { label: 'Autumn', value: 'autumn' },
   { label: 'Business', value: 'business' },
-  { label: 'Caramellatte', value: 'caramellatte' },
-  { label: 'Corporate', value: 'corporate' },
   { label: 'Coffee', value: 'coffee' },
   { label: 'Cyberpunk', value: 'cyberpunk' },
   { label: 'Dim', value: 'dim' },
   { label: 'Dracula', value: 'dracula' },
   { label: 'Forest', value: 'forest' },
-  { label: 'Garden', value: 'garden' },
   { label: 'Halloween', value: 'halloween' },
   { label: 'Luxury', value: 'luxury' },
   { label: 'Night', value: 'night' },
-  { label: 'Nord', value: 'nord' },
   { label: 'Retro', value: 'retro' },
   { label: 'Sunset', value: 'sunset' },
   { label: 'Synthwave', value: 'synthwave' },
-  { label: 'Winter', value: 'winter' }
 ]
 
 /*
