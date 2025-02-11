@@ -49,7 +49,7 @@ function HowWorks() {
       <div className="hero-content flex-col lg:flex-row">
         <img
           src={businessWoman}
-          class="max-w-sm rounded-lg shadow-2xl" />
+          class="max-w-sm rounded-lg shadow-2x justify-items-center" />
         <div>
           <h1 className="text-5xl font-bold">How the Quiz Works</h1>
           <p className="py-6">
@@ -66,6 +66,7 @@ function HowWorks() {
       bodyProps={{
         pageSubTitle,
         boxes,
+        className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
       }}
       headerLinks={headerLinks}
     />

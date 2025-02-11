@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export function BoxCard({ svgPath, title, description, to }) {
+function BoxCard({ svgPath, title, description, to }) {
   return (
     <Link
       to={to}
@@ -35,11 +35,12 @@ function Body({
   boxes = [],
   showQuizButton,
   className,
+  classNameSection
 }) {
   const boxesToRender = boxes.filter((box) => box.title)
 
   return (
-    <section className={`${className}`}>
+    <section className={`${classNameSection}`}>
       <div className="container mx-auto px-5 py-24">
         <div className="text-center mb-12">
           <p className="text-accent">{pageFlavorText}</p>
@@ -47,7 +48,7 @@ function Body({
           <p>{pageSubTitle}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+        <div className={`${className}`}>
           {boxesToRender.map((item, index) => (
             <BoxCard
               key={index}
