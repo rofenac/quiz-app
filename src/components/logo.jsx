@@ -8,7 +8,7 @@ function Logo() {
           <span className="text-black text-lg font-bold leading-none">PMP</span>
         </div>
       </div>
-      <span className="ml-3 text-neutral-content">DFPMPQA</span>
+      <span className="ml-3">DFPMPQA</span>
     </Link>
   )
 }

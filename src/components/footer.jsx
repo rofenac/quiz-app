@@ -4,12 +4,12 @@ function FooterNav() {
   return (
     <nav className="menu menu-horizontal px-1">
       <li>
-        <span className="text-neutral-content/70 pointer-events-none">© 2025 David Derr</span>
+        <span className="text-info pointer-events-none">© 2025 David Derr</span>
       </li>
       <li>
         <a
           href="https://github.com/rofenac"
-          className="hover:text-neutral-content text-neutral-content"
+          className="hover:text-accent text-info"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -22,7 +22,7 @@ function FooterNav() {
 
 function Footer() {
   return (
-    <footer className="footer bg-neutral text-neutral-content/70">
+    <footer>
       <div className="container mx-auto px-5 flex items-center justify-between">
         <Logo />
         <FooterNav />

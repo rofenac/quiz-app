@@ -8,12 +8,12 @@ function LeaderBoard() {
   const { leaderboard, clearLeaderboard } = useContext(ScoreContext)
 
   const links = [
-    { to: '/', text: 'Back Home' },
+    { to: '/', text: 'Home Page' },
     { to: '/howworks', text: 'How the Quiz Works' },
   ]
 
   const headerLinks = links.map((link, index) => (
-    <Link key={index} to={link.to} className="hover:text-purple-400">
+    <Link key={index} to={link.to} className="hover:text-accent">
       {link.text}
     </Link>
   ))
@@ -21,10 +21,10 @@ function LeaderBoard() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header>{headerLinks}</Header>
-      <section className="flex-grow bg-neutral py-24">
+      <section className="flex-grow py-24">
         <div className="container mx-auto px-5">
           <div className="text-center w-full mb-10">
-            <h2 className="text-3xl font-bold text-neutral-content">Leaderboard</h2>
+            <h2 className="text-3xl font-bold">Leaderboard</h2>
           </div>
           <LeaderboardTable leaderboard={leaderboard} />
           <ClearLeaderboardButton clearLeaderboard={clearLeaderboard} />
@@ -38,8 +38,8 @@ function LeaderBoard() {
 function LeaderboardTable({ leaderboard }) {
   return (
     <div className="overflow-x-auto">
-      <table className="table w-full bg-base-100 shadow-xl">
-        <thead className="bg-neutral-focus text-neutral-content">
+      <table className="table w-full bg-base-300 shadow-xl">
+        <thead className="bg-neutral-focus">
           <tr>
             <th>Rank</th>
             <th>Username</th>
@@ -50,14 +50,14 @@ function LeaderboardTable({ leaderboard }) {
           {leaderboard.length > 0 ? (
             leaderboard.map((entry, index) => (
               <tr key={index} className="hover:bg-neutral-focus">
-                <td className="text-neutral-content">{entry.rank}</td>
-                <td className="text-neutral-content">{entry.userName}</td>
-                <td className="text-neutral-content">{entry.score}</td>
+                <td>{entry.rank}</td>
+                <td>{entry.userName}</td>
+                <td>{entry.score}</td>
               </tr>
             ))
           ) : (
             <tr>
-              <td colSpan="3" className="text-center text-neutral-content">No scores yet!</td>
+              <td colSpan="3" className="text-center">No scores yet!</td>
             </tr>
           )}
         </tbody>
