@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function BoxCard({ svgPath, title, description, to }) {
+function BoxCard({ icon, title, description, to }) {
   return (
     <Link
       to={to}
@@ -8,16 +8,7 @@ function BoxCard({ svgPath, title, description, to }) {
     >
       <div className="card-body items-center text-center">
         <div className="rounded-full bg-neutral-focus p-3">
-          <svg
-            className="w-6 h-6 text-accent"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d={svgPath}></path>
-          </svg>
+          {icon}
         </div>
         <h2 className="card-title group-hover:text-accent">
           {title}
@@ -52,7 +43,7 @@ function Body({
           {boxesToRender.map((item, index) => (
             <BoxCard
               key={index}
-              svgPath={item.svgPath}
+              icon={item.icon}
               title={item.title}
               description={item.description}
               to={item.to}

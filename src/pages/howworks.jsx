@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom'
 import PageTemplate from '../components/pagetemplate'
 import businessWoman from '../assets/businesswoman.jpg'
+import AllInclusiveTwoToneIcon from '@mui/icons-material/AllInclusiveTwoTone'
+import PeopleTwoToneIcon from '@mui/icons-material/PeopleTwoTone'
+import AccountTreeTwoToneIcon from '@mui/icons-material/AccountTreeTwoTone'
+import CasesTwoToneIcon from '@mui/icons-material/CasesTwoTone'
 
 function HowWorks() {
   const links = [
@@ -16,31 +20,31 @@ function HowWorks() {
 
   const boxes = [
     {
+      icon: <AllInclusiveTwoToneIcon className="text-accent" />,
       title: 'All Questions',
       to: '/quiz/all',
       description: 'Challenge yourself with questions covering the full PMP syllabus.',
-      svgPath: 'M12 2a10 10 0 110 20 10 10 0 010-20z',
     },
     {
+      icon: <PeopleTwoToneIcon className="text-accent" />,
       title: 'People',
       to: '/quiz/people',
       description:
         'Focus on effectively leading and empowering teams—covering stakeholder management, conflict resolution, and motivation.',
-      svgPath: 'M22 12h-4l-3 9L9 3l-3 9H2',
     },
     {
+      icon: <AccountTreeTwoToneIcon className="text-accent" />,
       title: 'Process',
       to: '/quiz/process',
       description:
         'Test your skills in planning, executing, monitoring, and controlling project processes with proven methodologies.',
-      svgPath: 'M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12',
     },
     {
+      icon: <CasesTwoToneIcon className="text-accent" />,
       title: 'Business Environment',
       to: '/quiz/business',
       description:
         'Assess your knowledge of organizational strategy, compliance, and external factors that impact projects.',
-      svgPath: 'M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 7a4 4 0 100-8 4 4 0000 8z',
     },
   ]
 
