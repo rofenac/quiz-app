@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageTemplate from '../components/pagetemplate'
+import JsonReformatter from '../components/JsonReformatter'
 
 function HomePage() {
   const links = [
@@ -38,17 +39,20 @@ function HomePage() {
   ]
 
   return (
-    <PageTemplate
-      bodyProps={{
-        pageFlavorText: 'So you want to be a PMP...',
-        pageTitle: 'Welcome to the Darn Fine PMP Quiz App!',
-        pageSubTitle: 'Learn about the PMP certification exam and take our fabulous quizzes!',
-        boxes,
-        showQuizButton: true,
-        className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-18"
-      }}
-      headerLinks={headerLinks}
-    />
+    <>
+      <PageTemplate
+        bodyProps={{
+          pageFlavorText: 'So you want to be a PMP...',
+          pageTitle: 'Welcome to the Darn Fine PMP Quiz App!',
+          pageSubTitle: 'Learn about the PMP certification exam and take our fabulous quizzes!',
+          boxes,
+          showQuizButton: true,
+          className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-18"
+        }}
+        headerLinks={headerLinks}
+      />
+      <JsonReformatter />
+    </>
   )
 }
 
