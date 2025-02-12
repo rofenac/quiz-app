@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom'
+import { gsap } from "gsap"
+import { useGSAP } from "@gsap/react"
+import { useRef } from "react"
 
 function BoxCard({ icon, title, description, to }) {
   return (
@@ -29,6 +32,16 @@ function Body({
   classNameSection
 }) {
   const boxesToRender = boxes.filter((box) => box.title)
+  const containerRef = useRef(null)
+
+  // Apply GSAP animation
+  useGSAP(() => {
+    gsap.fromTo(
+      containerRef.current.children,
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 0.7, stagger: 0.3, ease: "back.out" }
+    )
+  }, [])
 
   return (
     <section className={`${classNameSection}`}>
@@ -39,7 +52,8 @@ function Body({
           <p>{pageSubTitle}</p>
         </div>
 
-        <div className={`${className}`}>
+        {/* This applies the animation */}
+        <div ref={containerRef} className={`${className}`}>
           {boxesToRender.map((item, index) => (
             <BoxCard
               key={index}

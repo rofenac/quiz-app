@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { useEffect } from 'react'
+import { gsap } from "gsap"
+import { useGSAP } from "@gsap/react"
 import HomePage from './pages/homepage'
 import People from './pages/people'
 import Process from './pages/process'
@@ -7,6 +9,9 @@ import Business from './pages/business'
 import HowWorks from './pages/howworks'
 import Leaderboard from './pages/leaderboard'
 import Quiz from './pages/quiz'
+
+// Register GSAP plugins
+gsap.registerPlugin(useGSAP)
 
 function App() {
   useEffect(() => {
