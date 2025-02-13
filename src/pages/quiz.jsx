@@ -1,22 +1,24 @@
 import { useState, useEffect, useContext } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useNavigate } from 'react-router-dom'
 import { ScoreContext } from '../components/scorecontext'
 import questions from '../data/questions.json'
 
 function Quiz() {
   const { domain } = useParams()
+  const navigate = useNavigate()
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [quizQuestions, setQuizQuestions] = useState([])
-  const [feedback, setFeedback] = useState(null)
-  const [showNext, setShowNext] = useState(false)
-  const [selectedOptionIndex, setSelectedOptionIndex] = useState(null)
+  const [answers, setAnswers] = useState({})
 
-  // Use our score context instead of a local state for score
+  // State for controlling the modal visibility and the input value.
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [userNameInput, setUserNameInput] = useState('')
+
   const { score, updateScore, resetScore, addScoreToLeaderboard } = useContext(ScoreContext)
 
   const letters = ['A', 'B', 'C', 'D']
 
-  const shuffleArray = (array) => array.sort(() => Math.random() - 0.5)
+  const shuffleArray = array => array.sort(() => Math.random() - 0.5)
 
   useEffect(() => {
     let filteredQuestions
@@ -32,56 +34,72 @@ function Quiz() {
     }
 
     setQuizQuestions(shuffleArray(filteredQuestions))
+    // Reset answers and current question index when domain changes.
+    setAnswers({})
+    setCurrentQuestionIndex(0)
   }, [domain])
 
   function handleAnswer(isCorrect, explanation, index) {
-    setSelectedOptionIndex(index)
-    const correctOptionIndex = quizQuestions[currentQuestionIndex].options.findIndex(option => option.isCorrect)
-    const correctOption = quizQuestions[currentQuestionIndex].options[correctOptionIndex]
+    // Prevent re-answering if an answer already exists for this question.
+    if (answers[currentQuestionIndex]) return
 
-    if (isCorrect) {
-      updateScore(1) // Increase the score by 1 for a correct answer
-      setFeedback({
-        message: 'Correct!',
-        explanation,
-        correctAnswer: `${letters[correctOptionIndex]}: ${correctOption.text}`,
-      })
-    } else {
-      setFeedback({
-        message: 'Incorrect!',
-        explanation,
-        correctAnswer: `${letters[correctOptionIndex]}: ${correctOption.text}`,
-      })
+    const currentQuestion = quizQuestions[currentQuestionIndex]
+    const correctOptionIndex = currentQuestion.options.findIndex(option => option.isCorrect)
+    const correctOption = currentQuestion.options[correctOptionIndex]
+
+    const answerData = {
+      selectedOptionIndex: index,
+      message: isCorrect ? 'Correct!' : 'Incorrect!',
+      explanation,
+      correctAnswer: `${letters[correctOptionIndex]}: ${correctOption.text}`
     }
 
-    setShowNext(true)
+    // Store the answer data so that it persists during the quiz session.
+    setAnswers(prev => ({ ...prev, [currentQuestionIndex]: answerData }))
+
+    // Update the score only if the answer is correct.
+    if (isCorrect) {
+      updateScore(1)
+    }
   }
 
   function handleNextQuestion() {
     if (currentQuestionIndex < quizQuestions.length - 1) {
       setCurrentQuestionIndex(prev => prev + 1)
-      setFeedback(null)
-      setShowNext(false)
-      setSelectedOptionIndex(null)
     } else {
-      const userName = prompt(`Quiz Over! Your score is ${score} / ${quizQuestions.length}. Enter your name for the leaderboard:`)
-      if (userName) {
-        addScoreToLeaderboard(userName, score) // Save to leaderboard & localStorage
-      }
-      resetScore()
-      setCurrentQuestionIndex(0)
-      setFeedback(null)
-      setShowNext(false)
-      setSelectedOptionIndex(null)
+      // When the quiz is finished, open the modal.
+      setIsModalOpen(true)
     }
+  }
+
+  function handlePreviousQuestion() {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(prev => prev - 1)
+    }
+  }
+
+  function handleModalSubmit() {
+    if (userNameInput) {
+      addScoreToLeaderboard(userNameInput, score)
+    }
+    // Close the modal, reset quiz state, and redirect the user to the home page.
+    setIsModalOpen(false)
+    resetScore()
+    setCurrentQuestionIndex(0)
+    setAnswers({})
+    setUserNameInput('')
+    navigate('/')
   }
 
   if (quizQuestions.length === 0) {
     return <p>Loading questions...</p>
   }
 
+  const currentAnswer = answers[currentQuestionIndex]
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-base-200">
+      {/* Main Quiz Card */}
       <div className="card w-full lg:w-1/2 bg-base-100 shadow-xl">
         <div className="card-body">
           <h1 className="text-2xl font-bold text-center mb-4">
@@ -101,16 +119,16 @@ function Quiz() {
           <div className="flex flex-col gap-4">
             {quizQuestions[currentQuestionIndex].options.map((option, index) => {
               let buttonClass = 'btn w-full'
-              if (feedback) {
+              if (currentAnswer) {
                 if (option.isCorrect) {
                   buttonClass += ' btn-success'
-                } else if (index === selectedOptionIndex) {
+                } else if (index === currentAnswer.selectedOptionIndex) {
                   buttonClass += ' btn-error'
                 } else {
                   buttonClass += ' btn-disabled'
                 }
               } else {
-                buttonClass += ' btn-primary'
+                buttonClass += ' btn-info'
               }
 
               return (
@@ -124,7 +142,7 @@ function Quiz() {
                       index
                     )
                   }
-                  disabled={!!feedback}
+                  disabled={!!currentAnswer}
                 >
                   {letters[index]}. {option.text}
                 </button>
@@ -132,31 +150,57 @@ function Quiz() {
             })}
           </div>
 
-          {feedback && (
-            <div className={`alert mt-4 ${feedback.message === 'Incorrect!' ? 'alert-error' : 'alert-success'}`}>
+          {currentAnswer && (
+            <div className={`alert mt-4 ${currentAnswer.message === 'Incorrect!' ? 'alert-error' : 'alert-success'}`}>
               <div>
-                <p className="text-2xl font-bold">{feedback.message}</p>
+                <p className="text-2xl font-bold">{currentAnswer.message}</p>
                 <br />
-                <p className="text-lg font-bold">Correct Answer: "{feedback.correctAnswer}"</p>
-                <p className="italic text-lg">{feedback.explanation}</p>
+                <p className="text-lg font-bold">Correct Answer: "{currentAnswer.correctAnswer}"</p>
+                <p className="italic text-lg">{currentAnswer.explanation}</p>
               </div>
             </div>
           )}
-          <div className="flex w-full">
-            <Link to="/" className="btn btn-outline">
+
+          <div className="flex w-full gap-2 mt-4">
+            <Link to="/" className="btn btn-outline flex-grow">
               Back to Home
             </Link>
-            {showNext && (
-              <>
-                <div className="card grid h-20 flex-grow place-items-center"></div>
-                <button className="btn btn-secondary" onClick={handleNextQuestion}>
-                  Next Question
-                </button>
-              </>
-            )}
+            <button
+              className="btn btn-secondary flex-grow"
+              onClick={handlePreviousQuestion}
+              disabled={currentQuestionIndex === 0}
+            >
+              Previous Question
+            </button>
+            <button className="btn btn-accent flex-grow" onClick={handleNextQuestion}>
+              {currentQuestionIndex < quizQuestions.length - 1 ? 'Next Question' : 'Finish Quiz'}
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Modal for Leaderboard Submission */}
+      {isModalOpen && (
+        <div className="modal modal-open">
+          <div className="modal-box">
+            <h3 className="font-bold text-lg">Quiz Over!</h3>
+            <p className="py-4">
+              Your score is {score} / {quizQuestions.length}. Enter your name for the leaderboard:
+            </p>
+            <input
+              type="text"
+              className="input input-bordered w-full"
+              value={userNameInput}
+              onChange={e => setUserNameInput(e.target.value)}
+            />
+            <div className="modal-action">
+              <button className="btn" onClick={handleModalSubmit}>
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
