@@ -124,7 +124,7 @@ function Quiz() {
     setCurrentQuestionIndex(0)
     setAnswers({})
     setUserNameInput('')
-    navigate('/')
+    navigate('/leaderboard')
   }
 
   if (quizQuestions.length === 0) {
