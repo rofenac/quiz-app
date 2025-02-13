@@ -7,19 +7,19 @@ function BoxCard({ icon, title, description, to }) {
   const path1Ref = useRef(null)
   const path2Ref = useRef(null)
 
-  // Total length of the path – for a 100x100 square border it’s roughly 400.
-  const totalLength = 400
+  // Each half-border is 200 units long (for a 100x100 viewBox rectangle)
+  const halfLength = 200
 
-  // On mouse enter, animate the stroke dash offset to 0 so the border "draws" in.
+  // On mouse enter, animate the stroke dash offset to 0 so the half-border "draws" in.
   const handleMouseEnter = () => {
     gsap.to(path1Ref.current, { strokeDashoffset: 0, duration: 0.6, ease: 'power1.inOut' })
     gsap.to(path2Ref.current, { strokeDashoffset: 0, duration: 0.6, ease: 'power1.inOut' })
   }
 
-  // On mouse leave, reset the dash offset so the border disappears.
+  // On mouse leave, reset the dash offset so the half-borders disappear.
   const handleMouseLeave = () => {
-    gsap.to(path1Ref.current, { strokeDashoffset: totalLength, duration: 0.6, ease: 'power1.inOut' })
-    gsap.to(path2Ref.current, { strokeDashoffset: totalLength, duration: 0.6, ease: 'power1.inOut' })
+    gsap.to(path1Ref.current, { strokeDashoffset: halfLength, duration: 0.6, ease: 'power1.inOut' })
+    gsap.to(path2Ref.current, { strokeDashoffset: halfLength, duration: 0.6, ease: 'power1.inOut' })
   }
 
   return (
@@ -31,29 +31,33 @@ function BoxCard({ icon, title, description, to }) {
     >
       {/* SVG overlay for animated border */}
       <svg
-        className="absolute inset-0 w-full h-full pointer-events-none"
+        className="absolute inset-0 w-full h-full pointer-events-none text-accent"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
       >
-        {/* Path 1: Starts at lower right (100,100) and goes counter-clockwise */}
+        {/* 
+          Path 1: Starts at lower right (100,100) and goes counter-clockwise along the bottom and left edges to (0,0)
+        */}
         <path
           ref={path1Ref}
-          d="M100,100 L0,100 L0,0 L100,0 L100,100"
+          d="M100,100 L0,100 L0,0"
           fill="none"
-          stroke="#FF0088"
+          stroke="currentColor"  // uses the current accent color
           strokeWidth="2"
-          strokeDasharray={totalLength}
-          strokeDashoffset={totalLength}
+          strokeDasharray={halfLength}
+          strokeDashoffset={halfLength}
         />
-        {/* Path 2: Starts at upper left (0,0) and goes clockwise */}
+        {/*
+          Path 2: Starts at upper left (0,0) and goes clockwise along the top and right edges to (100,100)
+        */}
         <path
           ref={path2Ref}
-          d="M0,0 L100,0 L100,100 L0,100 L0,0"
+          d="M0,0 L100,0 L100,100"
           fill="none"
-          stroke="#00FF88"
+          stroke="currentColor"  // uses the current accent color
           strokeWidth="2"
-          strokeDasharray={totalLength}
-          strokeDashoffset={totalLength}
+          strokeDasharray={halfLength}
+          strokeDashoffset={halfLength}
         />
       </svg>
 

@@ -61,6 +61,7 @@ function LeaderBoard() {
   const links = [
     { to: '/', text: 'Home Page' },
     { to: '/howworks', text: 'How the Quiz Works' },
+    { to: 'https://rofenac.github.io/blog/', text: 'My DevLog' }
   ]
 
   const headerLinks = links.map((link, index) => (
