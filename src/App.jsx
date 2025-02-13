@@ -6,7 +6,7 @@ import HomePage from './pages/homepage'
 import People from './pages/people'
 import Process from './pages/process'
 import Business from './pages/business'
-import HowWorks from './pages/howworks'
+import HowWorks from './pages/HowWorks'
 import Leaderboard from './pages/leaderboard'
 import Quiz from './pages/quiz'
 

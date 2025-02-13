@@ -1,9 +1,10 @@
 ## What is installed:
  - ReactJS
  - Vite
+ - Material UI "standard" libraries + @mui/icons-material
  - TailwindCSS 4.0 (new)
  - DaisyUI 5.0beta (new)
- - Material UI "standard" libraries + @mui/icons-material
+ - Greensock Animation Platform
 
 ---
 

@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { CountdownContext } from '../animations/CountdownContext'
 
 function Hero({ backgroundImage, title, subtitle, quizName, quizDomain }) {
   return (
@@ -21,10 +22,16 @@ function Hero({ backgroundImage, title, subtitle, quizName, quizDomain }) {
 }
 
 function HeroButton({ quizName, quizDomain }) {
+  const { navigateWithCountdown } = useContext(CountdownContext)
+
+  const handleClick = () => {
+    navigateWithCountdown(`/quiz/${quizDomain}`)
+  }
+
   return (
-    <Link to={quizDomain} className="btn btn-accent">
+    <button onClick={handleClick} className="btn btn-accent">
       {quizName}
-    </Link>
+    </button>
   )
 }
 

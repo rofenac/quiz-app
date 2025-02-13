@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom'
+import { useRef, useContext } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
-import { useRef } from 'react'
+import { CountdownContext } from './animations/CountdownContext'
 import BoxCard from './BoxCard'
 
 function Body({
@@ -13,10 +14,13 @@ function Body({
   className,
   classNameSection
 }) {
-  const boxesToRender = boxes.filter((box) => box.title)
+  const boxesToRender = boxes.filter(box => box.title)
   const containerRef = useRef(null)
   const headerRef = useRef(null)
   const quizButtonRef = useRef(null)
+  const { navigateWithCountdown } = useContext(CountdownContext)
+  const location = useLocation()
+  const navigate = useNavigate()
 
   // Animate header text (pageFlavorText, pageTitle, pageSubTitle)
   useGSAP(() => {
@@ -54,17 +58,25 @@ function Body({
     }
   }, [])
 
+  const handleStartQuiz = () => {
+    // Check if we are on the howworks page
+    if (location.pathname === '/howworks') {
+      navigateWithCountdown('/quiz/all question')
+    } else {
+      // Navigate immediately without the countdown overlay
+      navigate('/quiz/all question')
+    }
+  }
+
   return (
     <section className={`${classNameSection}`}>
       <div className="container mx-auto px-5 py-32">
-        {/* Header texts container with ref for GSAP animation */}
         <div ref={headerRef} className="text-center mb-12">
           <p className="pageFlavorText text-accent">{pageFlavorText}</p>
           <h1 className="pageTitle text-3xl font-bold">{pageTitle}</h1>
           <p className="pageSubTitle">{pageSubTitle}</p>
         </div>
 
-        {/* Boxes container with GSAP animation */}
         <div ref={containerRef} className={`${className}`}>
           {boxesToRender.map((item, index) => (
             <BoxCard
@@ -79,9 +91,9 @@ function Body({
 
         {showQuizButton && (
           <div ref={quizButtonRef} className="flex justify-center mt-16">
-            <Link to="/quiz/all question" className="btn btn-lg btn-accent">
+            <button onClick={handleStartQuiz} className="btn btn-lg btn-accent">
               Start Quiz
-            </Link>
+            </button>
           </div>
         )}
       </div>

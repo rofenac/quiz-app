@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { CountdownContext } from '../animations/CountdownContext'
 
 function Cta({ quizName, quizDomain }) {
   return (
@@ -10,10 +11,16 @@ function Cta({ quizName, quizDomain }) {
 }
 
 function CtaButton({ quizName, quizDomain }) {
+  const { navigateWithCountdown } = useContext(CountdownContext)
+
+  const handleClick = () => {
+    navigateWithCountdown(`/quiz/${quizDomain}`)
+  }
+
   return (
-    <Link to={quizDomain} className="btn btn-accent">
+    <button onClick={handleClick} className="btn btn-accent">
       {quizName}
-    </Link>
+    </button>
   )
 }
 

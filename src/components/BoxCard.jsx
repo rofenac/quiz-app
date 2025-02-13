@@ -1,14 +1,19 @@
-import { Link } from 'react-router-dom'
-import { useRef } from 'react'
+import { useRef, useContext } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import gsap from 'gsap'
+import { CountdownContext } from './animations/CountdownContext'
 
 function BoxCard({ icon, title, description, to }) {
   // Refs for the two SVG paths
   const path1Ref = useRef(null)
   const path2Ref = useRef(null)
-
   // Each half-border is 200 units long (for a 100x100 viewBox rectangle)
   const halfLength = 200
+
+  // Access countdown navigation from context
+  const { navigateWithCountdown } = useContext(CountdownContext)
+  const location = useLocation()
+  const navigate = useNavigate()
 
   // On mouse enter, animate the stroke dash offset to 0 so the half-border "draws" in.
   const handleMouseEnter = () => {
@@ -22,9 +27,20 @@ function BoxCard({ icon, title, description, to }) {
     gsap.to(path2Ref.current, { strokeDashoffset: halfLength, duration: 0.6, ease: 'power1.inOut' })
   }
 
+  // Handle click based on the current page:
+  // - On the howworks page, use the countdown overlay before navigating.
+  // - On other pages, navigate immediately.
+  const handleClick = () => {
+    if (location.pathname === '/howworks') {
+      navigateWithCountdown(to)
+    } else {
+      navigate(to)
+    }
+  }
+
   return (
-    <Link
-      to={to}
+    <button
+      onClick={handleClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className="group relative card shadow-lg bg-base-300 border border-base-300 hover:shadow-xl hover:scale-105 transition-transform duration-200 overflow-hidden"
@@ -35,14 +51,14 @@ function BoxCard({ icon, title, description, to }) {
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
       >
-        {/* 
+        {/*
           Path 1: Starts at lower right (100,100) and goes counter-clockwise along the bottom and left edges to (0,0)
         */}
         <path
           ref={path1Ref}
           d="M100,100 L0,100 L0,0"
           fill="none"
-          stroke="currentColor"  // uses the current accent color
+          stroke="currentColor"
           strokeWidth="2"
           strokeDasharray={halfLength}
           strokeDashoffset={halfLength}
@@ -54,7 +70,7 @@ function BoxCard({ icon, title, description, to }) {
           ref={path2Ref}
           d="M0,0 L100,0 L100,100"
           fill="none"
-          stroke="currentColor"  // uses the current accent color
+          stroke="currentColor"
           strokeWidth="2"
           strokeDasharray={halfLength}
           strokeDashoffset={halfLength}
@@ -68,7 +84,7 @@ function BoxCard({ icon, title, description, to }) {
         <h2 className="card-title group-hover:text-accent">{title}</h2>
         <p>{description}</p>
       </div>
-    </Link>
+    </button>
   )
 }
 

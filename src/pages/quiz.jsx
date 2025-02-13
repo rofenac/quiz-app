@@ -1,6 +1,7 @@
-import { useState, useEffect, useContext } from 'react'
+import { useState, useEffect, useContext, useRef } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { ScoreContext } from '../components/scorecontext'
+import gsap from 'gsap'
 import questions from '../data/questions.json'
 
 function Quiz() {
@@ -15,8 +16,8 @@ function Quiz() {
   const [userNameInput, setUserNameInput] = useState('')
 
   const { score, updateScore, resetScore, addScoreToLeaderboard } = useContext(ScoreContext)
-
   const letters = ['A', 'B', 'C', 'D']
+  const cardRef = useRef(null)
 
   const shuffleArray = array => array.sort(() => Math.random() - 0.5)
 
@@ -64,17 +65,52 @@ function Quiz() {
   }
 
   function handleNextQuestion() {
+    // Animate the card sliding out to the left completely off-screen.
     if (currentQuestionIndex < quizQuestions.length - 1) {
-      setCurrentQuestionIndex(prev => prev + 1)
+      gsap.to(cardRef.current, {
+        x: '-100vw',
+        duration: 0.5,
+        ease: 'power2.in',
+        onComplete: () => {
+          // Update the question after the slide-out animation completes.
+          setCurrentQuestionIndex(prev => prev + 1)
+          // Immediately reset the card position off-screen to the right and animate it into view.
+          gsap.fromTo(
+            cardRef.current,
+            { x: '100vw' },
+            { x: '0vw', duration: 0.5, ease: 'power2.out' }
+          )
+        }
+      })
     } else {
-      // When the quiz is finished, open the modal.
-      setIsModalOpen(true)
+      // When the quiz is finished, animate the card out then open the modal.
+      gsap.to(cardRef.current, {
+        x: '-100vw',
+        duration: 0.5,
+        ease: 'power2.in',
+        onComplete: () => setIsModalOpen(true)
+      })
     }
   }
 
   function handlePreviousQuestion() {
     if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex(prev => prev - 1)
+      // Animate the card sliding out to the right completely off-screen.
+      gsap.to(cardRef.current, {
+        x: '100vw',
+        duration: 0.5,
+        ease: 'power2.in',
+        onComplete: () => {
+          // Update to previous question.
+          setCurrentQuestionIndex(prev => prev - 1)
+          // Reset the card position off-screen to the left and animate it into view.
+          gsap.fromTo(
+            cardRef.current,
+            { x: '-100vw' },
+            { x: '0vw', duration: 0.5, ease: 'power2.out' }
+          )
+        }
+      })
     }
   }
 
@@ -100,7 +136,7 @@ function Quiz() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-base-200">
       {/* Main Quiz Card */}
-      <div className="card w-full lg:w-1/2 bg-base-100 shadow-xl">
+      <div className="card w-full lg:w-1/2 bg-base-100 shadow-xl" ref={cardRef}>
         <div className="card-body">
           <h1 className="text-2xl font-bold text-center mb-4">
             {domain ? domain.toUpperCase() : 'RANDOM'} Quiz
