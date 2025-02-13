@@ -1,4 +1,6 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import gsap from 'gsap'
 import PageTemplate from '../components/pagetemplate'
 import JsonReformatter from '../components/JsonReformatter'
 import PeopleTwoToneIcon from '@mui/icons-material/PeopleTwoTone'
@@ -41,6 +43,17 @@ function HomePage() {
     },
   ]
 
+  // GSAP animation to fade in and drop the flavor text, title, and subtitle
+  useEffect(() => {
+    gsap.from('.page-flavor-text, .page-title, .page-sub-title', {
+      opacity: 0,
+      y: -50,
+      duration: 1,
+      stagger: 0.3,
+      ease: 'power2.out',
+    })
+  }, [])
+
   return (
     <>
       <PageTemplate
@@ -50,7 +63,7 @@ function HomePage() {
           pageSubTitle: 'Learn about the PMP certification exam and take our fabulous quizzes!',
           boxes,
           showQuizButton: true,
-          className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-18"
+          className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-18',
         }}
         headerLinks={headerLinks}
       />

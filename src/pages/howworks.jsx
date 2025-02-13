@@ -1,4 +1,6 @@
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import gsap from 'gsap'
 import PageTemplate from '../components/pagetemplate'
 import businessWoman from '../assets/businesswoman.jpg'
 import AllInclusiveTwoToneIcon from '@mui/icons-material/AllInclusiveTwoTone'
@@ -48,18 +50,43 @@ function HowWorks() {
     },
   ]
 
+  // Create a ref for the hero content so we can animate it.
+  const heroRef = useRef(null)
+
+  useEffect(() => {
+    if (heroRef.current) {
+      // Animate the image: slide in from left
+      gsap.fromTo(
+        heroRef.current.querySelector('.hero-image'),
+        { opacity: 0, x: -100 },
+        { opacity: 1, x: 0, duration: 1 }
+      )
+      // Animate the text: slide in from right
+      gsap.fromTo(
+        heroRef.current.querySelector('.hero-text'),
+        { opacity: 0, x: 100 },
+        { opacity: 1, x: 0, duration: 1 },
+      )
+    }
+  }, [])
+
+  // Create the hero content with a ref attached
   const pageSubTitle = (
     <div className="hero">
-      <div className="hero-content grid grid-cols-3">
+      <div ref={heroRef} className="hero-content grid grid-cols-3 items-center">
         <img
           src={businessWoman}
-          class="max-w-sm rounded-lg shadow-2x" />
-        <div className="col-span-2">
+          alt="Business Woman"
+          className="hero-image max-w-sm rounded-lg shadow-2xl"
+        />
+        <div className="col-span-2 hero-text">
           <h1 className="text-5xl font-bold">How the Quiz Works</h1>
           <p className="py-6">
             The Darn Fine PMP Quiz App—your interactive gateway to mastering project management. Whether you choose the comprehensive <strong>All Questions Quiz</strong> or hone your skills with a domain-specific challenge in People, Process, or Business Environment, every quiz propels you closer to PMP mastery.
           </p>
-          <p className="text-accent">Experience randomized questions, instant expert feedback, and real-time progress tracking. Ready to conquer the PMP exam? Your journey begins here!</p>
+          <p className="text-accent">
+            Experience randomized questions, instant expert feedback, and real-time progress tracking. Ready to conquer the PMP exam? Your journey begins here!
+          </p>
         </div>
       </div>
     </div>
@@ -68,6 +95,7 @@ function HowWorks() {
   return (
     <PageTemplate
       bodyProps={{
+        // In this page, we’re only using pageSubTitle (which contains our hero content).
         pageSubTitle,
         boxes,
         className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-18"

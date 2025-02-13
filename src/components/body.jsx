@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import { gsap } from "gsap"
-import { useGSAP } from "@gsap/react"
-import { useRef } from "react"
+import { gsap } from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { useRef } from 'react'
 
 function BoxCard({ icon, title, description, to }) {
   return (
@@ -33,26 +33,49 @@ function Body({
 }) {
   const boxesToRender = boxes.filter((box) => box.title)
   const containerRef = useRef(null)
+  const headerRef = useRef(null)
+  const quizButtonRef = useRef(null)
 
-  // Apply GSAP animation
+  // Animate header text (pageFlavorText, pageTitle, pageSubTitle)
+  useGSAP(() => {
+    gsap.fromTo(
+      headerRef.current.children,
+      { opacity: 0, y: -20 },
+      { opacity: 1, y: 0, duration: 1, stagger: 0.3 }
+    )
+  }, [])
+
+  // Animate the boxes (if any)
   useGSAP(() => {
     gsap.fromTo(
       containerRef.current.children,
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 0.7, stagger: 0.3, ease: "back.out" }
+      { opacity: 1, y: 0, duration: 0.7, stagger: 0.3, ease: 'back.out' }
     )
+  }, [])
+
+  // Animate the "Start Quiz" button to zoom in from its vanishing point
+  useGSAP(() => {
+    if (quizButtonRef.current) {
+      gsap.fromTo(
+        quizButtonRef.current,
+        { opacity: 0, scale: 0 },
+        { opacity: 1, scale: 1, duration: 0.8, ease: 'back.out(1.7)' }
+      )
+    }
   }, [])
 
   return (
     <section className={`${classNameSection}`}>
       <div className="container mx-auto px-5 py-32">
-        <div className="text-center mb-12">
-          <p className="text-accent">{pageFlavorText}</p>
-          <h1 className="text-3xl font-bold">{pageTitle}</h1>
-          <p>{pageSubTitle}</p>
+        {/* Header texts container with ref for GSAP animation */}
+        <div ref={headerRef} className="text-center mb-12">
+          <p className="pageFlavorText text-accent">{pageFlavorText}</p>
+          <h1 className="pageTitle text-3xl font-bold">{pageTitle}</h1>
+          <p className="pageSubTitle">{pageSubTitle}</p>
         </div>
 
-        {/* This applies the animation */}
+        {/* Boxes container with GSAP animation */}
         <div ref={containerRef} className={`${className}`}>
           {boxesToRender.map((item, index) => (
             <BoxCard
@@ -66,7 +89,7 @@ function Body({
         </div>
 
         {showQuizButton && (
-          <div className="flex justify-center mt-16">
+          <div ref={quizButtonRef} className="flex justify-center mt-16">
             <Link to="/quiz/all question" className="btn btn-lg btn-accent">
               Start Quiz
             </Link>
