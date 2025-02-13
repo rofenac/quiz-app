@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
-import Header from '../components/header'
+import Header from '../components/Header'
 import Hero from '../components/domainpagecomponents/hero'
 import PmpContext from '../components/domainpagecomponents/pmpcontext'
 import RealLife from '../components/domainpagecomponents/reallife'
 import Strategies from '../components/domainpagecomponents/strategies'
 import Cta from '../components/domainpagecomponents/cta'
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 import worldOrange from '../assets/worldorange.jpg'
 
 function Business() {

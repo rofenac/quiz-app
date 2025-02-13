@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
-import PageTemplate from '../components/pagetemplate'
+import PageTemplate from '../components/pagetemplate.jsx'
 import businessWoman from '../assets/businesswoman.jpg'
 import AllInclusiveTwoToneIcon from '@mui/icons-material/AllInclusiveTwoTone'
 import PeopleTwoToneIcon from '@mui/icons-material/PeopleTwoTone'

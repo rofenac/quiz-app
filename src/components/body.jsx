@@ -2,25 +2,7 @@ import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { useRef } from 'react'
-
-function BoxCard({ icon, title, description, to }) {
-  return (
-    <Link
-      to={to}
-      className="group card shadow-lg bg-base-300 border border-base-300 hover:shadow-xl hover:scale-105 transition-transform duration-200"
-    >
-      <div className="card-body items-center text-center">
-        <div className="rounded-full bg-neutral-focus p-3">
-          {icon}
-        </div>
-        <h2 className="card-title group-hover:text-accent">
-          {title}
-        </h2>
-        <p>{description}</p>
-      </div>
-    </Link>
-  )
-}
+import BoxCard from './BoxCard'
 
 function Body({
   pageFlavorText,
