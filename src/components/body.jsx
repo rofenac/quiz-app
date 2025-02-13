@@ -45,12 +45,19 @@ function Body({
     )
   }, [])
 
-  // Animate the boxes (if any)
+  // Animate the boxes (if any) and clear inline transforms after animating so that hover effects can work
   useGSAP(() => {
     gsap.fromTo(
       containerRef.current.children,
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 0.7, stagger: 0.3, ease: 'back.out' }
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        stagger: 0.3,
+        ease: 'back.out',
+        clearProps: 'transform'
+      }
     )
   }, [])
 

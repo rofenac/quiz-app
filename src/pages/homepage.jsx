@@ -11,6 +11,7 @@ function HomePage() {
   const links = [
     { to: '/howworks', text: 'How the Quiz Works' },
     { to: '/leaderboard', text: 'Leaderboard' },
+    { to: 'https://rofenac.github.io/blog/', text: 'My DevLog' }
   ]
 
   const headerLinks = links.map((link, index) => (

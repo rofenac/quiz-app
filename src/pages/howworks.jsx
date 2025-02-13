@@ -12,6 +12,7 @@ function HowWorks() {
   const links = [
     { to: '/', text: 'Home Page' },
     { to: '/leaderboard', text: 'Leaderboard' },
+    { to: 'https://rofenac.github.io/blog/', text: 'My DevLog' }
   ]
 
   const headerLinks = links.map((link, index) => (
