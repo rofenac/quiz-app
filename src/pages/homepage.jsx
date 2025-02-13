@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
 import PageTemplate from '../components/pagetemplate'
-import JsonReformatter from '../components/JsonReformatter'
 import PeopleTwoToneIcon from '@mui/icons-material/PeopleTwoTone'
 import AccountTreeTwoToneIcon from '@mui/icons-material/AccountTreeTwoTone'
 import CasesTwoToneIcon from '@mui/icons-material/CasesTwoTone'
@@ -56,20 +55,17 @@ function HomePage() {
   }, [])
 
   return (
-    <>
-      <PageTemplate
-        bodyProps={{
-          pageFlavorText: 'So you want to be a PMP...',
-          pageTitle: 'Welcome to the Darn Fine PMP Quiz App!',
-          pageSubTitle: 'Learn about the PMP certification exam and take our fabulous quizzes!',
-          boxes,
-          showQuizButton: true,
-          className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-18',
-        }}
-        headerLinks={headerLinks}
-      />
-      <JsonReformatter />
-    </>
+    <PageTemplate
+      bodyProps={{
+        pageFlavorText: 'So you want to be a PMP...',
+        pageTitle: 'Welcome to the Darn Fine PMP Quiz App!',
+        pageSubTitle: 'Learn about the PMP certification exam and take our fabulous quizzes!',
+        boxes,
+        showQuizButton: true,
+        className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-18',
+      }}
+      headerLinks={headerLinks}
+    />
   )
 }
 
