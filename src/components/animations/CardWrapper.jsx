@@ -2,16 +2,16 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap } from 'gsap'
 
-function CardWrapper({ children, animationDirection = 'left' }) {
+function CardWrapper({ children, animationDirection = 'left', dOffset }) {
   const cardRef = useRef(null)
 
   useGSAP(() => {
-    // Choose an x offset based on the desired direction
     const xOffset = animationDirection === 'left' ? -100 : 100
     gsap.from(cardRef.current, {
       x: xOffset,
       opacity: 0,
       duration: 2,
+      delay: dOffset,
       ease: 'back.out(1.7)',
     })
   })
