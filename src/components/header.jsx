@@ -1,9 +1,23 @@
+import { useRef, useEffect } from 'react'
+import gsap from 'gsap'
 import Logo from './logo'
 import ThemeController from './ThemeController'
 
 function Header({ children }) {
+  const headerRef = useRef(null)
+
+  useEffect(() => {
+    if (headerRef.current) {
+      gsap.fromTo(
+        headerRef.current,
+        { opacity: 0 },
+        { opacity: 1, duration: 1.3 }
+      )
+    }
+  }, [])
+
   return (
-    <header>
+    <header ref={headerRef}>
       <div className="navbar container mx-auto px-5 flex items-center justify-between">
         <div className="flex items-center space-x-5">
           <Logo />
