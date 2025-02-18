@@ -1,4 +1,5 @@
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
+import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import Logo from './logo'
 
@@ -25,7 +26,7 @@ function FooterNav() {
 function Footer() {
   const footerRef = useRef(null)
 
-  useEffect(() => {
+  useGSAP(() => {
     if (footerRef.current) {
       gsap.fromTo(
         footerRef.current,

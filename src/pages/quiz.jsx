@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext, useRef } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { ScoreContext } from '../components/scorecontext'
+import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import questions from '../data/questions.json'
 
@@ -19,8 +20,10 @@ function Quiz() {
   const letters = ['A', 'B', 'C', 'D']
   const cardRef = useRef(null)
 
+  // Shuffle helper function.
   const shuffleArray = array => array.sort(() => Math.random() - 0.5)
 
+  // Filter questions based on the domain.
   useEffect(() => {
     let filteredQuestions
 
@@ -39,6 +42,17 @@ function Quiz() {
     setAnswers({})
     setCurrentQuestionIndex(0)
   }, [domain])
+
+  // Animate the quiz card into view on initial mount.
+  useGSAP(() => {
+    if (cardRef.current) {
+      gsap.fromTo(
+        cardRef.current,
+        { x: '100vw' },
+        { x: '0vw', duration: 0.5, ease: 'power2.out' }
+      )
+    }
+  }, [])
 
   function handleAnswer(isCorrect, explanation, index) {
     // Prevent re-answering if an answer already exists for this question.
@@ -118,7 +132,7 @@ function Quiz() {
     if (userNameInput) {
       addScoreToLeaderboard(userNameInput, score)
     }
-    // Close the modal, reset quiz state, and redirect the user to the home page.
+    // Close the modal, reset quiz state, and redirect the user to the leaderboard.
     setIsModalOpen(false)
     resetScore()
     setCurrentQuestionIndex(0)

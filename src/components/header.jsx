@@ -1,4 +1,5 @@
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
+import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import Logo from './logo'
 import ThemeController from './ThemeController'
@@ -6,7 +7,7 @@ import ThemeController from './ThemeController'
 function Header({ children }) {
   const headerRef = useRef(null)
 
-  useEffect(() => {
+  useGSAP(() => {
     if (headerRef.current) {
       gsap.fromTo(
         headerRef.current,

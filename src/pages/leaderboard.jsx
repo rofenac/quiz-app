@@ -1,9 +1,11 @@
-import { useContext, useEffect, useRef } from 'react'
+import { useContext, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { ScoreContext } from '../components/scorecontext'
+import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import { ScoreContext } from '../components/scorecontext'
+
 
 function LeaderBoard() {
   const { leaderboard, clearLeaderboard } = useContext(ScoreContext)
@@ -15,7 +17,7 @@ function LeaderBoard() {
   const tableRef = useRef(null)
   const buttonRef = useRef(null)
 
-  useEffect(() => {
+  useGSAP(() => {
     // Animate header fade in
     if (headerRef.current) {
       gsap.fromTo(
@@ -61,7 +63,7 @@ function LeaderBoard() {
   const links = [
     { to: '/', text: 'Home Page' },
     { to: '/howworks', text: 'How the Quiz Works' },
-    { to: 'https://rofenac.github.io/blog/', text: 'My DevLog' }
+    { to: 'https://rofenac.github.io/blog/', text: 'My DevLog' },
   ]
 
   const headerLinks = links.map((link, index) => (
