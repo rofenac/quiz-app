@@ -59,13 +59,7 @@ function Body({
   }, [])
 
   const handleStartQuiz = () => {
-    // Check if we are on the howworks page
-    if (location.pathname === '/howworks') {
-      navigateWithCountdown('/quiz/full')
-    } else {
-      // Navigate immediately without the countdown overlay
-      navigate('/quiz/full')
-    }
+    navigateWithCountdown('/quiz/full')
   }
 
   return (
