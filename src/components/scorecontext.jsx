@@ -5,7 +5,7 @@ export const ScoreContext = createContext()
 export const ScoreProvider = ({ children }) => {
   const [score, setScore] = useState(0)
   const [leaderboards, setLeaderboards] = useState({
-    all: [],
+    full: [], // renamed from "all" to "full"
     people: [],
     process: [],
     business: []
@@ -22,7 +22,7 @@ export const ScoreProvider = ({ children }) => {
     localStorage.setItem("leaderboardscores.json", JSON.stringify(updatedBoards))
   }
 
-  const addScoreToLeaderboard = (userName, finalScore, domain = 'all') => {
+  const addScoreToLeaderboard = (userName, finalScore, domain = 'full') => {
     setLeaderboards(prevBoards => {
       const updatedDomainBoard = [...(prevBoards[domain] || []), { userName, score: finalScore }]
         .sort((a, b) => b.score - a.score)
@@ -38,7 +38,7 @@ export const ScoreProvider = ({ children }) => {
     })
   }
 
-  const clearLeaderboard = (domain = 'all') => {
+  const clearLeaderboard = (domain = 'full') => {
     setLeaderboards(prevBoards => {
       const updatedBoards = {
         ...prevBoards,

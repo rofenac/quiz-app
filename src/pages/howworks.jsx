@@ -26,7 +26,7 @@ function HowWorks() {
     {
       icon: <AllInclusiveTwoToneIcon className="text-accent" />,
       title: 'All Questions',
-      to: '/quiz/all',
+      to: '/quiz/full',
       description: 'Challenge yourself with questions covering the full PMP syllabus.',
     },
     {
