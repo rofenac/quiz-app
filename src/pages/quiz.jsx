@@ -54,6 +54,15 @@ function Quiz() {
     }
   }, [])
 
+  // Don't render quiz content until questions are loaded
+  if (quizQuestions.length === 0) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-base-200">
+        <p className="text-xl">Loading quiz questions...</p>
+      </div>
+    )
+  }
+
   function handleAnswer(isCorrect, explanation, index) {
     // Prevent re-answering if an answer already exists for this question.
     if (answers[currentQuestionIndex]) return
@@ -130,19 +139,14 @@ function Quiz() {
 
   function handleModalSubmit() {
     if (userNameInput) {
-      addScoreToLeaderboard(userNameInput, score)
+      addScoreToLeaderboard(userNameInput, score, domain ? domain : 'all')
     }
-    // Close the modal, reset quiz state, and redirect the user to the leaderboard.
     setIsModalOpen(false)
     resetScore()
     setCurrentQuestionIndex(0)
     setAnswers({})
     setUserNameInput('')
-    navigate('/leaderboard')
-  }
-
-  if (quizQuestions.length === 0) {
-    return <p>Loading questions...</p>
+    navigate(`/leaderboard`)
   }
 
   const currentAnswer = answers[currentQuestionIndex]

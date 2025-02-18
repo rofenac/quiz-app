@@ -4,36 +4,55 @@ export const ScoreContext = createContext()
 
 export const ScoreProvider = ({ children }) => {
   const [score, setScore] = useState(0)
-  const [leaderboard, setLeaderboard] = useState([])
+  const [leaderboards, setLeaderboards] = useState({
+    all: [],
+    people: [],
+    process: [],
+    business: []
+  })
 
   useEffect(() => {
-    const savedLeaderboard = localStorage.getItem("leaderboardscores.json")
-    if (savedLeaderboard) {
-      setLeaderboard(JSON.parse(savedLeaderboard))
+    const savedBoards = localStorage.getItem("leaderboardscores.json")
+    if (savedBoards) {
+      setLeaderboards(JSON.parse(savedBoards))
     }
   }, [])
 
-  const saveLeaderboard = (updatedLeaderboard) => {
-    localStorage.setItem("leaderboardscores.json", JSON.stringify(updatedLeaderboard))
+  const saveLeaderboards = (updatedBoards) => {
+    localStorage.setItem("leaderboardscores.json", JSON.stringify(updatedBoards))
   }
 
-  const addScoreToLeaderboard = (userName, finalScore) => {
-    setLeaderboard(prevLeaderboard => {
-      const updated = [...prevLeaderboard, { userName, score: finalScore }]
+  const addScoreToLeaderboard = (userName, finalScore, domain = 'all') => {
+    setLeaderboards(prevBoards => {
+      const updatedDomainBoard = [...(prevBoards[domain] || []), { userName, score: finalScore }]
         .sort((a, b) => b.score - a.score)
         .map((entry, index) => ({ ...entry, rank: index + 1 }))
 
-      saveLeaderboard(updated)
-      return updated
+      const updatedBoards = {
+        ...prevBoards,
+        [domain]: updatedDomainBoard
+      }
+
+      saveLeaderboards(updatedBoards)
+      return updatedBoards
     })
   }
 
-  // Define updateScore here so that Quiz.jsx can call it
+  const clearLeaderboard = (domain = 'all') => {
+    setLeaderboards(prevBoards => {
+      const updatedBoards = {
+        ...prevBoards,
+        [domain]: []
+      }
+      saveLeaderboards(updatedBoards)
+      return updatedBoards
+    })
+  }
+
   function updateScore(points) {
     setScore(prev => prev + points)
   }
 
-  // Optionally, you can also define a resetScore function
   function resetScore() {
     setScore(0)
   }
@@ -44,12 +63,9 @@ export const ScoreProvider = ({ children }) => {
         score,
         updateScore,
         resetScore,
-        leaderboard,
+        leaderboards,
         addScoreToLeaderboard,
-        clearLeaderboard: () => {
-          setLeaderboard([])
-          localStorage.removeItem("leaderboardscores.json")
-        },
+        clearLeaderboard,
       }}
     >
       {children}
