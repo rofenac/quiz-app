@@ -1,5 +1,6 @@
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import PageTemplate from '../components/pagetemplate.jsx'
 import businessWoman from '../assets/businesswoman.jpg'
@@ -12,7 +13,7 @@ function HowWorks() {
   const links = [
     { to: '/', text: 'Home Page' },
     { to: '/leaderboard', text: 'Leaderboard' },
-    { to: 'https://rofenac.github.io/blog/', text: 'My DevLog' }
+    { to: 'https://rofenac.github.io/blog/', text: 'My DevLog' },
   ]
 
   const headerLinks = links.map((link, index) => (
@@ -54,7 +55,8 @@ function HowWorks() {
   // Create a ref for the hero content so we can animate it.
   const heroRef = useRef(null)
 
-  useEffect(() => {
+  // Use the useGSAP hook to animate the hero image and text on mount.
+  useGSAP(() => {
     if (heroRef.current) {
       // Animate the image: slide in from left
       gsap.fromTo(
@@ -66,7 +68,7 @@ function HowWorks() {
       gsap.fromTo(
         heroRef.current.querySelector('.hero-text'),
         { opacity: 0, x: 100 },
-        { opacity: 1, x: 0, duration: 1 },
+        { opacity: 1, x: 0, duration: 1 }
       )
     }
   }, [])
@@ -99,7 +101,7 @@ function HowWorks() {
         // In this page, we’re only using pageSubTitle (which contains our hero content).
         pageSubTitle,
         boxes,
-        className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-18"
+        className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-18',
       }}
       headerLinks={headerLinks}
     />

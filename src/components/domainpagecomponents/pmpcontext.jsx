@@ -1,10 +1,19 @@
+import CardTitleAnimation from "../animations/CardTitleAnimation"
+import CardWrapper from "../animations/CardWrapper"
+
 function PmpContext({ quizType, lineOne, lineTwo, lineThree, typeOne, typeTwo, typeThree }) {
   return (
     <div className="py-10 px-4 lg:px-16">
-      <h2 className="text-2xl font-bold mb-4">Mastering the {quizType} Domain</h2>
+      <CardTitleAnimation>
+        <h2 className="text-2xl font-bold mb-4">Mastering the {quizType} Domain</h2>
+      </CardTitleAnimation>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <PmpCard title="Key Objectives" items={[lineOne, lineTwo, lineThree]} />
-        <PmpCard title="Types of PMP Questions" items={[typeOne, typeTwo, typeThree]} />
+        <CardWrapper animationDirection="left" dOffset="0">
+          <PmpCard title="Key Objectives" items={[lineOne, lineTwo, lineThree]} />
+        </CardWrapper>
+        <CardWrapper animationDirection="right" dOffset="0">
+          <PmpCard title="Types of PMP Questions" items={[typeOne, typeTwo, typeThree]} />
+        </CardWrapper>
       </div>
     </div>
   )

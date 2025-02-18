@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import PageTemplate from '../components/pagetemplate'
 import PeopleTwoToneIcon from '@mui/icons-material/PeopleTwoTone'
@@ -10,7 +10,7 @@ function HomePage() {
   const links = [
     { to: '/howworks', text: 'How the Quiz Works' },
     { to: '/leaderboard', text: 'Leaderboard' },
-    { to: 'https://rofenac.github.io/blog/', text: 'My DevLog' }
+    { to: 'https://rofenac.github.io/blog/', text: 'My DevLog' },
   ]
 
   const headerLinks = links.map((link, index) => (
@@ -43,8 +43,8 @@ function HomePage() {
     },
   ]
 
-  // GSAP animation to fade in and drop the flavor text, title, and subtitle
-  useEffect(() => {
+  // Use the useGSAP hook to animate the flavor text, title, and subtitle on mount.
+  useGSAP(() => {
     gsap.from('.page-flavor-text, .page-title, .page-sub-title', {
       opacity: 0,
       y: -50,

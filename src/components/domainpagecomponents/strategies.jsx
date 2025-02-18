@@ -1,10 +1,19 @@
+import CardTitleAnimation from '../animations/CardTitleAnimation'
+import CardWrapper from '../animations/CardWrapper'
+
 function Strategies({ materialsOne, materialsTwo, materialsThree, tacticsOne, tacticsTwo, tacticsThree }) {
   return (
     <div className="py-10 px-4 lg:px-16">
-      <h2 className="text-2xl font-bold mb-4">Study Strategies</h2>
+      <CardTitleAnimation>
+        <h2 className="text-2xl font-bold mb-4">Study Strategies</h2>
+      </CardTitleAnimation>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <StrategiesCard title="Recommended Materials" items={[materialsOne, materialsTwo, materialsThree]} />
-        <StrategiesCard title="Tactics & Tools" items={[tacticsOne, tacticsTwo, tacticsThree]} />
+        <CardWrapper animationDirection="left" dOffset="0.6">
+          <StrategiesCard title="Recommended Materials" items={[materialsOne, materialsTwo, materialsThree]} />
+        </CardWrapper>
+        <CardWrapper animationDirection="right" dOffset="0.6">
+          <StrategiesCard title="Tactics & Tools" items={[tacticsOne, tacticsTwo, tacticsThree]} />
+        </CardWrapper>
       </div>
     </div>
   )

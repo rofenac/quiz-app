@@ -1,5 +1,6 @@
-import { useRef, useContext } from 'react'
+import { useRef, useContext, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
+import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { CountdownContext } from './animations/CountdownContext'
 
@@ -15,21 +16,34 @@ function BoxCard({ icon, title, description, to }) {
   const location = useLocation()
   const navigate = useNavigate()
 
-  // On mouse enter, animate the stroke dash offset to 0 so the half-border "draws" in.
+  // State to track hover status
+  const [isHovered, setIsHovered] = useState(false)
+
+  // Animate the SVG paths whenever the hover state changes.
+  // When hovered, the strokeDashoffset animates to 0 (drawing the border).
+  // When not hovered, it resets to halfLength.
+  useGSAP(() => {
+    if (path1Ref.current && path2Ref.current) {
+      if (isHovered) {
+        gsap.to(path1Ref.current, { strokeDashoffset: 0, duration: 0.6, ease: 'power1.inOut' })
+        gsap.to(path2Ref.current, { strokeDashoffset: 0, duration: 0.6, ease: 'power1.inOut' })
+      } else {
+        gsap.to(path1Ref.current, { strokeDashoffset: halfLength, duration: 0.6, ease: 'power1.inOut' })
+        gsap.to(path2Ref.current, { strokeDashoffset: halfLength, duration: 0.6, ease: 'power1.inOut' })
+      }
+    }
+  }, [isHovered])
+
+  // Set hover state to trigger the animations
   const handleMouseEnter = () => {
-    gsap.to(path1Ref.current, { strokeDashoffset: 0, duration: 0.6, ease: 'power1.inOut' })
-    gsap.to(path2Ref.current, { strokeDashoffset: 0, duration: 0.6, ease: 'power1.inOut' })
+    setIsHovered(true)
   }
 
-  // On mouse leave, reset the dash offset so the half-borders disappear.
   const handleMouseLeave = () => {
-    gsap.to(path1Ref.current, { strokeDashoffset: halfLength, duration: 0.6, ease: 'power1.inOut' })
-    gsap.to(path2Ref.current, { strokeDashoffset: halfLength, duration: 0.6, ease: 'power1.inOut' })
+    setIsHovered(false)
   }
 
-  // Handle click based on the current page:
-  // - On the howworks page, use the countdown overlay before navigating.
-  // - On other pages, navigate immediately.
+  // Handle navigation on click based on current page
   const handleClick = () => {
     if (location.pathname === '/howworks') {
       navigateWithCountdown(to)
@@ -51,7 +65,7 @@ function BoxCard({ icon, title, description, to }) {
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
       >
-        {/*
+        {/* 
           Path 1: Starts at lower right (100,100) and goes counter-clockwise along the bottom and left edges to (0,0)
         */}
         <path
@@ -63,7 +77,7 @@ function BoxCard({ icon, title, description, to }) {
           strokeDasharray={halfLength}
           strokeDashoffset={halfLength}
         />
-        {/*
+        {/* 
           Path 2: Starts at upper left (0,0) and goes clockwise along the top and right edges to (100,100)
         */}
         <path

@@ -1,10 +1,11 @@
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
+import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
 function CountdownOverlay({ onComplete }) {
   const overlayRef = useRef(null)
 
-  useEffect(() => {
+  useGSAP(() => {
     const tl = gsap.timeline({ onComplete })
     // Ensure the overlay is visible
     tl.set(overlayRef.current, { display: 'flex', opacity: 1 })
@@ -18,7 +19,7 @@ function CountdownOverlay({ onComplete }) {
     )
     tl.to(readyText, { opacity: 0, duration: 0.5, delay: 0.5 })
 
-    // Animate the countdown from 5 to 1
+    // Animate the countdown from 3 to 1
     const countdownEl = overlayRef.current.querySelector('.countdown')
     const numbers = ['3', '2', '1']
     numbers.forEach(num => {
@@ -35,6 +36,8 @@ function CountdownOverlay({ onComplete }) {
         { scale: 1, opacity: 0, duration: 0.5, ease: 'power2.in' }
       )
     })
+
+    // Cleanup the timeline when the component unmounts.
     return () => tl.kill()
   }, [onComplete])
 
