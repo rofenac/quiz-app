@@ -139,7 +139,8 @@ function Quiz() {
 
   function handleModalSubmit() {
     if (userNameInput) {
-      addScoreToLeaderboard(userNameInput, score, domain ? domain : 'all')
+      // If domain exists, it will update the specific board; if not, it updates the full question set board.
+      addScoreToLeaderboard(userNameInput, score, domain ? domain : 'full')
     }
     setIsModalOpen(false)
     resetScore()
