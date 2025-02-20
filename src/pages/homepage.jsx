@@ -13,11 +13,28 @@ function HomePage() {
     { to: 'https://rofenac.github.io/blog/', text: 'My DevLog' },
   ]
 
-  const headerLinks = links.map((link, index) => (
-    <Link key={index} to={link.to} className="hover:text-accent">
-      {link.text}
-    </Link>
-  ))
+  const headerLinks = links.map((link, index) => {
+    // If the link is external, use <a> tag with target attributes
+    if (link.to.startsWith('http')) {
+      return (
+        <a
+          key={index}
+          href={link.to}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-accent"
+        >
+          {link.text}
+        </a>
+      )
+    }
+    // For internal navigation, use <Link>
+    return (
+      <Link key={index} to={link.to} className="hover:text-accent">
+        {link.text}
+      </Link>
+    )
+  })
 
   const boxes = [
     {
@@ -59,10 +76,12 @@ function HomePage() {
       bodyProps={{
         pageFlavorText: 'So you want to be a PMP...',
         pageTitle: 'Welcome to the Darn Fine PMP Quiz App!',
-        pageSubTitle: 'Learn about the PMP certification exam and take our fabulous quizzes!',
+        pageSubTitle:
+          'Learn about the PMP certification exam and take our fabulous quizzes!',
         boxes,
         showQuizButton: true,
-        className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-18',
+        className:
+          'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-18',
       }}
       headerLinks={headerLinks}
     />
