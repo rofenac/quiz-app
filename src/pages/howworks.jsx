@@ -16,11 +16,28 @@ function HowWorks() {
     { to: 'https://rofenac.github.io/blog/', text: 'My DevLog' },
   ]
 
-  const headerLinks = links.map((link, index) => (
-    <Link key={index} to={link.to} className="hover:text-accent">
-      {link.text}
-    </Link>
-  ))
+  const headerLinks = links.map((link, index) => {
+    // If the link is external, use <a> tag with target attributes
+    if (link.to.startsWith('http')) {
+      return (
+        <a
+          key={index}
+          href={link.to}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-accent"
+        >
+          {link.text}
+        </a>
+      )
+    }
+    // For internal navigation, use <Link>
+    return (
+      <Link key={index} to={link.to} className="hover:text-accent">
+        {link.text}
+      </Link>
+    )
+  })
 
   const boxes = [
     {
