@@ -1,5 +1,4 @@
 import { useRef, useContext } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { CountdownContext } from './animations/CountdownContext'
@@ -19,8 +18,6 @@ function Body({
   const headerRef = useRef(null)
   const quizButtonRef = useRef(null)
   const { navigateWithCountdown } = useContext(CountdownContext)
-  const location = useLocation()
-  const navigate = useNavigate()
 
   // Animate header text (pageFlavorText, pageTitle, pageSubTitle)
   useGSAP(() => {
