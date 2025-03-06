@@ -1,7 +1,13 @@
+import fastifyStatic from '@fastify/static'
+import path from 'path'
+import { fileURLToPath } from 'url'
 import Fastify from 'fastify'
 import fastifyCors from '@fastify/cors'
 import dotenv from 'dotenv'
 import mysql from 'mysql2/promise'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // Load environment variables
 dotenv.config()
@@ -9,6 +15,12 @@ dotenv.config()
 // Create Fastify instance
 const fastify = Fastify({
   logger: true
+})
+
+// Register static file serving
+await fastify.register(fastifyStatic, {
+  root: path.join(__dirname, 'dist'), // Assuming 'dist' is your build directory
+  prefix: '/'
 })
 
 // Register CORS plugin
@@ -118,6 +130,11 @@ fastify.get('/api/questions/:domain', async (request, reply) => {
   } catch (error) {
     reply.code(500).send({ error: error.message })
   }
+})
+
+// Catch-all route for SPA navigation
+fastify.get('*', (request, reply) => {
+  reply.sendFile('index.html')
 })
 
 // Start the server
