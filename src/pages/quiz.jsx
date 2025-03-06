@@ -3,7 +3,6 @@ import { useParams, Link, useNavigate } from 'react-router-dom'
 import { ScoreContext } from '../components/scorecontext'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import questions from '../data/questions.json'
 
 function Quiz() {
   const { domain } = useParams()
@@ -11,6 +10,9 @@ function Quiz() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [quizQuestions, setQuizQuestions] = useState([])
   const [answers, setAnswers] = useState({})
+  const API_HOST = import.meta.env.VITE_API_HOST || 'http://localhost'
+  const API_PORT = import.meta.env.VITE_API_PORT || '3000'
+  const API_URL = `${API_HOST}:${API_PORT}`
 
   // State for controlling the modal visibility and the input value.
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -23,24 +25,33 @@ function Quiz() {
   // Shuffle helper function.
   const shuffleArray = array => array.sort(() => Math.random() - 0.5)
 
-  // Filter questions based on the domain.
   useEffect(() => {
-    let filteredQuestions
+    const fetchQuestions = async () => {
+      try {
+        let url
+        if (domain) {
+          url = `${API_URL}/api/questions/${domain}`
+        } else {
+          url = `${API_URL}/api/questions`
+        }
 
-    if (domain === 'people') {
-      filteredQuestions = questions.filter(q => q.domain === 'People')
-    } else if (domain === 'process') {
-      filteredQuestions = questions.filter(q => q.domain === 'Process')
-    } else if (domain === 'business') {
-      filteredQuestions = questions.filter(q => q.domain === 'Business Environment')
-    } else {
-      filteredQuestions = [...questions]
+        const response = await fetch(url)
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`)
+        }
+
+        const data = await response.json()
+        setQuizQuestions(shuffleArray(data))
+
+        // Reset answers and current question index
+        setAnswers({})
+        setCurrentQuestionIndex(0)
+      } catch (error) {
+        console.error('Error fetching questions:', error)
+      }
     }
 
-    setQuizQuestions(shuffleArray(filteredQuestions))
-    // Reset answers and current question index when domain changes.
-    setAnswers({})
-    setCurrentQuestionIndex(0)
+    fetchQuestions()
   }, [domain])
 
   // Animate the quiz card into view on initial mount.

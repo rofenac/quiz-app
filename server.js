@@ -37,6 +37,78 @@ try {
   process.exit(1)
 }
 
+fastify.get('/api/questions', async (request, reply) => {
+  try {
+    const [questions] = await pool.query(`
+      SELECT q.id, q.question_text as question, q.explanation as correctAnswerExplanation, 
+             q.type, t.name as domain
+      FROM questions q
+      LEFT JOIN question_topics qt ON q.id = qt.question_id
+      LEFT JOIN topics t ON qt.topic_id = t.id
+    `)
+
+    // For each question, fetch its options
+    for (let question of questions) {
+      const [options] = await pool.query(`
+        SELECT option_text as text, is_correct as isCorrect
+        FROM options
+        WHERE question_id = ?
+        ORDER BY option_order
+      `, [question.id])
+
+      question.options = options
+    }
+
+    return questions
+  } catch (error) {
+    reply.code(500).send({ error: error.message })
+  }
+})
+
+// Get questions filtered by domain
+fastify.get('/api/questions/:domain', async (request, reply) => {
+  try {
+    const domain = request.params.domain
+
+    // Map URL parameter to database domain values
+    let topicName
+    if (domain === 'people') {
+      topicName = 'People'
+    } else if (domain === 'process') {
+      topicName = 'Process'
+    } else if (domain === 'business') {
+      topicName = 'Business Environment'
+    } else {
+      return reply.code(400).send({ error: 'Invalid domain' })
+    }
+
+    const [questions] = await pool.query(`
+      SELECT q.id, q.question_text as question, q.explanation as correctAnswerExplanation, 
+             q.type, t.name as domain
+      FROM questions q
+      JOIN question_topics qt ON q.id = qt.question_id
+      JOIN topics t ON qt.topic_id = t.id
+      WHERE t.name = ?
+    `, [topicName])
+
+    // For each question, fetch its options
+    for (let question of questions) {
+      const [options] = await pool.query(`
+        SELECT option_text as text, is_correct as isCorrect
+        FROM options
+        WHERE question_id = ?
+        ORDER BY option_order
+      `, [question.id])
+
+      question.options = options
+    }
+
+    return questions
+  } catch (error) {
+    reply.code(500).send({ error: error.message })
+  }
+})
+
 // Define an API endpoint to fetch data from a MySQL table
 fastify.get('/users', async (request, reply) => {
   try {
@@ -46,36 +118,6 @@ fastify.get('/users', async (request, reply) => {
     reply.code(500).send({ error: error.message })
   }
 })
-
-// Add this route to your server.js to extract db schema
-fastify.get('/schema', async (request, reply) => {
-  try {
-    // Get table information
-    const [tables] = await pool.query(`
-      SELECT TABLE_NAME 
-      FROM INFORMATION_SCHEMA.TABLES 
-      WHERE TABLE_SCHEMA = ?
-    `, [process.env.DB_NAME]);
-
-    const schema = {};
-
-    // For each table, get column information
-    for (const table of tables) {
-      const tableName = table.TABLE_NAME;
-      const [columns] = await pool.query(`
-        SELECT COLUMN_NAME, DATA_TYPE, COLUMN_KEY, IS_NULLABLE, COLUMN_DEFAULT
-        FROM INFORMATION_SCHEMA.COLUMNS
-        WHERE TABLE_SCHEMA = ? AND TABLE_NAME = ?
-      `, [process.env.DB_NAME, tableName]);
-
-      schema[tableName] = columns;
-    }
-
-    return schema;
-  } catch (error) {
-    reply.code(500).send({ error: error.message });
-  }
-});
 
 // Start the server
 const start = async () => {
