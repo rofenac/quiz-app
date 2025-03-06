@@ -132,8 +132,7 @@ fastify.get('/api/questions/:domain', async (request, reply) => {
   }
 })
 
-// Catch-all route for SPA navigation
-fastify.get('*', (request, reply) => {
+fastify.setNotFoundHandler((request, reply) => {
   reply.sendFile('index.html')
 })
 
