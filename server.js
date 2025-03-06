@@ -19,13 +19,19 @@ const fastify = Fastify({
 
 // Register static file serving
 await fastify.register(fastifyStatic, {
-  root: path.join(__dirname, 'dist'), // Assuming 'dist' is your build directory
-  prefix: '/'
+  root: path.join(__dirname, 'dist'),
+  prefix: '/quiz-app', // Change this to match your base path
+  decorateReply: false
 })
 
 // Register CORS plugin
 await fastify.register(fastifyCors, {
-  origin: ['http://172.232.173.170:5173', 'http://localhost:5173'], // Adjust frontend URL as needed
+  origin: [
+    'http://172.232.173.170:5173',     // Development frontend
+    'http://localhost:5173',           // Local development
+    'http://172.232.173.170:3000',     // Production frontend (same server)
+    'http://172.232.173.170'           // Without port specification
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 })
@@ -51,7 +57,7 @@ try {
   process.exit(1)
 }
 
-fastify.get('/api/questions', async (request, reply) => {
+fastify.get('/quiz-app/api/questions', async (request, reply) => {
   try {
     const [questions] = await pool.query(`
       SELECT q.id, q.question_text as question, q.explanation as correctAnswerExplanation, 
@@ -80,7 +86,7 @@ fastify.get('/api/questions', async (request, reply) => {
 })
 
 // Get questions filtered by domain
-fastify.get('/api/questions/:domain', async (request, reply) => {
+fastify.get('/quiz-app/api/questions/:domain', async (request, reply) => {
   try {
     const domain = request.params.domain
 
@@ -133,7 +139,14 @@ fastify.get('/api/questions/:domain', async (request, reply) => {
 })
 
 fastify.setNotFoundHandler((request, reply) => {
-  reply.sendFile('index.html')
+  // Check if the path starts with your base path
+  if (request.url.startsWith('/quiz-app/')) {
+    const accept = request.headers.accept || '';
+    if (accept.includes('text/html')) {
+      return reply.sendFile('index.html');
+    }
+  }
+  reply.code(404).send({ error: 'Resource not found' });
 })
 
 // Start the server

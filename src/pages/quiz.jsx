@@ -28,11 +28,11 @@ function Quiz() {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        let url = `${API_URL}/api/questions`
+        let url = `${API_URL}/quiz-app/api/questions`
 
         // Only append the domain if it's not 'full'
         if (domain && domain !== 'full') {
-          url = `${API_URL}/api/questions/${domain}`
+          url = `${API_URL}/quiz-app/api/questions/${domain}`
         }
 
         const response = await fetch(url)
