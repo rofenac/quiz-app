@@ -13,7 +13,9 @@ const fastify = Fastify({
 
 // Register CORS plugin
 await fastify.register(fastifyCors, {
-  origin: true // Allow all origins
+  origin: ['http://172.232.173.170:5173', 'http://localhost:5173'], // Adjust frontend URL as needed
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
 })
 
 // Create a connection pool to the MySQL server
@@ -70,6 +72,15 @@ fastify.get('/api/questions/:domain', async (request, reply) => {
   try {
     const domain = request.params.domain
 
+    // Handle 'full' domain by redirecting to all questions
+    if (domain === 'full') {
+      const response = await fastify.inject({
+        method: 'GET',
+        url: '/api/questions'
+      })
+      return JSON.parse(response.payload)
+    }
+
     // Map URL parameter to database domain values
     let topicName
     if (domain === 'people') {
@@ -83,7 +94,7 @@ fastify.get('/api/questions/:domain', async (request, reply) => {
     }
 
     const [questions] = await pool.query(`
-      SELECT q.id, q.question_text as question, q.explanation as correctAnswerExplanation, 
+      SELECT q.id, q.question_text as question, q.explanation as correctAnswerExplanation,
              q.type, t.name as domain
       FROM questions q
       JOIN question_topics qt ON q.id = qt.question_id
@@ -104,16 +115,6 @@ fastify.get('/api/questions/:domain', async (request, reply) => {
     }
 
     return questions
-  } catch (error) {
-    reply.code(500).send({ error: error.message })
-  }
-})
-
-// Define an API endpoint to fetch data from a MySQL table
-fastify.get('/users', async (request, reply) => {
-  try {
-    const [rows] = await pool.query('SELECT * FROM users')
-    return rows
   } catch (error) {
     reply.code(500).send({ error: error.message })
   }
