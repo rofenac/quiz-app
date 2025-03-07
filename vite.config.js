@@ -7,11 +7,11 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/quiz-app/',
+  base: '/',
   server: {
     proxy: {
-      '/quiz-app/api': {
-        target: 'http://172.232.173.170:3000',
+      '/api': {
+        target: 'http://192.168.100.2:3000',
         changeOrigin: true,
       }
     }

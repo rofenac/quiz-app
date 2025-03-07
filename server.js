@@ -17,7 +17,7 @@ const fastify = Fastify({
 
 await fastify.register(fastifyStatic, {
   root: path.join(__dirname, 'dist'),
-  prefix: '/quiz-app',
+  prefix: '/',
   decorateReply: false
 })
 
@@ -46,7 +46,7 @@ try {
   process.exit(1)
 }
 
-fastify.get('/quiz-app/api/questions', async (request, reply) => {
+fastify.get('/api/questions', async (request, reply) => {
   try {
     const [questions] = await pool.query(`
       SELECT q.id, q.question_text as question, q.explanation as correctAnswerExplanation, 
@@ -73,7 +73,7 @@ fastify.get('/quiz-app/api/questions', async (request, reply) => {
   }
 })
 
-fastify.get('/quiz-app/api/questions/:domain', async (request, reply) => {
+fastify.get('/api/questions/:domain', async (request, reply) => {
   try {
     const domain = request.params.domain
 
