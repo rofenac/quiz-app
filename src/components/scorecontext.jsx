@@ -5,7 +5,7 @@ export const ScoreContext = createContext()
 export const ScoreProvider = ({ children }) => {
   const [score, setScore] = useState(0)
   const [leaderboards, setLeaderboards] = useState({
-    full: [], // renamed from "all" to "full"
+    full: [],
     people: [],
     process: [],
     business: []

@@ -11,7 +11,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/quiz-app/api': {
-        target: 'http://localhost:3000',
+        target: 'http://172.232.173.170:3000',
+        //target: 'http://localhost:3000',
         changeOrigin: true,
       }
     }

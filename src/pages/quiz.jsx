@@ -11,7 +11,6 @@ function Quiz() {
   const [quizQuestions, setQuizQuestions] = useState([])
   const [answers, setAnswers] = useState({})
 
-  // State for controlling the modal visibility and the input value.
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [userNameInput, setUserNameInput] = useState('')
 
@@ -19,7 +18,6 @@ function Quiz() {
   const letters = ['A', 'B', 'C', 'D']
   const cardRef = useRef(null)
 
-  // Shuffle helper function.
   const shuffleArray = array => array.sort(() => Math.random() - 0.5)
 
   useEffect(() => {
@@ -27,12 +25,11 @@ function Quiz() {
       try {
         let url = '/quiz-app/api/questions'
 
-        // Only append the domain if it's not 'full'
         if (domain && domain !== 'full') {
           url = `/quiz-app/api/questions/${domain}`
         }
 
-        console.log('Fetching questions from:', url) // Add this for debugging
+        console.log('Fetching questions from:', url)
 
         const response = await fetch(url)
         if (!response.ok) {
@@ -42,7 +39,6 @@ function Quiz() {
         const data = await response.json()
         setQuizQuestions(shuffleArray(data))
 
-        // Reset answers and current question index
         setAnswers({})
         setCurrentQuestionIndex(0)
       } catch (error) {
@@ -53,7 +49,6 @@ function Quiz() {
     fetchQuestions()
   }, [domain])
 
-  // Animate the quiz card into view on initial mount.
   useGSAP(() => {
     if (cardRef.current) {
       gsap.fromTo(
@@ -64,7 +59,6 @@ function Quiz() {
     }
   }, [])
 
-  // Don't render quiz content until questions are loaded
   if (quizQuestions.length === 0) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-base-200">
@@ -74,7 +68,6 @@ function Quiz() {
   }
 
   function handleAnswer(isCorrect, explanation, index) {
-    // Prevent re-answering if an answer already exists for this question.
     if (answers[currentQuestionIndex]) return
 
     const currentQuestion = quizQuestions[currentQuestionIndex]
@@ -88,26 +81,21 @@ function Quiz() {
       correctAnswer: `${letters[correctOptionIndex]}: ${correctOption.text}`
     }
 
-    // Store the answer data so that it persists during the quiz session.
     setAnswers(prev => ({ ...prev, [currentQuestionIndex]: answerData }))
 
-    // Update the score only if the answer is correct.
     if (isCorrect) {
       updateScore(1)
     }
   }
 
   function handleNextQuestion() {
-    // Animate the card sliding out to the left completely off-screen.
     if (currentQuestionIndex < quizQuestions.length - 1) {
       gsap.to(cardRef.current, {
         x: '-100vw',
         duration: 0.5,
         ease: 'power2.in',
         onComplete: () => {
-          // Update the question after the slide-out animation completes.
           setCurrentQuestionIndex(prev => prev + 1)
-          // Immediately reset the card position off-screen to the right and animate it into view.
           gsap.fromTo(
             cardRef.current,
             { x: '100vw' },
@@ -116,7 +104,6 @@ function Quiz() {
         }
       })
     } else {
-      // When the quiz is finished, animate the card out then open the modal.
       gsap.to(cardRef.current, {
         x: '-100vw',
         duration: 0.5,
@@ -128,15 +115,12 @@ function Quiz() {
 
   function handlePreviousQuestion() {
     if (currentQuestionIndex > 0) {
-      // Animate the card sliding out to the right completely off-screen.
       gsap.to(cardRef.current, {
         x: '100vw',
         duration: 0.5,
         ease: 'power2.in',
         onComplete: () => {
-          // Update to previous question.
           setCurrentQuestionIndex(prev => prev - 1)
-          // Reset the card position off-screen to the left and animate it into view.
           gsap.fromTo(
             cardRef.current,
             { x: '-100vw' },
@@ -149,7 +133,6 @@ function Quiz() {
 
   function handleModalSubmit() {
     if (userNameInput) {
-      // If domain exists, it will update the specific board; if not, it updates the full question set board.
       addScoreToLeaderboard(userNameInput, score, domain ? domain : 'full')
     }
     setIsModalOpen(false)
@@ -164,7 +147,6 @@ function Quiz() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-base-200">
-      {/* Main Quiz Card */}
       <div className="card w-full lg:w-1/2 bg-base-100 shadow-xl" ref={cardRef}>
         <div className="card-body">
           <h1 className="text-2xl font-bold text-center mb-4">
@@ -244,7 +226,6 @@ function Quiz() {
         </div>
       </div>
 
-      {/* Modal for Leaderboard Submission */}
       {isModalOpen && (
         <div className="modal modal-open">
           <div className="modal-box">

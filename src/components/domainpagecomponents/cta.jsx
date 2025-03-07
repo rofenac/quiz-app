@@ -7,13 +7,12 @@ import { CountdownContext } from '../animations/CountdownContext'
 function Cta({ quizName, quizDomain }) {
   const ctaRef = useRef(null)
 
-  // Animate the CTA container to float up and fade in
   useGSAP(() => {
     gsap.from(ctaRef.current, {
-      y: 20,         // Starts 20px below its final position
-      opacity: 0,    // Starts fully transparent
-      duration: 1,   // Animation lasts 1 second
-      ease: 'power1.out' // A simple easing without overshoot
+      y: 20,
+      opacity: 0,
+      duration: 1,
+      ease: 'power1.out'
     })
   })
 

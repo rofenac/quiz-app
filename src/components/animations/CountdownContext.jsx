@@ -9,13 +9,11 @@ export function CountdownProvider({ children }) {
   const [overlayVisible, setOverlayVisible] = useState(false)
   const [targetRoute, setTargetRoute] = useState(null)
 
-  // This function triggers the countdown overlay
   const navigateWithCountdown = route => {
     setTargetRoute(route)
     setOverlayVisible(true)
   }
 
-  // When the overlay finishes its animation, navigate to the target route
   const handleOverlayComplete = () => {
     setOverlayVisible(false)
     if (targetRoute) {

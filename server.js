@@ -9,29 +9,24 @@ import mysql from 'mysql2/promise'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-// Load environment variables
 dotenv.config()
 
-// Create Fastify instance
 const fastify = Fastify({
   logger: true
 })
 
-// Register static file serving
 await fastify.register(fastifyStatic, {
   root: path.join(__dirname, 'dist'),
   prefix: '/quiz-app',
   decorateReply: false
 })
 
-// Register CORS plugin
 await fastify.register(fastifyCors, {
   origin: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 })
 
-// Create a connection pool to the MySQL server
 const pool = mysql.createPool({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -42,7 +37,6 @@ const pool = mysql.createPool({
   queueLimit: 0
 })
 
-// Test database connection
 try {
   const connection = await pool.getConnection()
   console.log('Connected to MySQL server')
@@ -62,7 +56,6 @@ fastify.get('/quiz-app/api/questions', async (request, reply) => {
       LEFT JOIN topics t ON qt.topic_id = t.id
     `)
 
-    // For each question, fetch its options
     for (let question of questions) {
       const [options] = await pool.query(`
         SELECT option_text as text, is_correct as isCorrect
@@ -80,21 +73,18 @@ fastify.get('/quiz-app/api/questions', async (request, reply) => {
   }
 })
 
-// Get questions filtered by domain
 fastify.get('/quiz-app/api/questions/:domain', async (request, reply) => {
   try {
     const domain = request.params.domain
 
-    // Handle 'full' domain by redirecting to all questions
     if (domain === 'full') {
       const response = await fastify.inject({
         method: 'GET',
-        url: '/quiz-app/api/questions'  // Add the /quiz-app prefix
+        url: '/quiz-app/api/questions'
       })
       return JSON.parse(response.payload)
     }
 
-    // Map URL parameter to database domain values
     let topicName
     if (domain === 'people') {
       topicName = 'People'
@@ -115,7 +105,6 @@ fastify.get('/quiz-app/api/questions/:domain', async (request, reply) => {
       WHERE t.name = ?
     `, [topicName])
 
-    // For each question, fetch its options
     for (let question of questions) {
       const [options] = await pool.query(`
         SELECT option_text as text, is_correct as isCorrect
@@ -134,7 +123,6 @@ fastify.get('/quiz-app/api/questions/:domain', async (request, reply) => {
 })
 
 fastify.setNotFoundHandler((request, reply) => {
-  // Check if the path starts with your base path
   if (request.url.startsWith('/quiz-app/')) {
     const accept = request.headers.accept || '';
     if (accept.includes('text/html')) {
@@ -144,7 +132,6 @@ fastify.setNotFoundHandler((request, reply) => {
   reply.code(404).send({ error: 'Resource not found' });
 })
 
-// Start the server
 const start = async () => {
   try {
     const PORT = process.env.PORT || 3000

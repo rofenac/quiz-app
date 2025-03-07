@@ -10,12 +10,10 @@ import HowWorks from './pages/howworks'
 import Leaderboard from './pages/leaderboard'
 import Quiz from './pages/quiz'
 
-// Register GSAP plugins
 gsap.registerPlugin(useGSAP)
 
 function App() {
   useEffect(() => {
-    // Get the theme from localStorage or fallback to the <html>'s data-theme attribute
     const savedTheme = localStorage.getItem('theme') || document.documentElement.getAttribute('data-theme')
     document.documentElement.setAttribute('data-theme', savedTheme)
   }, [])

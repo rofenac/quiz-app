@@ -7,10 +7,8 @@ function CountdownOverlay({ onComplete }) {
 
   useGSAP(() => {
     const tl = gsap.timeline({ onComplete })
-    // Ensure the overlay is visible
     tl.set(overlayRef.current, { display: 'flex', opacity: 1 })
 
-    // Animate the "Are you ready?" text
     const readyText = overlayRef.current.querySelector('.ready-text')
     tl.fromTo(
       readyText,
@@ -19,7 +17,6 @@ function CountdownOverlay({ onComplete }) {
     )
     tl.to(readyText, { opacity: 0, duration: 0.5, delay: 0.5 })
 
-    // Animate the countdown from 3 to 1
     const countdownEl = overlayRef.current.querySelector('.countdown')
     const numbers = ['3', '2', '1']
     numbers.forEach(num => {
@@ -37,7 +34,6 @@ function CountdownOverlay({ onComplete }) {
       )
     })
 
-    // Cleanup the timeline when the component unmounts.
     return () => tl.kill()
   }, [onComplete])
 

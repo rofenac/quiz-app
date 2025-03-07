@@ -17,7 +17,6 @@ function HowWorks() {
   ]
 
   const headerLinks = links.map((link, index) => {
-    // If the link is external, use <a> tag with target attributes
     if (link.to.startsWith('http')) {
       return (
         <a
@@ -31,7 +30,6 @@ function HowWorks() {
         </a>
       )
     }
-    // For internal navigation, use <Link>
     return (
       <Link key={index} to={link.to} className="hover:text-accent">
         {link.text}
@@ -69,19 +67,15 @@ function HowWorks() {
     },
   ]
 
-  // Create a ref for the hero content so we can animate it.
   const heroRef = useRef(null)
 
-  // Use the useGSAP hook to animate the hero image and text on mount.
   useGSAP(() => {
     if (heroRef.current) {
-      // Animate the image: slide in from left
       gsap.fromTo(
         heroRef.current.querySelector('.hero-image'),
         { opacity: 0, x: -100 },
         { opacity: 1, x: 0, duration: 1 }
       )
-      // Animate the text: slide in from right
       gsap.fromTo(
         heroRef.current.querySelector('.hero-text'),
         { opacity: 0, x: 100 },
@@ -90,7 +84,6 @@ function HowWorks() {
     }
   }, [])
 
-  // Create the hero content with a ref attached
   const pageSubTitle = (
     <div className="hero">
       <div ref={heroRef} className="hero-content grid grid-cols-3 items-center">
@@ -115,7 +108,6 @@ function HowWorks() {
   return (
     <PageTemplate
       bodyProps={{
-        // In this page, we’re only using pageSubTitle (which contains our hero content).
         pageSubTitle,
         boxes,
         className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-18',

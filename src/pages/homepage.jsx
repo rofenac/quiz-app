@@ -14,7 +14,6 @@ function HomePage() {
   ]
 
   const headerLinks = links.map((link, index) => {
-    // If the link is external, use <a> tag with target attributes
     if (link.to.startsWith('http')) {
       return (
         <a
@@ -28,7 +27,6 @@ function HomePage() {
         </a>
       )
     }
-    // For internal navigation, use <Link>
     return (
       <Link key={index} to={link.to} className="hover:text-accent">
         {link.text}
@@ -60,7 +58,6 @@ function HomePage() {
     },
   ]
 
-  // Use the useGSAP hook to animate the flavor text, title, and subtitle on mount.
   useGSAP(() => {
     gsap.from('.page-flavor-text, .page-title, .page-sub-title', {
       opacity: 0,

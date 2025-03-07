@@ -9,12 +9,10 @@ import Footer from '../components/footer'
 function LeaderBoard() {
   const { leaderboards, clearLeaderboard } = useContext(ScoreContext)
 
-  // Refs for animations
   const titleRef = useRef(null)
-  const sectionsRef = useRef([]) // Array to store refs for each leaderboard section
-  const buttonRefs = useRef([]) // Array to store refs for clear buttons
+  const sectionsRef = useRef([])
+  const buttonRefs = useRef([])
 
-  // GSAP animations on load
   useGSAP(() => {
     if (titleRef.current) {
       gsap.fromTo(
@@ -24,7 +22,6 @@ function LeaderBoard() {
       )
     }
 
-    // Animate each leaderboard section individually
     sectionsRef.current.forEach((section, index) => {
       if (section) {
         gsap.fromTo(
@@ -35,7 +32,6 @@ function LeaderBoard() {
       }
     })
 
-    // Animate buttons with a slight bounce effect
     buttonRefs.current.forEach((button, index) => {
       if (button) {
         gsap.fromTo(
@@ -75,7 +71,6 @@ function LeaderBoard() {
           </h2>
           <div className="divider" />
 
-          {/* Loop through each category to display its leaderboard */}
           {categories.map(({ key, title }, index) => (
             <div key={key} ref={el => (sectionsRef.current[index] = el)} className="mt-24 mb-24">
               <h3 className="text-2xl font-semibold text-center mb-4">{title}</h3>

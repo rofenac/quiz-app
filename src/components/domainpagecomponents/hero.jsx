@@ -7,7 +7,6 @@ import { CountdownContext } from '../animations/CountdownContext'
 function Hero({ backgroundImage, title, subtitle, quizName, quizDomain }) {
   const heroRef = useRef(null)
 
-  // Animate all elements with the class "hero-text"
   useGSAP(() => {
     const heroTexts = heroRef.current.querySelectorAll('.hero-text')
     gsap.from(heroTexts, {

@@ -19,7 +19,6 @@ function Body({
   const quizButtonRef = useRef(null)
   const { navigateWithCountdown } = useContext(CountdownContext)
 
-  // Animate header text (pageFlavorText, pageTitle, pageSubTitle)
   useGSAP(() => {
     gsap.fromTo(
       headerRef.current.children,
@@ -28,7 +27,6 @@ function Body({
     )
   }, [])
 
-  // Animate the boxes (if any) and clear inline transforms after animating so that hover effects can work
   useGSAP(() => {
     gsap.fromTo(
       containerRef.current.children,
@@ -44,7 +42,6 @@ function Body({
     )
   }, [])
 
-  // Animate the "Start Quiz" button to zoom in from its vanishing point
   useGSAP(() => {
     if (quizButtonRef.current) {
       gsap.fromTo(
