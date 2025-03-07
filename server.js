@@ -26,12 +26,7 @@ await fastify.register(fastifyStatic, {
 
 // Register CORS plugin
 await fastify.register(fastifyCors, {
-  origin: [
-    'http://172.232.173.170:5173',     // Development frontend
-    'http://localhost:5173',           // Local development
-    'http://172.232.173.170:3000',     // Production frontend (same server)
-    'http://172.232.173.170'           // Without port specification
-  ],
+  origin: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 })
