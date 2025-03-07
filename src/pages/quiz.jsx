@@ -10,9 +10,9 @@ function Quiz() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [quizQuestions, setQuizQuestions] = useState([])
   const [answers, setAnswers] = useState({})
-  const API_HOST = import.meta.env.VITE_API_HOST || 'http://localhost'
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost'
   const API_PORT = import.meta.env.VITE_API_PORT || '3000'
-  const API_URL = `${API_HOST}:${API_PORT}`
+  const BASE_URL = `${API_URL}:${API_PORT}`
 
   // State for controlling the modal visibility and the input value.
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -28,11 +28,11 @@ function Quiz() {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        let url = `${API_URL}/quiz-app/api/questions`
+        let url = `${BASE_URL}/quiz-app/api/questions`
 
         // Only append the domain if it's not 'full'
         if (domain && domain !== 'full') {
-          url = `${API_URL}/quiz-app/api/questions/${domain}`
+          url = `${BASE_URL}/quiz-app/api/questions/${domain}`
         }
 
         const response = await fetch(url)
