@@ -23,10 +23,10 @@ function Quiz() {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        let url = '/quiz-app/api/questions'
+        let url = '/api/questions'
 
         if (domain && domain !== 'full') {
-          url = `/quiz-app/api/questions/${domain}`
+          url = `/api/questions/${domain}`
         }
 
         console.log('Fetching questions from:', url)
