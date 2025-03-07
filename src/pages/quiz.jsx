@@ -11,11 +11,6 @@ function Quiz() {
   const [quizQuestions, setQuizQuestions] = useState([])
   const [answers, setAnswers] = useState({})
 
-  // Replace these three lines
-  const API_URL = import.meta.env.VITE_API_URL || 'http://172.232.173.170'
-  const API_PORT = import.meta.env.VITE_API_PORT || '3000'
-  const FULL_API_URL = `${API_URL}:${API_PORT}`
-
   // State for controlling the modal visibility and the input value.
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [userNameInput, setUserNameInput] = useState('')
@@ -30,12 +25,11 @@ function Quiz() {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        // Use FULL_API_URL instead of API_URL
-        let url = `${FULL_API_URL}/quiz-app/api/questions`
+        let url = '/quiz-app/api/questions'
 
         // Only append the domain if it's not 'full'
         if (domain && domain !== 'full') {
-          url = `${FULL_API_URL}/quiz-app/api/questions/${domain}`
+          url = `/quiz-app/api/questions/${domain}`
         }
 
         console.log('Fetching questions from:', url) // Add this for debugging
