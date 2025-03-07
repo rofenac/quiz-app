@@ -30,7 +30,7 @@ function Process() {
         title="Mastering the Process Domain"
         subtitle="Optimizing workflows and ensuring project success through process mastery"
         quizName="Take the Process Quiz"
-        quizDomain="../quiz/process"
+        quizDomain="process"
       />
 
       <PmpContext
@@ -59,7 +59,7 @@ function Process() {
         tacticsThree="Review case studies to apply theoretical knowledge in practical settings"
       />
 
-      <Cta quizName="Take the Process Quiz" quizDomain="../quiz/process" />
+      <Cta quizName="Take the Process Quiz" quizDomain="process" />
 
       <Footer />
     </div>
