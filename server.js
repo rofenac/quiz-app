@@ -20,7 +20,7 @@ const fastify = Fastify({
 // Register static file serving
 await fastify.register(fastifyStatic, {
   root: path.join(__dirname, 'dist'),
-  prefix: '/quiz-app', // Change this to match your base path
+  prefix: '/quiz-app',
   decorateReply: false
 })
 
@@ -89,7 +89,7 @@ fastify.get('/quiz-app/api/questions/:domain', async (request, reply) => {
     if (domain === 'full') {
       const response = await fastify.inject({
         method: 'GET',
-        url: '/api/questions'
+        url: '/quiz-app/api/questions'  // Add the /quiz-app prefix
       })
       return JSON.parse(response.payload)
     }
