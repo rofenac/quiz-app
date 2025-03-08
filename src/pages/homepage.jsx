@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import PageTemplate from '../components/pagetemplate'
+import WelcomeAuthWrapper from '../components/auth/WelcomeAuthWrapper'
 import PeopleTwoToneIcon from '@mui/icons-material/PeopleTwoTone'
 import AccountTreeTwoToneIcon from '@mui/icons-material/AccountTreeTwoTone'
 import CasesTwoToneIcon from '@mui/icons-material/CasesTwoTone'
@@ -54,7 +55,7 @@ function HomePage() {
       title: 'Business Environment',
       to: '/business',
       description:
-        'Addresses the broader context impacting projects, including organizational strategy, compliance, and external factors. It ensures alignment with business goals and promotes an understanding of the project’s role within the bigger picture.',
+        'Addresses the broader context impacting projects, including organizational strategy, compliance, and external factors. It ensures alignment with business goals and promotes an understanding of the project\'s role within the bigger picture.',
     },
   ]
 
@@ -69,19 +70,22 @@ function HomePage() {
   }, [])
 
   return (
-    <PageTemplate
-      bodyProps={{
-        pageFlavorText: 'So you want to be a PMP...',
-        pageTitle: 'Welcome to the Darn Fine PMP Quiz App!',
-        pageSubTitle:
-          'Learn about the PMP certification exam and take our fabulous quizzes!',
-        boxes,
-        showQuizButton: true,
-        className:
-          'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-18',
-      }}
-      headerLinks={headerLinks}
-    />
+    <>
+      <WelcomeAuthWrapper />
+      <PageTemplate
+        bodyProps={{
+          pageFlavorText: 'So you want to be a PMP...',
+          pageTitle: 'Welcome to the Darn Fine PMP Quiz App!',
+          pageSubTitle:
+            'Learn about the PMP certification exam and take our fabulous quizzes!',
+          boxes,
+          showQuizButton: true,
+          className:
+            'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-18',
+        }}
+        headerLinks={headerLinks}
+      />
+    </>
   )
 }
 

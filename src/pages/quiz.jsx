@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext, useRef } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { ScoreContext } from '../components/scorecontext'
+import { AuthContext } from '../components/auth/AuthContext.jsx'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
@@ -10,17 +11,22 @@ function Quiz() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [quizQuestions, setQuizQuestions] = useState([])
   const [answers, setAnswers] = useState({})
-
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const [userNameInput, setUserNameInput] = useState('')
 
   const { score, updateScore, resetScore, addScoreToLeaderboard } = useContext(ScoreContext)
+  const { currentUser, isAuthenticated } = useContext(AuthContext)
   const letters = ['A', 'B', 'C', 'D']
   const cardRef = useRef(null)
 
   const shuffleArray = array => array.sort(() => Math.random() - 0.5)
 
   useEffect(() => {
+    // Redirect unauthenticated users
+    if (!isAuthenticated) {
+      navigate('/')
+      return
+    }
+
     const fetchQuestions = async () => {
       try {
         let url = '/api/questions'
@@ -47,7 +53,7 @@ function Quiz() {
     }
 
     fetchQuestions()
-  }, [domain])
+  }, [domain, isAuthenticated, navigate])
 
   useGSAP(() => {
     if (cardRef.current) {
@@ -58,6 +64,10 @@ function Quiz() {
       )
     }
   }, [])
+
+  if (!isAuthenticated) {
+    return null // Don't render anything while redirecting
+  }
 
   if (quizQuestions.length === 0) {
     return (
@@ -131,15 +141,21 @@ function Quiz() {
     }
   }
 
-  function handleModalSubmit() {
-    if (userNameInput) {
-      addScoreToLeaderboard(userNameInput, score, domain ? domain : 'full')
+  function handleQuizComplete() {
+    // User must be authenticated at this point
+    if (currentUser) {
+      // Add score to leaderboard with user's displayName
+      addScoreToLeaderboard(
+        currentUser.displayName || currentUser.username,
+        score,
+        domain || 'full'
+      )
     }
+
     setIsModalOpen(false)
     resetScore()
     setCurrentQuestionIndex(0)
     setAnswers({})
-    setUserNameInput('')
     navigate(`/leaderboard`)
   }
 
@@ -229,19 +245,21 @@ function Quiz() {
       {isModalOpen && (
         <div className="modal modal-open">
           <div className="modal-box">
-            <h3 className="font-bold text-lg">Quiz Over!</h3>
-            <p className="py-4">
-              Your score is {score} / {quizQuestions.length}. Enter your name for the leaderboard:
-            </p>
-            <input
-              type="text"
-              className="input input-bordered w-full"
-              value={userNameInput}
-              onChange={e => setUserNameInput(e.target.value)}
-            />
+            <h3 className="font-bold text-2xl text-center mb-4">Quiz Completed!</h3>
+            <div className="py-6 text-center">
+              <p className="text-xl mb-4">
+                Congratulations, {currentUser?.displayName || currentUser?.username}!
+              </p>
+              <p className="text-3xl font-bold mb-6">
+                Your score: {score} / {quizQuestions.length}
+              </p>
+              <p className="italic">
+                You'll now be taken to the leaderboard to see how you rank against other quiz takers.
+              </p>
+            </div>
             <div className="modal-action">
-              <button className="btn" onClick={handleModalSubmit}>
-                Submit
+              <button className="btn btn-accent" onClick={handleQuizComplete}>
+                View Leaderboard
               </button>
             </div>
           </div>

@@ -3,6 +3,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import Logo from './logo'
 import ThemeController from './ThemeController'
+import SignOutButton from './SignOutButton'
 
 function Header({ children }) {
   const headerRef = useRef(null)
@@ -25,7 +26,10 @@ function Header({ children }) {
           <div className="divider divider-horizontal" />
           <nav className="flex items-center space-x-5">{children}</nav>
         </div>
-        <ThemeController />
+        <div className="flex items-center gap-4">
+          <ThemeController />
+          <SignOutButton />
+        </div>
       </div>
     </header>
   )

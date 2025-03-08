@@ -1,12 +1,12 @@
 import { useState, useContext } from 'react'
-import { ScoreContext } from '../scorecontext.jsx'
+import { AuthContext } from './AuthContext'
 
 // Login Form Component
 export const LoginForm = ({ onClose }) => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState(null)
-  const { login, loading } = useContext(ScoreContext)
+  const { login, loading } = useContext(AuthContext)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -72,7 +72,7 @@ export const RegisterForm = ({ onClose }) => {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const [error, setError] = useState(null)
-  const { register, loading } = useContext(ScoreContext)
+  const { register, loading } = useContext(AuthContext)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -180,6 +180,12 @@ export const RegisterForm = ({ onClose }) => {
 // Auth Modal Component
 export const AuthModal = ({ isOpen, onClose, initialTab = 'login' }) => {
   const [activeTab, setActiveTab] = useState(initialTab)
+  const { isAuthenticated } = useContext(AuthContext)
+
+  // If user is authenticated and the modal is open, close it
+  if (isAuthenticated && isOpen && onClose) {
+    onClose()
+  }
 
   if (!isOpen) return null
 
@@ -190,9 +196,11 @@ export const AuthModal = ({ isOpen, onClose, initialTab = 'login' }) => {
           <h2 className="text-xl font-bold">
             {activeTab === 'login' ? 'Login' : 'Register'}
           </h2>
-          <button onClick={onClose} className="btn btn-circle btn-sm">
-            ✕
-          </button>
+          {isAuthenticated && (
+            <button onClick={onClose} className="btn btn-circle btn-sm">
+              ✕
+            </button>
+          )}
         </div>
 
         <div className="tabs tabs-boxed mb-4">

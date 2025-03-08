@@ -10,43 +10,102 @@ export const ScoreProvider = ({ children }) => {
     process: [],
     business: []
   })
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    const savedBoards = localStorage.getItem("leaderboardscores.json")
-    if (savedBoards) {
-      setLeaderboards(JSON.parse(savedBoards))
-    }
+    fetchLeaderboards()
   }, [])
 
-  const saveLeaderboards = (updatedBoards) => {
-    localStorage.setItem("leaderboardscores.json", JSON.stringify(updatedBoards))
+  const fetchLeaderboards = async () => {
+    try {
+      setLoading(true)
+      const response = await fetch('/api/leaderboard')
+
+      if (response.ok) {
+        const data = await response.json()
+        setLeaderboards(data)
+      }
+    } catch (error) {
+      console.error('Error fetching leaderboards:', error)
+    } finally {
+      setLoading(false)
+    }
   }
 
-  const addScoreToLeaderboard = (userName, finalScore, domain = 'full') => {
-    setLeaderboards(prevBoards => {
-      const updatedDomainBoard = [...(prevBoards[domain] || []), { userName, score: finalScore }]
-        .sort((a, b) => b.score - a.score)
-        .map((entry, index) => ({ ...entry, rank: index + 1 }))
+  const addScoreToLeaderboard = async (userName, finalScore, domain = 'full') => {
+    try {
+      setLoading(true)
 
-      const updatedBoards = {
-        ...prevBoards,
-        [domain]: updatedDomainBoard
+      // Get the authentication token
+      const storedUser = localStorage.getItem('currentUser')
+      const token = storedUser ? JSON.parse(storedUser).token : null
+
+      if (!token) {
+        console.error('No authentication token found')
+        return
       }
 
-      saveLeaderboards(updatedBoards)
-      return updatedBoards
-    })
+      // Post the score to the server with authentication token
+      const response = await fetch('/api/leaderboard/add', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          userName,
+          score: finalScore,
+          domain
+        })
+      })
+
+      if (response.ok) {
+        // Update local state with fresh data from server
+        fetchLeaderboards()
+      } else {
+        const errorData = await response.json()
+        console.error('Server error:', errorData)
+      }
+    } catch (error) {
+      console.error('Error adding score to leaderboard:', error)
+    } finally {
+      setLoading(false)
+    }
   }
 
-  const clearLeaderboard = (domain = 'full') => {
-    setLeaderboards(prevBoards => {
-      const updatedBoards = {
-        ...prevBoards,
-        [domain]: []
+  const clearLeaderboard = async (domain = 'full') => {
+    try {
+      setLoading(true)
+
+      // Get the authentication token
+      const storedUser = localStorage.getItem('currentUser')
+      const token = storedUser ? JSON.parse(storedUser).token : null
+
+      if (!token) {
+        console.error('No authentication token found')
+        return
       }
-      saveLeaderboards(updatedBoards)
-      return updatedBoards
-    })
+
+      // Request to clear the leaderboard on the server with authentication token
+      const response = await fetch(`/api/leaderboard/clear/${domain}`, {
+        method: 'DELETE',
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      })
+
+      if (response.ok) {
+        // Update local state
+        fetchLeaderboards()
+      } else {
+        const errorData = await response.json()
+        console.error('Server error:', errorData)
+      }
+    } catch (error) {
+      console.error('Error clearing leaderboard:', error)
+    } finally {
+      setLoading(false)
+    }
   }
 
   function updateScore(points) {
@@ -66,6 +125,7 @@ export const ScoreProvider = ({ children }) => {
         leaderboards,
         addScoreToLeaderboard,
         clearLeaderboard,
+        loading
       }}
     >
       {children}
