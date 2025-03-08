@@ -7,11 +7,10 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 
 function LeaderBoard() {
-  const { leaderboards, clearLeaderboard } = useContext(ScoreContext)
+  const { leaderboards } = useContext(ScoreContext)
 
   const titleRef = useRef(null)
   const sectionsRef = useRef([])
-  const buttonRefs = useRef([])
 
   useGSAP(() => {
     if (titleRef.current) {
@@ -28,16 +27,6 @@ function LeaderBoard() {
           section,
           { opacity: 0, y: 30 },
           { opacity: 1, y: 0, duration: 0.7, delay: index * 0.2 }
-        )
-      }
-    })
-
-    buttonRefs.current.forEach((button, index) => {
-      if (button) {
-        gsap.fromTo(
-          button,
-          { scale: 0 },
-          { scale: 1, duration: 0.6, delay: 0.5 + index * 0.1, ease: 'back.out(1.7)' }
         )
       }
     })
@@ -75,15 +64,6 @@ function LeaderBoard() {
             <div key={key} ref={el => (sectionsRef.current[index] = el)} className="mt-24 mb-24">
               <h3 className="text-2xl font-semibold text-center mb-4">{title}</h3>
               <LeaderboardTable leaderboard={leaderboards[key]} />
-              <div className="flex justify-center mt-4">
-                <button
-                  ref={el => (buttonRefs.current[index] = el)}
-                  className="btn btn-warning"
-                  onClick={() => clearLeaderboard(key)}
-                >
-                  Clear {title}
-                </button>
-              </div>
             </div>
           ))}
         </div>
