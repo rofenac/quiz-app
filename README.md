@@ -1,4 +1,4 @@
-# 🚀 THE FULL STACK...ARISE 🌌
+# 🚀 FULL STACK...ARISE 🌌
 
 > *"The fullstack deployment is complete. Now, witness the firepower of this fully armed and operational application!"*
 
@@ -31,8 +31,6 @@
                        ↓           ↓       └──────────────→│ <> │
                    Frontend    Backend                     └────┘
 ```
-
----
 
 **I find your lack of downtime disturbing. 🎊**
 

@@ -21,31 +21,39 @@ export const LoginForm = ({ onClose }) => {
   }
 
   return (
-    <div className="p-4">
-      <h2 className="text-xl font-bold mb-4">Login</h2>
-      {error && <div className="alert alert-error mb-4">{error}</div>}
+    <div className="p-6">
+      <h2 className="text-xl font-bold mb-6">Login</h2>
+      {error && <div className="alert alert-error mb-5 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        <span>{error}</span>
+      </div>}
 
       <form onSubmit={handleSubmit}>
-        <div className="form-control mb-4">
-          <label className="label">
-            <span className="label-text">Username or Email</span>
-          </label>
+        <div className="form-control mb-5">
+          <div className="mb-3">
+            <label className="label">
+              <span className="label-text">Username or Email</span>
+            </label>
+          </div>
           <input
             type="text"
-            className="input input-bordered"
+            className="input input-bordered input-primary shadow-sm"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
           />
         </div>
 
-        <div className="form-control mb-6">
-          <label className="label">
-            <span className="label-text">Password</span>
-          </label>
+        <div className="form-control mb-7">
+          {/* Direct spacing between label and input */}
+          <div className="mb-3">
+            <label className="label">
+              <span className="label-text">Password</span>
+            </label>
+          </div>
           <input
             type="password"
-            className="input input-bordered"
+            className="input input-bordered input-primary shadow-sm"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -54,10 +62,10 @@ export const LoginForm = ({ onClose }) => {
 
         <button
           type="submit"
-          className="btn btn-primary w-full"
+          className="btn btn-primary w-full mt-4 shadow-md"
           disabled={loading}
         >
-          {loading ? 'Logging in...' : 'Login'}
+          {loading ? <span className="loading loading-spinner loading-sm"></span> : 'Login'}
         </button>
       </form>
     </div>
@@ -92,73 +100,86 @@ export const RegisterForm = ({ onClose }) => {
   }
 
   return (
-    <div className="p-4">
-      <h2 className="text-xl font-bold mb-4">Register</h2>
-      {error && <div className="alert alert-error mb-4">{error}</div>}
+    <div className="p-6">
+      <h2 className="text-xl font-bold mb-6">Register</h2>
+      {error && <div className="alert alert-error mb-5 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        <span>{error}</span>
+      </div>}
 
       <form onSubmit={handleSubmit}>
-        <div className="form-control mb-4">
-          <label className="label">
-            <span className="label-text">Username</span>
-          </label>
+        <div className="form-control mb-5">
+          <div className="mb-3">
+            <label className="label">
+              <span className="label-text">Username</span>
+            </label>
+          </div>
           <input
             type="text"
-            className="input input-bordered"
+            className="input input-bordered input-primary shadow-sm"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
           />
         </div>
 
-        <div className="form-control mb-4">
-          <label className="label">
-            <span className="label-text">Email</span>
-          </label>
+        <div className="form-control mb-5">
+          <div className="mb-3">
+            <label className="label">
+              <span className="label-text">Email</span>
+            </label>
+          </div>
           <input
             type="email"
-            className="input input-bordered"
+            className="input input-bordered input-primary shadow-sm"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
         </div>
 
-        <div className="form-control mb-4">
-          <label className="label">
-            <span className="label-text">Display Name</span>
-          </label>
+        <div className="form-control mb-5">
+          <div className="mb-3">
+            <label className="label">
+              <span className="label-text">Display Name</span>
+            </label>
+          </div>
           <input
             type="text"
-            className="input input-bordered"
+            className="input input-bordered input-primary shadow-sm"
             value={displayName}
             onChange={(e) => setDisplayName(e.target.value)}
             placeholder="This will appear on leaderboards"
           />
-          <label className="label">
+          <label className="label mt-2">
             <span className="label-text-alt">If left blank, your username will be used</span>
           </label>
         </div>
 
-        <div className="form-control mb-4">
-          <label className="label">
-            <span className="label-text">Password</span>
-          </label>
+        <div className="form-control mb-5">
+          <div className="mb-3">
+            <label className="label">
+              <span className="label-text">Password</span>
+            </label>
+          </div>
           <input
             type="password"
-            className="input input-bordered"
+            className="input input-bordered input-primary shadow-sm"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
         </div>
 
-        <div className="form-control mb-6">
-          <label className="label">
-            <span className="label-text">Confirm Password</span>
-          </label>
+        <div className="form-control mb-7">
+          <div className="mb-3">
+            <label className="label">
+              <span className="label-text">Confirm Password</span>
+            </label>
+          </div>
           <input
             type="password"
-            className="input input-bordered"
+            className="input input-bordered input-primary shadow-sm"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
@@ -167,10 +188,10 @@ export const RegisterForm = ({ onClose }) => {
 
         <button
           type="submit"
-          className="btn btn-primary w-full"
+          className="btn btn-primary w-full mt-4 shadow-md"
           disabled={loading}
         >
-          {loading ? 'Registering...' : 'Register'}
+          {loading ? <span className="loading loading-spinner loading-sm"></span> : 'Register'}
         </button>
       </form>
     </div>
@@ -191,19 +212,19 @@ export const AuthModal = ({ isOpen, onClose, initialTab = 'login' }) => {
 
   return (
     <div className="modal modal-open">
-      <div className="modal-box">
-        <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-bold">
+      <div className="modal-box bg-base-200">
+        <div className="flex justify-between items-center mb-5">
+          <h2 className="text-xl font-bold text-primary">
             {activeTab === 'login' ? 'Login' : 'Register'}
           </h2>
           {isAuthenticated && (
-            <button onClick={onClose} className="btn btn-circle btn-sm">
+            <button onClick={onClose} className="btn btn-circle btn-sm btn-ghost">
               ✕
             </button>
           )}
         </div>
 
-        <div className="tabs tabs-boxed mb-4">
+        <div className="tabs tabs-boxed mb-6">
           <a
             className={`tab ${activeTab === 'login' ? 'tab-active' : ''}`}
             onClick={() => setActiveTab('login')}
