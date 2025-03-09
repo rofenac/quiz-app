@@ -1,0 +1,1305 @@
+# **Process Domain**
+
+*Note: Questions 1–10 are from your original document; Questions 11–100 are newly generated to bring the total to 100.*
+
+---
+
+**Question 1:**  
+You are managing a complex infrastructure project and have identified multiple interdependencies between work packages. Which project management tool would be MOST helpful for visualizing these dependencies and identifying the critical path?  
+A. Gantt chart  
+B. Network diagram  
+C. Work breakdown structure  
+D. Resource histogram  
+
+**Answer:** B  
+*Explanation:* A network diagram is designed to visualize the logical relationships among project activities, enabling the identification of the critical path.  
+*(PMBOK Guide – Seventh Edition, 2021, p148–149, “Schedule Management”)*
+
+---
+
+**Question 2:**  
+During project execution, you notice that actual costs are 15% higher than planned, while physical progress is only at 40% when 50% was planned. What does this indicate about the project's performance?  
+A. Over budget but ahead of schedule  
+B. Over budget and behind schedule  
+C. Under budget but behind schedule  
+D. Under budget and ahead of schedule  
+
+**Answer:** B  
+*Explanation:* When cost performance is below plan (CPI < 1) and progress lags (SPI < 1), the project is over budget and behind schedule.  
+*(PMBOK Guide – Seventh Edition, 2021, p152–153, “Performance Measurement”)*
+
+---
+
+**Question 3:**  
+A project manager is preparing to initiate a new project. Which document formally authorizes the project and provides the project manager with authority to apply organizational resources?  
+A. Business case  
+B. Project charter  
+C. Scope statement  
+D. Requirements document  
+
+**Answer:** B  
+*Explanation:* The project charter formally authorizes the project and grants the project manager authority to utilize organizational resources.  
+*(PMBOK Guide – Seventh Edition, 2021, p122–123, “Project Initiation”)*
+
+---
+
+**Question 4:**  
+During a risk identification workshop, a team member suggests that the project should maintain a higher-than-usual contingency reserve due to potential weather impacts. The project manager, however, notes that historical data shows minimal weather disruptions for similar projects. What risk attitude is the project manager demonstrating?  
+A. Risk-averse  
+B. Risk-neutral  
+C. Risk-seeking  
+D. Risk-tolerant  
+
+**Answer:** B  
+*Explanation:* A risk-neutral attitude relies on historical data to determine that the risk does not warrant an unusually high contingency reserve.  
+*(PMBOK Guide – Seventh Edition, 2021, p155–156, “Risk Management”)*
+
+---
+
+**Question 5:**  
+A project is using an agile approach with two-week iterations. At the end of the current iteration, several planned user stories remain incomplete. What is the BEST course of action?  
+A. Extend the iteration until all user stories are complete.  
+B. Return incomplete user stories to the product backlog for reprioritization.  
+C. Assign additional resources to complete the remaining user stories immediately.  
+D. Document the incomplete work as technical debt to be addressed later.  
+
+**Answer:** B  
+*Explanation:* In agile practice, incomplete work is returned to the backlog so that it can be reprioritized in future sprints while maintaining the integrity of the timebox.  
+*(PMBOK Guide – Seventh Edition, 2021, p128–129, “Development Approaches”)*
+
+---
+
+**Question 6:**  
+You are managing a project with significant uncertainty about requirements. Which project life cycle would be MOST appropriate?  
+A. Predictive (waterfall)  
+B. Iterative  
+C. Incremental  
+D. Adaptive (agile)  
+
+**Answer:** D  
+*Explanation:* When requirements are uncertain, an adaptive (agile) life cycle allows for evolving requirements as the project progresses.  
+*(PMBOK Guide – Seventh Edition, 2021, p126–127, “Project Life Cycles”)*
+
+---
+
+**Question 7:**  
+During execution of a construction project, a key vendor informs you that materials will be delivered two weeks later than planned, impacting multiple dependent activities. What should be your FIRST response?  
+A. Immediately update the schedule with the new delivery date.  
+B. Assess the impact on the critical path and develop mitigation options.  
+C. Request the vendor expedite delivery at additional cost.  
+D. Notify the client of a delayed completion date.  
+
+**Answer:** B  
+*Explanation:* Before making changes, the project manager should assess the vendor delay’s impact on the critical path and explore mitigation strategies.  
+*(PMBOK Guide – Seventh Edition, 2021, p144–145, “Change Management”)*
+
+---
+
+**Question 8:**  
+A project manager is developing a quality management plan and wants to build in measures to prevent defects. Which quality approach emphasizes prevention over inspection?  
+A. Six Sigma  
+B. Total Quality Management  
+C. Statistical Sampling  
+D. Quality Control  
+
+**Answer:** B  
+*Explanation:* Total Quality Management (TQM) focuses on continuous improvement and defect prevention rather than simply inspecting for errors.  
+*(PMBOK Guide – Seventh Edition, 2021, p150–151, “Quality Management”)*
+
+---
+
+**Question 9:**  
+During project planning, you identify a critical deliverable requiring specialized expertise not available internally. What procurement approach would be MOST appropriate?  
+A. Fixed-price contract with a qualified vendor  
+B. Time and materials contract with a consultant  
+C. Cost-reimbursable contract with incentives  
+D. Indefinite delivery, indefinite quantity (IDIQ) contract  
+
+**Answer:** A  
+*Explanation:* A fixed-price contract transfers risk to the vendor and is suitable when the deliverable is well defined and specialized expertise is required.  
+*(PMBOK Guide – Seventh Edition, 2021, p159–160, “Procurement Management”)*
+
+---
+
+**Question 10:**  
+A project manager is closing out a project and preparing final documentation. Which of the following is NOT typically part of the project closure process?  
+A. Archiving project documents and lessons learned  
+B. Releasing project resources  
+C. Conducting a final risk assessment  
+D. Obtaining formal acceptance of deliverables  
+
+**Answer:** C  
+*Explanation:* A final risk assessment is generally completed during execution; project closure typically involves archiving documentation, releasing resources, and obtaining formal acceptance.  
+*(PMBOK Guide – Seventh Edition, 2021, p134–135, “Project Closure”)*
+
+---
+
+*--- New Questions (11–100) ---*
+
+**Question 11:**  
+Your project schedule shows that you will finish three weeks behind plan. With no additional budget available for extra resources, what schedule compression technique should you use?  
+A. Fast tracking  
+B. Crashing  
+C. Resource leveling  
+D. Revising the baseline  
+
+**Answer:** A  
+*Explanation:* Fast tracking involves overlapping sequential tasks to reduce overall schedule duration without additional cost, making it the best option when budgets are fixed.  
+*(PMBOK Guide – Seventh Edition, 2021, p59, “Fast Tracking”)*
+
+---
+
+**Question 12:**  
+You discover that many project activities have unclear dependencies and relationships. Which technique will help you clarify these dependencies most effectively?  
+A. Creating a Gantt chart  
+B. Developing a network diagram  
+C. Constructing a work breakdown structure  
+D. Using a resource histogram  
+
+**Answer:** B  
+*Explanation:* A network diagram explicitly maps out the logical relationships between tasks, revealing dependencies and the critical path.  
+*(PMBOK Guide – Seventh Edition, 2021, p148–149, “Schedule Management”)*
+
+---
+
+**Question 13:**  
+During risk management planning, you realize that qualitative risk analysis is not providing sufficient detail for decision-making. What should you do next?  
+A. Stop risk analysis altogether.  
+B. Conduct a quantitative risk analysis to numerically evaluate risks.  
+C. Increase the contingency reserve without further analysis.  
+D. Delay risk analysis until more information is available.  
+
+**Answer:** B  
+*Explanation:* Quantitative risk analysis provides numerical data on risk exposure and probability, allowing for more informed decision-making.  
+*(PMBOK Guide – Seventh Edition, 2021, p155–156, “Risk Management”)*
+
+---
+
+**Question 14:**  
+In reviewing project performance, you notice significant schedule variance. Which performance measurement technique will best help you forecast the final project duration?  
+A. Earned Value Analysis  
+B. Critical Chain Method  
+C. Variance Analysis  
+D. Trend Analysis  
+
+**Answer:** A  
+*Explanation:* Earned Value Analysis (EVA) integrates scope, schedule, and cost data to forecast future performance and project duration.  
+*(PMBOK Guide – Seventh Edition, 2021, p152–153, “Performance Measurement”)*
+
+---
+
+**Question 15:**  
+Your project team is considering two different approaches to deliver a complex component. One option is to use an incremental development approach, while the other is predictive planning. What factor will most influence your choice?  
+A. Team size  
+B. Requirements certainty  
+C. Available budget  
+D. Stakeholder preferences  
+
+**Answer:** B  
+*Explanation:* The degree of requirements certainty is key: predictive planning suits well-defined requirements, while incremental approaches work better with evolving needs.  
+*(PMBOK Guide – Seventh Edition, 2021, p126–127, “Project Life Cycles”)*
+
+---
+
+**Question 16:**  
+A critical change request is submitted during execution that will affect multiple project activities. What is the FIRST step you should take?  
+A. Immediately update the schedule.  
+B. Assess the impact on scope, schedule, and budget before approval.  
+C. Escalate the request to the project sponsor without analysis.  
+D. Reject the request to avoid delays.  
+
+**Answer:** B  
+*Explanation:* Impact assessment is the first step in change control, ensuring that the decision is based on thorough analysis of its effect on the project.  
+*(PMBOK Guide – Seventh Edition, 2021, p144–145, “Change Management”)*
+
+---
+
+**Question 17:**  
+Your project involves multiple contractors with overlapping responsibilities. To manage integration effectively, what tool should you use?  
+A. Responsibility Assignment Matrix (RAM)  
+B. Work Breakdown Structure (WBS)  
+C. Network Diagram  
+D. Risk Register  
+
+**Answer:** A  
+*Explanation:* A Responsibility Assignment Matrix clarifies roles and responsibilities, reducing overlap and confusion among multiple contractors.  
+*(PMBOK Guide – Seventh Edition, 2021, p122, “Project Initiation and Team Structure”)*
+
+---
+
+**Question 18:**  
+You are monitoring project progress and notice that several tasks are delayed, impacting the critical path. What should you do next?  
+A. Immediately reassign tasks to faster workers.  
+B. Analyze the schedule to determine the cause of delays and adjust the plan accordingly.  
+C. Ignore the delays and hope they catch up later.  
+D. Increase the project budget to cover the delays.  
+
+**Answer:** B  
+*Explanation:* Analyzing delays allows you to identify root causes and adjust the schedule or implement mitigation strategies without resorting to costly fixes.  
+*(PMBOK Guide – Seventh Edition, 2021, p148, “Schedule Analysis”)*
+
+---
+
+**Question 19:**  
+While executing the project, you discover that some deliverables do not meet the required quality standards. What is your BEST course of action?  
+A. Increase inspection and testing during future activities.  
+B. Immediately halt all work until quality issues are resolved.  
+C. Document the defects as technical debt and proceed.  
+D. Rework the deliverables and update the quality management plan as needed.  
+
+**Answer:** D  
+*Explanation:* Reworking the deliverables while updating the quality management plan addresses the root cause and prevents similar issues in the future.  
+*(PMBOK Guide – Seventh Edition, 2021, p150–151, “Quality Management”)*
+
+---
+
+**Question 20:**  
+You are planning procurement for a critical deliverable and must decide on the contract type. Which factor is most important in choosing a fixed-price contract?  
+A. High uncertainty in scope  
+B. Well-defined and stable requirements  
+C. Availability of flexible resources  
+D. Uncertain market conditions  
+
+**Answer:** B  
+*Explanation:* Fixed-price contracts are best used when project requirements are well-defined and stable, minimizing risk for both buyer and seller.  
+*(PMBOK Guide – Seventh Edition, 2021, p159–160, “Procurement Management”)*
+
+---
+
+**Question 21:**  
+During project execution, you discover that an external vendor’s delay is impacting several tasks. What is the most effective method to manage this vendor risk?  
+A. Escalate the delay to senior management immediately.  
+B. Assess the impact on the critical path and negotiate mitigation strategies with the vendor.  
+C. Cancel the vendor contract and find a new vendor.  
+D. Ignore the delay as it is outside your control.  
+
+**Answer:** B  
+*Explanation:* Assessing the delay’s impact and working with the vendor to find mitigation options is the most balanced approach.  
+*(PMBOK Guide – Seventh Edition, 2021, p144–145, “Change Management and Vendor Relationships”)*
+
+---
+
+**Question 22:**  
+Your project is experiencing scope creep due to frequent, informal change requests. What should be your FIRST step in addressing this issue?  
+A. Immediately freeze the scope.  
+B. Implement a formal change control process.  
+C. Ignore the requests to avoid conflict.  
+D. Increase the project contingency reserve.  
+
+**Answer:** B  
+*Explanation:* A formal change control process ensures that all changes are documented, evaluated, and approved before implementation, controlling scope creep.  
+*(PMBOK Guide – Seventh Edition, 2021, p144–145, “Change Management”)*
+
+---
+
+**Question 23:**  
+Your team is struggling with unclear task dependencies, which is causing rework and delays. What will you do next?  
+A. Ask the team to rely on verbal communication only.  
+B. Develop a detailed network diagram to clarify task dependencies.  
+C. Reduce the number of tasks in the project.  
+D. Ignore the dependencies and focus on task completion.  
+
+**Answer:** B  
+*Explanation:* A detailed network diagram will clearly map out dependencies, reducing confusion and rework.  
+*(PMBOK Guide – Seventh Edition, 2021, p148–149, “Schedule Management”)*
+
+---
+
+**Question 24:**  
+When preparing a project schedule, you decide to use a rolling wave planning approach. What is the primary benefit of this technique?  
+A. It provides a detailed plan for the entire project upfront.  
+B. It allows for detailed planning of near-term work while leaving later work at a higher level.  
+C. It eliminates the need for change control.  
+D. It fixes the schedule for the project duration.  
+
+**Answer:** B  
+*Explanation:* Rolling wave planning lets you plan near-term activities in detail and postpone detailed planning of later work until more information is available.  
+*(PMBOK Guide – Seventh Edition, 2021, p126, “Rolling Wave Planning”)*
+
+---
+
+**Question 25:**  
+Your project’s risk register is growing, and it’s becoming difficult to manage. What is the best way to ensure that risk responses remain current and effective?  
+A. Freeze the risk register once the project begins.  
+B. Conduct regular risk reviews and update the risk register accordingly.  
+C. Archive old risks without further analysis.  
+D. Limit risk analysis to the planning phase.  
+
+**Answer:** B  
+*Explanation:* Regular risk reviews help ensure that emerging risks are identified and that risk responses remain effective throughout the project lifecycle.  
+*(PMBOK Guide – Seventh Edition, 2021, p155, “Risk Management”)*
+
+---
+
+**Question 26:**  
+A significant regulatory change occurs during project execution. What is your first action?  
+A. Ignore the change until project closure.  
+B. Analyze the impact on project scope, schedule, and cost, and update the project plan accordingly.  
+C. Immediately cancel the project.  
+D. Request an exemption from the regulatory body.  
+
+**Answer:** B  
+*Explanation:* Analyzing the impact of regulatory changes and updating the project plan ensures compliance and minimizes disruption.  
+*(PMBOK Guide – Seventh Edition, 2021, p173–174, “Compliance”)*
+
+---
+
+**Question 27:**  
+During a project meeting, you notice discrepancies between the planned schedule and actual progress. Which tool would best help you identify these discrepancies?  
+A. Gantt chart  
+B. Earned Value Management (EVM)  
+C. Work Breakdown Structure (WBS)  
+D. Risk Register  
+
+**Answer:** B  
+*Explanation:* Earned Value Management integrates cost, schedule, and scope data to provide insight into project performance versus plan.  
+*(PMBOK Guide – Seventh Edition, 2021, p152–153, “Performance Measurement”)*
+
+---
+
+**Question 28:**  
+Your project is experiencing delays because resources are being over-allocated. Which scheduling technique can help resolve this issue?  
+A. Fast tracking  
+B. Crashing  
+C. Resource leveling  
+D. Rebaselining  
+
+**Answer:** C  
+*Explanation:* Resource leveling adjusts the schedule to address resource constraints without changing the project scope.  
+*(PMBOK Guide – Seventh Edition, 2021, p148, “Resource Leveling”)*
+
+---
+
+**Question 29:**  
+A key deliverable is nearing completion, but quality reviews have revealed several defects. What is the most appropriate corrective action?  
+A. Approve the deliverable and plan for post-delivery fixes.  
+B. Rework the deliverable until it meets the quality standards, then update the quality management plan.  
+C. Ignore the defects to save time.  
+D. Increase the project budget to cover additional testing.  
+
+**Answer:** B  
+*Explanation:* Reworking the deliverable and updating the quality plan ensures the product meets the required standards before final delivery.  
+*(PMBOK Guide – Seventh Edition, 2021, p150–151, “Quality Management”)*
+
+---
+
+**Question 30:**  
+Your team is implementing a new process improvement, but progress is slow because the team is unfamiliar with the new methods. What should you do next?  
+A. Cancel the improvement initiative.  
+B. Provide targeted training and support to help the team adopt the new methods.  
+C. Replace team members with experts in the new method.  
+D. Continue without intervention.  
+
+**Answer:** B  
+*Explanation:* Offering training and support facilitates a smoother transition and better adoption of new processes.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Process Improvement and Change Management”)*
+
+---
+
+**Question 31:**  
+When closing a project, which document is essential to capture lessons learned and best practices for future projects?  
+A. Project charter  
+B. Final report  
+C. Lessons learned register  
+D. Stakeholder register  
+
+**Answer:** C  
+*Explanation:* The lessons learned register documents insights gained during the project and is essential for organizational learning.  
+*(PMBOK Guide – Seventh Edition, 2021, p134–135, “Project Closure”)*
+
+---
+
+**Question 32:**  
+A vendor is behind schedule, and your project’s success depends on their timely delivery. Which action should you take first?  
+A. Immediately replace the vendor.  
+B. Review the contract for penalties and negotiate corrective actions.  
+C. Increase your internal contingency reserve.  
+D. Update the project schedule without vendor input.  
+
+**Answer:** B  
+*Explanation:* Reviewing contractual terms and negotiating with the vendor helps manage risks while maintaining the vendor relationship.  
+*(PMBOK Guide – Seventh Edition, 2021, p159–160, “Procurement Management”)*
+
+---
+
+**Question 33:**  
+Your project team is experiencing delays because of inadequate information during task handoffs. Which technique will best improve communication between team members?  
+A. Daily stand-up meetings  
+B. A comprehensive project status report  
+C. Formal documentation review sessions  
+D. Peer reviews and walkthroughs of deliverables  
+
+**Answer:** D  
+*Explanation:* Peer reviews and walkthroughs ensure that information is clearly communicated during handoffs, reducing delays caused by misunderstandings.  
+*(PMBOK Guide – Seventh Edition, 2021, p148, “Communication in Project Execution”)*
+
+---
+
+**Question 34:**  
+You are tasked with updating your project schedule to reflect delays and scope changes. Which tool helps you compare the original and current schedule effectively?  
+A. Gantt chart with baseline overlay  
+B. Risk register  
+C. Quality management plan  
+D. Stakeholder analysis  
+
+**Answer:** A  
+*Explanation:* A Gantt chart with a baseline overlay allows you to visually compare planned versus actual progress, highlighting variances.  
+*(PMBOK Guide – Seventh Edition, 2021, p148, “Schedule Management”)*
+
+---
+
+**Question 35:**  
+To better understand the root cause of recurring delays in your project, which analysis method should you use?  
+A. SWOT analysis  
+B. Pareto analysis  
+C. Root cause analysis  
+D. Gap analysis  
+
+**Answer:** C  
+*Explanation:* Root cause analysis helps identify the underlying factors causing delays, allowing you to address them directly.  
+*(PMBOK Guide – Seventh Edition, 2021, p155, “Risk Management”)*
+
+---
+
+**Question 36:**  
+Your project uses agile methods but has fixed deliverable dates. Which hybrid approach might you use to accommodate both agile flexibility and fixed deadlines?  
+A. Pure agile  
+B. Predictive (waterfall)  
+C. Hybrid agile–predictive  
+D. Iterative-only  
+
+**Answer:** C  
+*Explanation:* A hybrid agile–predictive approach allows you to manage evolving requirements while adhering to fixed deadlines.  
+*(PMBOK Guide – Seventh Edition, 2021, p126–127, “Project Life Cycles”)*
+
+---
+
+**Question 37:**  
+A team member identifies a potential efficiency improvement that might reduce cycle time but requires a process change. What should you do next?  
+A. Immediately implement the change.  
+B. Evaluate the potential benefits and risks in a controlled pilot before full-scale implementation.  
+C. Reject the suggestion to maintain current processes.  
+D. Postpone the evaluation until project closure.  
+
+**Answer:** B  
+*Explanation:* Piloting the process change allows you to assess its impact and ensure it will deliver benefits without introducing new risks.  
+*(PMBOK Guide – Seventh Edition, 2021, p71, “Continuous Improvement”)*
+
+---
+
+**Question 38:**  
+During project execution, you notice that the team is frequently working on tasks out of sequence, causing inefficiencies. What will you do next?  
+A. Ignore the sequence issues.  
+B. Reevaluate and clearly communicate task dependencies and update the network diagram if necessary.  
+C. Increase task assignments to force completion.  
+D. Change the project scope to reduce tasks.  
+
+**Answer:** B  
+*Explanation:* Clarifying task dependencies and updating the network diagram ensures the team understands the correct sequence of activities.  
+*(PMBOK Guide – Seventh Edition, 2021, p148–149, “Schedule Management”)*
+
+---
+
+**Question 39:**  
+Your project involves significant uncertainty in requirements. Which planning approach is best suited to handle this uncertainty?  
+A. Predictive planning  
+B. Rolling wave planning  
+C. Fixed-scope planning  
+D. Comprehensive upfront planning  
+
+**Answer:** B  
+*Explanation:* Rolling wave planning allows for detailed planning of near-term work while leaving later work at a higher level until more information is available.  
+*(PMBOK Guide – Seventh Edition, 2021, p126, “Rolling Wave Planning”)*
+
+---
+
+**Question 40:**  
+When estimating the duration of project tasks, you notice that your initial estimates are off by a wide margin. What technique can improve estimate accuracy over time?  
+A. Expert judgment only  
+B. Parametric estimating combined with historical data  
+C. Relying solely on the project manager’s intuition  
+D. Fixing all estimates without updates  
+
+**Answer:** B  
+*Explanation:* Using parametric estimating along with historical data improves the accuracy of duration estimates by basing them on quantitative analysis.  
+*(PMBOK Guide – Seventh Edition, 2021, p152, “Estimation Techniques”)*
+
+---
+
+**Question 41:**  
+Your project’s baseline has shifted due to numerous approved changes. What should you do to maintain control over project performance?  
+A. Ignore the changes and stick with the original baseline.  
+B. Re-baseline the project after re-forecasting scope, schedule, and cost.  
+C. Halt all further changes until the project is complete.  
+D. Document changes without updating the baseline.  
+
+**Answer:** B  
+*Explanation:* Re-baselining the project after significant changes ensures that performance measurements remain accurate and relevant.  
+*(PMBOK Guide – Seventh Edition, 2021, p148, “Baseline Management”)*
+
+---
+
+**Question 42:**  
+During execution, the team discovers that certain tasks are being performed repeatedly due to unclear requirements. What process improvement step should you take next?  
+A. Increase rework allowances in the budget.  
+B. Refine requirements documentation and improve the change control process.  
+C. Extend the project schedule indefinitely.  
+D. Instruct the team to ignore requirements changes.  
+
+**Answer:** B  
+*Explanation:* Clarifying requirements and strengthening change control minimizes rework and improves efficiency.  
+*(PMBOK Guide – Seventh Edition, 2021, p155, “Requirements Management”)*
+
+---
+
+**Question 43:**  
+A critical activity’s duration is uncertain due to evolving technology. Which technique should you use to estimate its duration?  
+A. Deterministic estimating  
+B. Three-point estimating using optimistic, most likely, and pessimistic durations  
+C. Historical analogy  
+D. Fixed duration estimation  
+
+**Answer:** B  
+*Explanation:* Three-point estimating accounts for uncertainty by considering best, worst, and most likely durations.  
+*(PMBOK Guide – Seventh Edition, 2021, p152, “Estimation Techniques”)*
+
+---
+
+**Question 44:**  
+Your team is implementing a new scheduling software, but initial feedback shows confusion about its features. What will you do next?  
+A. Discontinue use of the software immediately.  
+B. Provide additional training sessions and create user guides to help the team adapt.  
+C. Ignore the feedback and force continued use.  
+D. Replace the software with a simpler tool without consulting the team.  
+
+**Answer:** B  
+*Explanation:* Offering training and support helps the team overcome the learning curve and fully utilize the new scheduling software.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Technology Adoption and Training”)*
+
+---
+
+**Question 45:**  
+In preparing for procurement, you need to decide between a fixed-price and a cost-reimbursable contract. Which project factor most strongly supports using a fixed-price contract?  
+A. High uncertainty in requirements  
+B. Well-defined scope and deliverables  
+C. High risk of change  
+D. Flexible budget conditions  
+
+**Answer:** B  
+*Explanation:* Fixed-price contracts are most effective when the scope and deliverables are clearly defined and stable.  
+*(PMBOK Guide – Seventh Edition, 2021, p159–160, “Procurement Management”)*
+
+---
+
+**Question 46:**  
+Your project is transitioning from design to execution, and you need to confirm that all project deliverables meet their acceptance criteria. Which process should you use?  
+A. Quality Assurance  
+B. Quality Control  
+C. Performance Measurement  
+D. Change Control  
+
+**Answer:** B  
+*Explanation:* Quality Control involves checking deliverables against acceptance criteria to ensure they meet the required standards before sign-off.  
+*(PMBOK Guide – Seventh Edition, 2021, p150–151, “Quality Management”)*
+
+---
+
+**Question 47:**  
+During a status meeting, you learn that work performed does not match the planned activities. What is the BEST method to assess this issue?  
+A. Comparing the project schedule with the actual progress using Earned Value Management.  
+B. Requesting verbal updates from each team member.  
+C. Increasing the frequency of status meetings.  
+D. Replacing the project team immediately.  
+
+**Answer:** A  
+*Explanation:* Earned Value Management provides an objective measure to compare planned versus actual progress in terms of scope, schedule, and cost.  
+*(PMBOK Guide – Seventh Edition, 2021, p152, “Performance Measurement”)*
+
+---
+
+**Question 48:**  
+You are tasked with integrating change control into your project. Which document will be most critical for tracking all changes?  
+A. Risk Register  
+B. Change Log  
+C. Quality Management Plan  
+D. Communication Plan  
+
+**Answer:** B  
+*Explanation:* The change log is used to track all changes, including their status, impact, and approval, ensuring proper change control.  
+*(PMBOK Guide – Seventh Edition, 2021, p144–145, “Change Management”)*
+
+---
+
+**Question 49:**  
+To monitor overall project performance, you decide to use a dashboard. Which key performance indicators (KPIs) should be included for schedule and cost performance?  
+A. Customer satisfaction and defect count  
+B. Earned Value metrics such as CPI and SPI  
+C. Number of meetings held  
+D. Risk probability ratings  
+
+**Answer:** B  
+*Explanation:* Earned Value metrics, including the Cost Performance Index (CPI) and Schedule Performance Index (SPI), effectively measure schedule and cost performance.  
+*(PMBOK Guide – Seventh Edition, 2021, p152–153, “Performance Measurement”)*
+
+---
+
+**Question 50:**  
+Your project involves several iterative cycles. How do you ensure that each iteration delivers customer value while maintaining process consistency?  
+A. Use a detailed Gantt chart for every iteration.  
+B. Implement a sprint review and retrospective at the end of each iteration.  
+C. Approve all work only at the project’s end.  
+D. Have the project sponsor manage each iteration personally.  
+
+**Answer:** B  
+*Explanation:* Sprint reviews and retrospectives provide feedback and ensure continuous improvement and value delivery with each iteration.  
+*(PMBOK Guide – Seventh Edition, 2021, p128–129, “Agile Development Practices”)*
+
+---
+
+**Question 51:**  
+During project execution, you must decide whether to fast track or crash the schedule. Which factor is MOST critical in choosing fast tracking?  
+A. Availability of extra budget  
+B. Ability to perform tasks concurrently without increasing risk significantly  
+C. Project complexity  
+D. Team size  
+
+**Answer:** B  
+*Explanation:* Fast tracking involves performing tasks in parallel; it is most suitable when overlapping activities can be done without incurring significant additional risk or cost.  
+*(PMBOK Guide – Seventh Edition, 2021, p59, “Fast Tracking”)*
+
+---
+
+**Question 52:**  
+Your project has a significant delay due to resource shortages. With no extra funds for crashing, what should you do next?  
+A. Fast track the remaining tasks.  
+B. Reassign tasks and use resource leveling to optimize the schedule.  
+C. Re-baseline the schedule without addressing the shortage.  
+D. Increase the contingency reserve instead.  
+
+**Answer:** B  
+*Explanation:* Resource leveling helps manage limited resources by adjusting the schedule without additional costs, making it ideal when funds are constrained.  
+*(PMBOK Guide – Seventh Edition, 2021, p148, “Resource Leveling”)*
+
+---
+
+**Question 53:**  
+A change in project scope requires re-estimating task durations. Which estimation technique should you use to incorporate uncertainty?  
+A. Analogous estimating  
+B. Three-point estimating  
+C. Bottom-up estimating  
+D. Expert judgment  
+
+**Answer:** B  
+*Explanation:* Three-point estimating uses optimistic, most likely, and pessimistic estimates to incorporate uncertainty and provide a more realistic duration.  
+*(PMBOK Guide – Seventh Edition, 2021, p152, “Estimation Techniques”)*
+
+---
+
+**Question 54:**  
+During execution, you notice quality issues that may lead to rework. What is the best action to mitigate this risk?  
+A. Increase rework allowance in the budget.  
+B. Implement stricter quality control measures immediately and adjust the quality plan.  
+C. Delay quality inspections until the end of the project.  
+D. Blame the team and proceed.  
+
+**Answer:** B  
+*Explanation:* Enhancing quality control measures and revising the quality management plan addresses defects early, reducing costly rework.  
+*(PMBOK Guide – Seventh Edition, 2021, p150–151, “Quality Management”)*
+
+---
+
+**Question 55:**  
+Your project has a well-defined scope but is experiencing unexpected delays. Which tool can help you identify the reasons for the delays?  
+A. Pareto analysis  
+B. Cause-and-effect diagram  
+C. Risk register  
+D. Schedule variance analysis  
+
+**Answer:** D  
+*Explanation:* Schedule variance analysis, often part of Earned Value Management, helps identify deviations between planned and actual progress.  
+*(PMBOK Guide – Seventh Edition, 2021, p152, “Performance Measurement”)*
+
+---
+
+**Question 56:**  
+A risk response plan you implemented has not produced the desired results, and delays persist. What is your next step?  
+A. Immediately escalate the risk to the project sponsor.  
+B. Revisit and adjust the risk response strategy, engaging the team for alternative approaches.  
+C. Ignore the issue and continue as planned.  
+D. Increase the contingency reserve without further analysis.  
+
+**Answer:** B  
+*Explanation:* Revisiting the risk response plan allows you to modify strategies based on new information, ensuring the risk is managed effectively.  
+*(PMBOK Guide – Seventh Edition, 2021, p155, “Risk Management”)*
+
+---
+
+**Question 57:**  
+You need to integrate lessons learned from earlier phases into your current project plan. What document will help you most with this integration?  
+A. Risk register  
+B. Lessons learned register  
+C. Communication plan  
+D. Stakeholder register  
+
+**Answer:** B  
+*Explanation:* The lessons learned register captures past experiences and provides insights for adjusting current project processes and plans.  
+*(PMBOK Guide – Seventh Edition, 2021, p134–135, “Project Closure”)*
+
+---
+
+**Question 58:**  
+A vendor’s performance is below expectations, impacting your schedule. What is the first step you should take?  
+A. Terminate the vendor contract immediately.  
+B. Review the vendor’s performance data and meet to discuss corrective actions.  
+C. Increase the vendor’s workload to speed up delivery.  
+D. Ignore the issue and hope performance improves.  
+
+**Answer:** B  
+*Explanation:* Reviewing performance and discussing corrective actions with the vendor is the first step in addressing performance issues constructively.  
+*(PMBOK Guide – Seventh Edition, 2021, p159, “Procurement Management”)*
+
+---
+
+**Question 59:**  
+When planning for resource utilization, you notice a potential overallocation in several critical tasks. Which process should you use?  
+A. Risk management  
+B. Resource leveling  
+C. Scope management  
+D. Stakeholder engagement  
+
+**Answer:** B  
+*Explanation:* Resource leveling is used to resolve overallocation by adjusting the schedule or resource assignments.  
+*(PMBOK Guide – Seventh Edition, 2021, p148, “Resource Leveling”)*
+
+---
+
+**Question 60:**  
+Your project involves iterative cycles and frequent changes. Which method will help your team remain flexible and adjust rapidly?  
+A. Waterfall  
+B. Adaptive (agile)  
+C. Predictive  
+D. Linear planning  
+
+**Answer:** B  
+*Explanation:* An adaptive (agile) approach is ideal for projects that require flexibility and rapid adjustment as requirements evolve.  
+*(PMBOK Guide – Seventh Edition, 2021, p126–127, “Project Life Cycles”)*
+
+---
+
+**Question 61:**  
+To monitor process performance, you decide to implement a performance dashboard. Which elements should be included to provide a comprehensive view?  
+A. Only cost performance metrics  
+B. Schedule variance, cost variance, and quality indicators  
+C. Team satisfaction scores exclusively  
+D. Only the project’s risk rating  
+
+**Answer:** B  
+*Explanation:* A comprehensive performance dashboard includes schedule, cost, and quality indicators, providing a holistic view of project performance.  
+*(PMBOK Guide – Seventh Edition, 2021, p152–153, “Performance Measurement”)*
+
+---
+
+**Question 62:**  
+A sudden increase in scope changes has affected the project schedule. What should you do to regain control?  
+A. Halt all changes immediately.  
+B. Strengthen the change control process and ensure all changes are documented and assessed before approval.  
+C. Approve changes without review to avoid delays.  
+D. Reassign tasks without addressing the change process.  
+
+**Answer:** B  
+*Explanation:* A robust change control process helps manage scope changes systematically and minimizes their impact on the project schedule.  
+*(PMBOK Guide – Seventh Edition, 2021, p144–145, “Change Management”)*
+
+---
+
+**Question 63:**  
+Your project requires frequent updates to the schedule due to evolving requirements. Which scheduling tool is best suited for continuous updates?  
+A. Static Gantt chart  
+B. Dynamic project management software with real-time updates  
+C. Fixed baseline schedule  
+D. Paper-based schedule  
+
+**Answer:** B  
+*Explanation:* Dynamic project management software that updates in real time helps track changes and provides an up-to-date view of the schedule.  
+*(PMBOK Guide – Seventh Edition, 2021, p148, “Schedule Management Tools”)*
+
+---
+
+**Question 64:**  
+During execution, you find that not all project risks were identified in the planning phase. What should you do next?  
+A. Update the risk register and perform a new risk analysis immediately.  
+B. Ignore the new risks to maintain the original plan.  
+C. Cancel the project due to unforeseen risks.  
+D. Re-baseline the project without risk adjustments.  
+
+**Answer:** A  
+*Explanation:* Continuously updating the risk register and performing additional risk analysis ensures that emerging risks are managed effectively.  
+*(PMBOK Guide – Seventh Edition, 2021, p155, “Risk Management”)*
+
+---
+
+**Question 65:**  
+You are preparing for a major project review. Which process will help you verify that all project deliverables meet the acceptance criteria?  
+A. Quality assurance  
+B. Quality control  
+C. Risk management  
+D. Change control  
+
+**Answer:** B  
+*Explanation:* Quality control involves checking deliverables against predefined acceptance criteria, ensuring they are acceptable before final review.  
+*(PMBOK Guide – Seventh Edition, 2021, p150–151, “Quality Management”)*
+
+---
+
+**Question 66:**  
+Your team must deliver a critical component by a fixed deadline. However, the work has many dependencies. What is the most effective method to shorten the schedule?  
+A. Crashing, by adding resources  
+B. Fast tracking, by overlapping tasks  
+C. Resource leveling  
+D. Changing the project scope  
+
+**Answer:** B  
+*Explanation:* Fast tracking allows tasks to overlap, which can reduce the project duration when tasks are not strictly sequential.  
+*(PMBOK Guide – Seventh Edition, 2021, p59, “Fast Tracking”)*
+
+---
+
+**Question 67:**  
+A key process improvement has been identified during execution. How should you formally incorporate this improvement into the project?  
+A. Implement it immediately without documentation.  
+B. Document the improvement, assess its impact, and update the project management plan accordingly.  
+C. Wait until project closure to review improvements.  
+D. Informally ask the team to follow the new process without updating documents.  
+
+**Answer:** B  
+*Explanation:* Formal incorporation of process improvements requires documentation, impact assessment, and updating the project management plan to ensure consistency.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Process Improvement”)*
+
+---
+
+**Question 68:**  
+Your project has a detailed risk register. What additional tool can you use to prioritize risks for response planning?  
+A. Pareto chart  
+B. Probability and impact matrix  
+C. SWOT analysis  
+D. Gantt chart  
+
+**Answer:** B  
+*Explanation:* A probability and impact matrix helps prioritize risks based on their likelihood and potential impact on the project.  
+*(PMBOK Guide – Seventh Edition, 2021, p155, “Risk Management”)*
+
+---
+
+**Question 69:**  
+While monitoring cost performance, you notice a cost overrun in one phase of the project. What should be your immediate response?  
+A. Increase the project budget overall.  
+B. Investigate the cause of the overrun and implement corrective actions if necessary.  
+C. Ignore the overrun as long as overall performance is acceptable.  
+D. Reassign tasks to cheaper resources.  
+
+**Answer:** B  
+*Explanation:* Investigating and addressing the cause of a cost overrun allows you to correct issues early and prevent further overruns.  
+*(PMBOK Guide – Seventh Edition, 2021, p152, “Performance Measurement”)*
+
+---
+
+**Question 70:**  
+Your project requires complex integration of various subsystems. Which planning process will help ensure that interdependencies are managed effectively?  
+A. Scope management  
+B. Integration management  
+C. Communication management  
+D. Procurement management  
+
+**Answer:** B  
+*Explanation:* Integration management focuses on coordinating all aspects of the project to ensure that various subsystems work together harmoniously.  
+*(PMBOK Guide – Seventh Edition, 2021, p148, “Integration Management”)*
+
+---
+
+**Question 71:**  
+A new risk has been identified during project execution that was not anticipated in the planning phase. What should you do first?  
+A. Add the risk to the risk register and perform a qualitative risk analysis.  
+B. Ignore the risk until it materializes.  
+C. Immediately escalate the risk to the sponsor.  
+D. Increase the contingency reserve without further analysis.  
+
+**Answer:** A  
+*Explanation:* Newly identified risks should be promptly added to the risk register and analyzed to determine their potential impact and appropriate response.  
+*(PMBOK Guide – Seventh Edition, 2021, p155, “Risk Management”)*
+
+---
+
+**Question 72:**  
+During a project review, you note that customer requirements have shifted slightly. What is the most appropriate process to accommodate this change?  
+A. Update the project scope baseline immediately without analysis.  
+B. Initiate a formal change request and update the project plan after evaluating the impact.  
+C. Ignore the shift as it is minor.  
+D. Re-baseline the project without stakeholder consultation.  
+
+**Answer:** B  
+*Explanation:* Formal change control ensures that any adjustments to scope are evaluated, documented, and approved before implementation.  
+*(PMBOK Guide – Seventh Edition, 2021, p144–145, “Change Management”)*
+
+---
+
+**Question 73:**  
+To determine the final project cost, which forecasting method is most appropriate when there are significant variances between planned and actual performance?  
+A. Estimate at Completion (EAC)  
+B. Bottom-up estimating  
+C. Analogous estimating  
+D. Parametric estimating  
+
+**Answer:** A  
+*Explanation:* The Estimate at Completion (EAC) uses current performance data to forecast the final project cost accurately.  
+*(PMBOK Guide – Seventh Edition, 2021, p152, “Performance Measurement”)*
+
+---
+
+**Question 74:**  
+You are tasked with developing the project schedule. Which process involves determining the earliest and latest that each activity can start and finish?  
+A. Critical path analysis  
+B. Schedule network analysis  
+C. Float calculation  
+D. Schedule compression  
+
+**Answer:** B  
+*Explanation:* Schedule network analysis involves calculating the earliest and latest start and finish times to determine the float and critical path.  
+*(PMBOK Guide – Seventh Edition, 2021, p148–149, “Schedule Management”)*
+
+---
+
+**Question 75:**  
+Your team is using a hybrid project management approach. Which tool is essential for managing iterative development and ongoing changes?  
+A. Waterfall methodology  
+B. Product backlog and sprint planning  
+C. Fixed baseline schedule  
+D. Gantt chart exclusively  
+
+**Answer:** B  
+*Explanation:* In a hybrid environment, a product backlog with sprint planning supports iterative development while managing changes effectively.  
+*(PMBOK Guide – Seventh Edition, 2021, p128–129, “Agile Development Practices”)*
+
+---
+
+**Question 76:**  
+A stakeholder requests a detailed progress report on schedule and cost performance every week. What is the best method to provide this information efficiently?  
+A. Develop a customized dashboard with Earned Value metrics.  
+B. Manually compile spreadsheets each week.  
+C. Schedule daily status meetings.  
+D. Provide a verbal update in every meeting.  
+
+**Answer:** A  
+*Explanation:* A dashboard that incorporates Earned Value metrics offers real-time insights into schedule and cost performance, reducing manual effort and increasing accuracy.  
+*(PMBOK Guide – Seventh Edition, 2021, p152, “Performance Measurement Tools”)*
+
+---
+
+**Question 77:**  
+You are reviewing your project’s change requests and notice a high frequency of minor changes. What is the BEST course of action to manage these changes?  
+A. Approve all minor changes to keep stakeholders happy.  
+B. Establish a fast-track change control process for minor changes while documenting them properly.  
+C. Reject all minor changes to avoid disruption.  
+D. Consolidate all minor changes into one major change request at project end.  
+
+**Answer:** B  
+*Explanation:* A fast-track process for minor changes helps manage them quickly without compromising the overall change control system.  
+*(PMBOK Guide – Seventh Edition, 2021, p144–145, “Change Management”)*
+
+---
+
+**Question 78:**  
+Your project manager observes that the project schedule is consistently being met but the deliverable quality is below expectations. What should you do next?  
+A. Increase the project budget.  
+B. Revisit and enhance the quality management plan, emphasizing defect prevention measures.  
+C. Extend the project schedule.  
+D. Shift focus entirely to quality control after project completion.  
+
+**Answer:** B  
+*Explanation:* Revising the quality management plan to emphasize defect prevention will improve deliverable quality without necessarily affecting the schedule.  
+*(PMBOK Guide – Seventh Edition, 2021, p150–151, “Quality Management”)*
+
+---
+
+**Question 79:**  
+Your project team is facing difficulties in meeting deadlines due to constant interruptions. What technique can you use to protect team focus?  
+A. Implement “no interruption” time blocks or timeboxing for focused work.  
+B. Increase meeting frequency.  
+C. Allow team members to work from home.  
+D. Delegate all interruptions to a single team member.  
+
+**Answer:** A  
+*Explanation:* Establishing dedicated time blocks where team members can work without interruption helps maintain focus and improve productivity.  
+*(PMBOK Guide – Seventh Edition, 2021, p148, “Time Management and Focus Techniques”)*
+
+---
+
+**Question 80:**  
+A significant process improvement opportunity has been identified, but its benefits are uncertain. What analysis should you perform?  
+A. SWOT analysis  
+B. Cost-benefit analysis  
+C. Stakeholder analysis  
+D. Root cause analysis  
+
+**Answer:** B  
+*Explanation:* A cost-benefit analysis helps determine whether the potential benefits of the process improvement justify its implementation.  
+*(PMBOK Guide – Seventh Edition, 2021, p152, “Performance Measurement and Improvement”)*
+
+---
+
+**Question 81:**  
+In your project, you need to ensure that all changes to the baseline are controlled. What is the most important document to maintain for this purpose?  
+A. Risk register  
+B. Change log  
+C. Stakeholder register  
+D. Communication plan  
+
+**Answer:** B  
+*Explanation:* The change log is the key document used to track all approved changes, ensuring that the baseline remains controlled.  
+*(PMBOK Guide – Seventh Edition, 2021, p144–145, “Change Management”)*
+
+---
+
+**Question 82:**  
+Your project schedule is complex with many overlapping activities. Which scheduling technique can help you identify tasks that can be performed in parallel?  
+A. Critical chain method  
+B. Fast tracking  
+C. Resource leveling  
+D. Gantt chart analysis  
+
+**Answer:** B  
+*Explanation:* Fast tracking involves identifying tasks that can overlap and be performed concurrently, helping to shorten the overall schedule.  
+*(PMBOK Guide – Seventh Edition, 2021, p59, “Fast Tracking”)*
+
+---
+
+**Question 83:**  
+During execution, you observe that the variance in schedule performance is growing. What tool can best help you understand the trend over time?  
+A. Trend analysis  
+B. SWOT analysis  
+C. Pareto chart  
+D. Cause-and-effect diagram  
+
+**Answer:** A  
+*Explanation:* Trend analysis uses historical performance data to forecast future performance and identify whether variances are increasing or decreasing.  
+*(PMBOK Guide – Seventh Edition, 2021, p152, “Performance Measurement”)*
+
+---
+
+**Question 84:**  
+Your project involves a new technology with uncertain performance. Which risk response strategy is most appropriate?  
+A. Avoid the risk by not using the technology.  
+B. Mitigate the risk through testing and pilot phases before full implementation.  
+C. Transfer the risk by outsourcing the work.  
+D. Accept the risk without additional actions.  
+
+**Answer:** B  
+*Explanation:* Mitigating risk through testing or pilot phases helps ensure the technology performs as expected before scaling up.  
+*(PMBOK Guide – Seventh Edition, 2021, p155, “Risk Management”)*
+
+---
+
+**Question 85:**  
+To better control project costs, you decide to monitor expenditures continuously. Which technique is best suited for this?  
+A. Analogous estimating  
+B. Earned Value Management (EVM)  
+C. Bottom-up estimating  
+D. Expert judgment  
+
+**Answer:** B  
+*Explanation:* Earned Value Management integrates cost, schedule, and scope, providing a comprehensive method for ongoing cost control.  
+*(PMBOK Guide – Seventh Edition, 2021, p152–153, “Performance Measurement”)*
+
+---
+
+**Question 86:**  
+Your project team suggests using an external consultant for a critical process improvement. What should be your first step?  
+A. Immediately hire the consultant.  
+B. Evaluate the consultant’s proposal against internal capabilities and project needs.  
+C. Dismiss the suggestion as too expensive.  
+D. Postpone the improvement until after the project.  
+
+**Answer:** B  
+*Explanation:* Evaluating the consultant’s proposal ensures that the decision is based on a comparison of external expertise versus internal capabilities, balancing cost and benefit.  
+*(PMBOK Guide – Seventh Edition, 2021, p159, “Procurement Management”)*
+
+---
+
+**Question 87:**  
+Your project requires tight integration of various technical components. What technique helps ensure these components work together as planned?  
+A. Integration testing  
+B. Stand-up meetings  
+C. Risk register updates  
+D. Scope creep management  
+
+**Answer:** A  
+*Explanation:* Integration testing verifies that technical components work together correctly, which is critical in complex projects.  
+*(PMBOK Guide – Seventh Edition, 2021, p150, “Quality Management and Testing”)*
+
+---
+
+**Question 88:**  
+A recurring delay is noted in the handoff between design and development teams. What should you do next?  
+A. Immediately reassign the work.  
+B. Analyze the handoff process and introduce process improvements such as better documentation or joint reviews.  
+C. Ignore the delays as they are inevitable.  
+D. Increase the design phase duration permanently.  
+
+**Answer:** B  
+*Explanation:* Analyzing and improving the handoff process reduces delays and ensures smoother transitions between project phases.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Process Improvement”)*
+
+---
+
+**Question 89:**  
+Your project schedule appears unrealistic based on current performance. What technique should you use to update the schedule forecast?  
+A. Re-baseline the schedule using the latest actual performance data.  
+B. Leave the original schedule unchanged.  
+C. Estimate completion based solely on remaining work.  
+D. Use historical averages without adjustment.  
+
+**Answer:** A  
+*Explanation:* Re-baselining the schedule with up-to-date performance data provides a realistic forecast for project completion.  
+*(PMBOK Guide – Seventh Edition, 2021, p148, “Baseline Management”)*
+
+---
+
+**Question 90:**  
+During execution, you discover that the documentation process is causing significant delays. What is your best course of action?  
+A. Remove documentation requirements entirely.  
+B. Streamline the documentation process using automation and templates.  
+C. Increase the time allocated for documentation without changes.  
+D. Outsource documentation tasks immediately.  
+
+**Answer:** B  
+*Explanation:* Streamlining documentation through automation and standardized templates improves efficiency without sacrificing quality.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Process Improvement”)*
+
+---
+
+**Question 91:**  
+Your project’s cost performance index (CPI) is trending below 1. What does this indicate?  
+A. The project is under budget.  
+B. The project is over budget.  
+C. The project is on budget.  
+D. The project cost cannot be determined.  
+
+**Answer:** B  
+*Explanation:* A CPI of less than 1 indicates that the project is over budget because less value is being earned for every dollar spent.  
+*(PMBOK Guide – Seventh Edition, 2021, p152, “Earned Value Management”)*
+
+---
+
+**Question 92:**  
+A vendor proposes a contract type that shifts most of the performance risk to them. Which contract type is this?  
+A. Cost-reimbursable contract  
+B. Time and materials contract  
+C. Fixed-price contract  
+D. Incentive-based contract  
+
+**Answer:** C  
+*Explanation:* Fixed-price contracts transfer most of the risk to the vendor since they agree to deliver at a predetermined price regardless of incurred costs.  
+*(PMBOK Guide – Seventh Edition, 2021, p159, “Procurement Management”)*
+
+---
+
+**Question 93:**  
+To improve project transparency, you decide to implement an integrated change control system. What is the primary benefit of this system?  
+A. It eliminates all project changes.  
+B. It provides a structured process for evaluating and approving changes, ensuring alignment with project objectives.  
+C. It speeds up the change approval process by bypassing reviews.  
+D. It allows informal changes to be made without documentation.  
+
+**Answer:** B  
+*Explanation:* An integrated change control system ensures that all changes are evaluated, approved, and documented, maintaining project alignment and transparency.  
+*(PMBOK Guide – Seventh Edition, 2021, p144–145, “Change Management”)*
+
+---
+
+**Question 94:**  
+Your project team is using iterative cycles. What tool best helps in tracking progress across iterations?  
+A. Gantt chart  
+B. Product backlog with burn-down charts  
+C. Critical path method  
+D. Resource histogram  
+
+**Answer:** B  
+*Explanation:* A product backlog combined with burn-down charts effectively tracks progress in an iterative environment by showing work remaining versus time.  
+*(PMBOK Guide – Seventh Edition, 2021, p128–129, “Agile Practices”)*
+
+---
+
+**Question 95:**  
+Your project sponsor requests weekly reports on schedule and cost variances. Which process ensures you capture these variances consistently?  
+A. Scope management  
+B. Earned Value Management (EVM)  
+C. Risk management  
+D. Quality control  
+
+**Answer:** B  
+*Explanation:* Earned Value Management systematically measures project performance and variance in cost and schedule, providing the requested data.  
+*(PMBOK Guide – Seventh Edition, 2021, p152–153, “Performance Measurement”)*
+
+---
+
+**Question 96:**  
+After several iterations, you notice that cycle times are increasing. What is the most effective way to address this issue?  
+A. Increase the team’s workload.  
+B. Analyze the workflow using process mapping to identify bottlenecks and implement improvements.  
+C. Extend the iteration duration.  
+D. Ignore the increase as temporary.  
+
+**Answer:** B  
+*Explanation:* Process mapping helps identify bottlenecks in the workflow, allowing you to implement targeted improvements to reduce cycle times.  
+*(PMBOK Guide – Seventh Edition, 2021, p148, “Process Improvement”)*
+
+---
+
+**Question 97:**  
+To better manage uncertainties in your project’s schedule, you decide to use a Monte Carlo simulation. What is the primary benefit of this technique?  
+A. It provides a single, fixed project end date.  
+B. It uses random sampling to estimate a range of potential outcomes and their probabilities.  
+C. It eliminates the need for risk management.  
+D. It simplifies the schedule by ignoring variability.  
+
+**Answer:** B  
+*Explanation:* Monte Carlo simulation uses random sampling to forecast a range of possible outcomes and their probabilities, which is valuable for managing uncertainty.  
+*(PMBOK Guide – Seventh Edition, 2021, p152, “Quantitative Risk Analysis”)*
+
+---
+
+**Question 98:**  
+Your project has incorporated several process improvements, but stakeholder satisfaction remains low. What should you do next?  
+A. Assume stakeholders are unreasonably critical.  
+B. Reevaluate stakeholder requirements and adjust process improvements to better align with their expectations.  
+C. Ignore the satisfaction scores and focus solely on internal metrics.  
+D. Increase process automation without consulting stakeholders.  
+
+**Answer:** B  
+*Explanation:* Reassessing stakeholder requirements ensures that process improvements are aligned with expectations and overall project success.  
+*(PMBOK Guide – Seventh Edition, 2021, p114, “Stakeholder Engagement and Value Delivery”)*
+
+---
+
+**Question 99:**  
+A process deviation is identified during an internal audit. What is your first step in addressing this deviation?  
+A. Ignore the deviation if it doesn’t seem critical.  
+B. Document the deviation, assess its impact, and initiate corrective actions as necessary.  
+C. Immediately terminate the process.  
+D. Blame the team members involved without further analysis.  
+
+**Answer:** B  
+*Explanation:* Documenting, assessing, and correcting process deviations ensures that the project adheres to planned processes and maintains quality.  
+*(PMBOK Guide – Seventh Edition, 2021, p150, “Quality and Process Management”)*
+
+---
+
+**Question 100:**  
+At project closure, you must compile all performance data, change records, and lessons learned. What is the most important reason for doing this?  
+A. To satisfy contractual obligations only  
+B. To improve the accuracy of future project planning and execution  
+C. To create additional documentation for auditors  
+D. To justify any cost overruns to the sponsor  
+
+**Answer:** B  
+*Explanation:* Documenting performance data, change records, and lessons learned facilitates continuous improvement, benefiting future projects by incorporating insights from past experiences.  
+*(PMBOK Guide – Seventh Edition, 2021, p134–135, “Project Closure and Organizational Learning”)*

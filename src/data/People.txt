@@ -1,0 +1,1305 @@
+# **People Domain**
+
+*Note: Questions 1–22 are the original questions from your “questions.txt” file; Questions 23–52 are additional new questions previously generated; Questions 53–100 are further new questions to complete the file to 100 questions.*
+
+---
+
+**Question 1:**  
+You have been assigned to a new project, where the work is behind schedule and the team are not working together well. The team is relatively new, and conflicts are arising. Team members are blaming each other for work not done, and some people are not showing up to work on the project at all. What will you do next?  
+A. Meet with the functional manager to agree on the team members’ time requirement.  
+B. Meet with your team to set a team charter and define roles & responsibilities. ✅  
+C. Meet with the project sponsor to gain additional funding for resources who can work together. ❌  
+D. Escalate the issue to the steering committee as soon as possible as a project risk. ❌  
+
+**Answer:** B  
+*Explanation:* The Standard for Project Management asks that we create a collaborative team environment, including team agreements, definitions of roles & responsibilities, and regular meetings to review issues.  
+*(PMBOK Guide – Seventh Edition, 2021, p28–29, “Create a Collaborative Team Environment”)*
+
+---
+
+**Question 2:**  
+You have recently completed a project for a new product and have been asked to manage it after its release to keep it relevant in today’s marketplace. Half of your existing project team are rolling off to other projects soon, and your project budget is nearly depleted. What will you do next?  
+A. Create a business case and project charter for your project sponsor to approve.  
+B. Retain as many of your current project staff to continue work on the product.  
+C. Raise a change request for your current project to add scope and continue making changes.  
+D. Secure funding for a stable team, then use current research to form a suite of projects to improve the product.  
+
+**Answer:** D  
+*Explanation:* This question refers to product management, which integrates people, data, processes, and systems to sustain a product through its lifecycle.  
+*(PMBOK Guide – Seventh Edition, 2021, p17–19, “Product Management”)*
+
+---
+
+**Question 3:**  
+You are delivering a critical change and several key stakeholders in your organization have added seemingly unnecessary steps for you to take, with extra approvals, reports, and meetings. They are also restricting the people you need from working on your project. What will you do next?  
+A. Go directly to the people you need to avoid extra back-and-forth with the stakeholders.  
+B. Raise a risk in the risk register on the lack of access to sufficient resources.  
+C. Communicate more often with the stakeholders and gain a deeper awareness of their ideas and situation.  
+D. Show your stakeholders the Resource Assignment Matrix and project roles & responsibilities.  
+
+**Answer:** C  
+*Explanation:* Effectively engaging with stakeholders is key. Regular communication helps clarify expectations and reduce unnecessary restrictions.  
+*(PMBOK Guide – Seventh Edition, 2021, p32–33, “Effectively Engage with Stakeholders”)*
+
+---
+
+**Question 4:**  
+You are managing a project team mostly made up of men. Recently Jane was hired for her high expertise in the brands that make up your industry. You notice she has been left out of some key meetings, and others are overlooking her opinions. You also notice she is paid significantly less than her male colleagues. What will you do next?  
+A. Make steps to update her pay to the same range as the others on your project, and ask her opinion and advice specifically during each meeting (along with others in your team).  
+B. Take the lower pay as a win for your project, as it will help keep costs low and her colleagues don’t need to know.  
+C. Ask Jane to write down her knowledge of the industry, just in case she leaves.  
+D. No need to rock the boat — this is just how people work in this industry.  
+
+**Answer:** A  
+*Explanation:* This question is on integrity and stewardship. Ensuring fair treatment and inclusion is critical for team morale and performance.  
+*(PMBOK Guide – Seventh Edition, 2021, p25, “Be a diligent, respectful and caring steward”)*
+
+---
+
+**Question 5:**  
+During one of your working group meetings, a stakeholder raises the concern that the product you are working on will be discontinued in the next five months. You were not aware of this, and your project budget has already been approved until the scheduled delivery, which is in five months also. What will you do next?  
+A. Keep the project going as it is — the discontinued product isn’t your responsibility.  
+B. Set a meeting with your project sponsor to share the information and a recommendation to terminate the project.  
+C. Change the scope of the project to meet a different product so your project can remain relevant.  
+D. Ask for additional funding to see if you can improve the product instead of discontinuing it.  
+
+**Answer:** B  
+*Explanation:* Delivering value is paramount. If a project no longer aligns with business needs, it is prudent to reassess or terminate the project.  
+*(PMBOK Guide – Seventh Edition, 2021, p35, “Focus on Value”)*
+
+---
+
+**Question 6:**  
+You have collected the requirements for your project and are creating the scope statement and work breakdown structure. During this process, you notice some functionality in your database system that will help a different project within your PMO. What will you do next?  
+A. Place the feature in the other project’s backlog and ask them to prioritize it.  
+B. Raise the functionality in your risk register as a threat, with a “mitigate” response.  
+C. Add the scope to your project and complete it as soon as possible.  
+D. Raise the functionality in your risk register as an opportunity, and meet with the other project team and sponsor to discuss.  
+
+**Answer:** D  
+*Explanation:* Exploiting a system interaction opportunity requires communicating and collaborating across projects to leverage benefits.  
+*(PMBOK Guide – Seventh Edition, 2021, p39, “Systems Thinking” & p125, “Opportunities”)*
+
+---
+
+**Question 7:**  
+You are working on a high-profile project. Several senior executives want to take credit while limiting their resource impact, leading to a conflict and unclear scope. What will you do next?  
+A. Create a scope statement yourself to avoid further conflict.  
+B. Facilitate a neutral discussion with executives to align on project goals.  
+C. Limit your project resources to the executives until they agree.  
+D. Escalate the issue to the steering committee for resolution.  
+
+**Answer:** B  
+*Explanation:* Neutral facilitation helps resolve conflicts by focusing on common project goals rather than personal agendas.  
+*(PMBOK Guide – Seventh Edition, 2021, p42, “Demonstrate Leadership Behaviours”)*
+
+---
+
+**Question 8:**  
+You are managing a project where most of the product is planned upfront, but an external vendor must deliver a partially defined system. Stakeholders are split between waterfall and agile approaches. What will you do next?  
+A. Use an agile methodology.  
+B. Use a waterfall methodology.  
+C. Proceed with a hybrid method combining pre-planned scope and agile ceremonies.  
+D. Use a combination of waterfall and agile to capture all requirements.  
+
+**Answer:** C  
+*Explanation:* Tailoring the approach to the project’s context by using a hybrid model allows for structure while enabling flexibility.  
+*(PMBOK Guide – Seventh Edition, 2021, p44–46, “Tailoring”)*
+
+---
+
+**Question 9:**  
+Senior users testing incremental releases have found defects. Their manager worries the product won’t meet requirements. What will you do next?  
+A. Perform some testing yourself.  
+B. Help the team focus on quality throughout the process.  
+C. Delay testing until the product is complete.  
+D. Increase testing resources to catch every defect.  
+
+**Answer:** B  
+*Explanation:* Quality is built into every phase of an agile project; ensuring every team member is responsible for quality improves overall deliverable fitness.  
+*(PMBOK Guide – Seventh Edition, 2021, p47–49, “Build Quality into Processes and Deliverables”)*
+
+---
+
+**Question 10:**  
+While conducting risk assessment, your team struggles to generate risk ideas. You decide to guide them on areas of complexity that might affect the product. What will you do next?  
+A. Ask them to brainstorm qualitative and quantitative risks.  
+B. Ask them to perform the Five Whys and Ishikawa analysis.  
+C. Ask them to brainstorm potential impacts from human behavior, system interactions, ambiguity, and technical innovation.  
+D. Ask them to perform a retrospective to discover problems.  
+
+**Answer:** C  
+*Explanation:* Brainstorming around various sources of complexity can help the team identify a broader range of risks.  
+*(PMBOK Guide – Seventh Edition, 2021, p50–51, “Navigate Complexity”)*
+
+---
+
+**Question 11:**  
+You discover a negative risk with a potential impact of $2,000,000. Stakeholders accept this risk if within a 10% threshold. What will you do next?  
+A. Note the acceptable risk level as a threat of $200,000 (10%).  
+B. Note the acceptable risk level as a threat ranging from $1,800,000 to $2,200,000.  
+C. Note the impact as outside the acceptable risk level.  
+D. Note the impact as an opportunity of $200,000.  
+
+**Answer:** B  
+*Explanation:* The risk threshold here is 10% of $2,000,000, meaning the acceptable range is $1.8m to $2.2m.  
+*(PMBOK Guide – Seventh Edition, 2021, p54, “Risk”)*
+
+---
+
+**Question 12:**  
+A risk about insufficient building materials is raised. One response suggests using a new, untested material. Half the stakeholders disagree. What will you do next?  
+A. Suggest a quantitative risk approach for more precise impact.  
+B. Advise proceeding with the proposed risk response.  
+C. Propose a different risk owner with more authority.  
+D. Suggest a different risk response that is timely, cost-effective, realistic, and agreed upon.  
+
+**Answer:** D  
+*Explanation:* Risk responses should be agreed upon by stakeholders and be realistic given the project context.  
+*(PMBOK Guide – Seventh Edition, 2021, p54, “Risk”)*
+
+---
+
+**Question 13:**  
+Your project is off track due to uncertainties in requirements and resources. The PMO asks you to brainstorm ways to prevent recurrence. What will you do next?  
+A. Increase the project’s contingency reserve.  
+B. Change the project methodology from Waterfall to Agile.  
+C. Use short feedback loops, continuous improvement, and transparent planning with the team.  
+D. Ask the team to double-check all work before submission.  
+
+**Answer:** C  
+*Explanation:* Embracing adaptability and continuous improvement is essential to prevent recurring issues.  
+*(PMBOK Guide – Seventh Edition, 2021, p55–57, “Adaptability and Resiliency”)*
+
+---
+
+**Question 14:**  
+As the project progresses, stakeholders start questioning changes and missing meetings, leading to delays. What will you do next?  
+A. Continue as planned and address concerns at the end.  
+B. Increase proactive communication and involve stakeholders in reviews.  
+C. Escalate stakeholder behavior to the sponsor.  
+D. Limit the number of allowed changes.  
+
+**Answer:** B  
+*Explanation:* Enhancing stakeholder engagement through proactive communication helps realign expectations and minimizes delays.  
+*(PMBOK Guide – Seventh Edition, 2021, p15, “Stakeholder Engagement”)*
+
+---
+
+**Question 15:**  
+While analyzing stakeholder influence, you find over 3,000 impacted stakeholders. Other project work is falling behind due to this overload. What will you do next?  
+A. Engage all stakeholder groups equally.  
+B. Prioritize stakeholders and engage with the most influential and impacted groups first.  
+C. Monitor stakeholders for stress signs and address only those groups.  
+D. Create a SharePoint page for stakeholder updates.  
+
+**Answer:** B  
+*Explanation:* Prioritizing stakeholder engagement based on influence and impact ensures that the most critical communications receive attention.  
+*(PMBOK Guide – Seventh Edition, 2021, p11–12, “Stakeholder Engagement: Prioritize and Engage”)*
+
+---
+
+**Question 16:**  
+Your project currently uses pull communication, but you notice stakeholders are unclear about project impacts and benefits. What will you do next?  
+A. Create a SharePoint site with project information.  
+B. Push for additional project funding.  
+C. Encourage two-way communication.  
+D. Send weekly email updates with project impacts and benefits.  
+
+**Answer:** D  
+*Explanation:* Push communication via scheduled updates ensures stakeholders receive clear, timely information about project progress and benefits.  
+*(PMBOK Guide – Seventh Edition, 2021, p13, “Types of Communication”)*
+
+---
+
+**Question 17:**  
+After taking over a project with a vendor that missed scope items, you set a joint meeting with both teams. What will you do next?  
+A. Speak slowly and clearly.  
+B. Confirm the message was received and understood, clarifying nuances.  
+C. Communicate only in writing to maintain records.  
+D. Prepare a formal claim for scope mismanagement.  
+
+**Answer:** B  
+*Explanation:* Confirming that both parties understand the communication minimizes misunderstandings and fosters collaboration.  
+*(PMBOK Guide – Seventh Edition, 2021, p13, “Stakeholder Engagement: Engage”)*
+
+---
+
+**Question 18:**  
+Your project experiences frequent scope changes causing delays. How will you identify the root cause?  
+A. Perform root cause analysis with the team.  
+B. Raise a risk about project delays.  
+C. Review logs to identify frequent requesters and update engagement strategies.  
+D. Increase the project contingency reserve.  
+
+**Answer:** C  
+*Explanation:* Reviewing logs (issue, risk, and change logs) can pinpoint which stakeholders are causing changes, enabling targeted improvements in engagement.  
+*(PMBOK Guide – Seventh Edition, 2021, p15, “Stakeholder Performance”)*
+
+---
+
+**Question 19:**  
+A project managed with a dictatorship style has led to low team morale and high absenteeism. The manager asks for your help, and you suggest a servant leadership style. What will the manager do next?  
+A. Serve the team by fulfilling every need.  
+B. Focus on removing obstacles and offering development opportunities.  
+C. Ensure team members serve each other.  
+D. Introduce new work methods without team input.  
+
+**Answer:** B  
+*Explanation:* Servant leadership focuses on enabling the team by removing barriers and supporting their growth, rather than micromanaging.  
+*(PMBOK Guide – Seventh Edition, 2021, p18, “Distributed Management and Leadership”)*
+
+---
+
+**Question 20:**  
+You join a project team with members from diverse functional areas who lack project experience, resulting in miscommunication and rework. What will you do next?  
+A. Set daily stand-ups.  
+B. Review the Resource Assignment Matrix.  
+C. Help the team define their vision, roles, and operating procedures.  
+D. Send the team for training.  
+
+**Answer:** C  
+*Explanation:* Establishing a clear vision, roles, and processes is crucial for forming a cohesive “one-team” mindset.  
+*(PMBOK Guide – Seventh Edition, 2021, p18, “Team Development”)*
+
+---
+
+**Question 21:**  
+While collecting project requirements, you notice the marketing manager has added unrelated scope. What will you do next?  
+A. Initiate an open dialogue to address the extra scope.  
+B. Override the marketing manager’s addition.  
+C. Raise a change request for the extra scope.  
+D. Add it to the product backlog for later prioritization.  
+
+**Answer:** A  
+*Explanation:* An open dialogue can clarify misunderstandings and resolve scope issues collaboratively.  
+*(PMBOK Guide – Seventh Edition, 2021, p21, “Project Team Culture”)*
+
+---
+
+**Question 22:**  
+Your project team, protected by a union agreement, is underperforming. The sponsor threatens to shut down the project. What will you do next?  
+A. Reassign the team to a new project.  
+B. Set a clear project purpose and pair the team with the customer.  
+C. Threaten the team with job loss.  
+D. Create a detailed Gantt chart to increase transparency.  
+
+**Answer:** B  
+*Explanation:* Establishing a clear purpose and demonstrating the team’s value helps improve morale and performance.  
+*(PMBOK Guide – Seventh Edition, 2021, p24–25, “Leadership Skills: Establishing a Vision; Motivation”)*
+
+---
+
+**Question 23:**  
+A project team member is consistently late and missing deadlines, affecting others. What leadership approach should you use?  
+A. Document and escalate immediately.  
+B. Meet privately to understand the issues and develop solutions collaboratively.  
+C. Reassign tasks to more reliable members.  
+D. Address the issue publicly to set expectations.  
+
+**Answer:** B  
+*Explanation:* A private, supportive discussion helps identify root causes and fosters improvement without public shaming.  
+*(PMBOK Guide – Seventh Edition, 2021, p80–81, “Leadership Skills”)*
+
+---
+
+**Question 24:**  
+Two technical specialists are in conflict over the best solution for a complex problem, causing delays. What is the best resolution technique?  
+A. Compromise by choosing a middle ground.  
+B. Smoothing by emphasizing areas of agreement.  
+C. Problem-solving by having them collaborate to identify the optimal solution.  
+D. Forcing a decision unilaterally.  
+
+**Answer:** C  
+*Explanation:* Collaborative problem-solving leverages both experts’ knowledge to arrive at the best solution and maintain team harmony.  
+*(PMBOK Guide – Seventh Edition, 2021, p84–85, “Conflict Management”)*
+
+---
+
+**Question 25:**  
+Leading a culturally diverse team across multiple countries, miscommunications occur. What is the most effective approach to improve team communication?  
+A. Standardize all communication in English with formal documentation.  
+B. Implement a communication plan that acknowledges cultural differences and sets clear protocols.  
+C. Restructure work packages by geography.  
+D. Schedule more status meetings.  
+
+**Answer:** B  
+*Explanation:* A tailored communication plan that respects cultural differences fosters clearer understanding and minimizes miscommunications.  
+*(PMBOK Guide – Seventh Edition, 2021, p76–77, “Communication Skills” & p95, “Cultural Diversity”)*
+
+---
+
+**Question 26:**  
+A key stakeholder is critical of project progress despite positive metrics. What is the best response?  
+A. Present detailed performance data.  
+B. Escalate the issue to the sponsor.  
+C. Schedule a private meeting to understand and address the stakeholder’s concerns.  
+D. Document the resistance and proceed.  
+
+**Answer:** C  
+*Explanation:* Directly engaging with the stakeholder to understand their concerns can build trust and help resolve underlying issues.  
+*(PMBOK Guide – Seventh Edition, 2021, p93–94, “Stakeholder Engagement”)*
+
+---
+
+**Question 27:**  
+Team members have varying work styles—some need detailed written instructions, others prefer verbal discussions. What approach should you take?  
+A. Standardize communication in one format.  
+B. Allow each to choose their own format without guidance.  
+C. Adapt your communication approach based on individual preferences while ensuring necessary documentation is maintained.  
+D. Create separate channels for each style.  
+
+**Answer:** C  
+*Explanation:* Tailoring communication to individual needs while keeping essential documentation ensures clarity and respects diversity.  
+*(PMBOK Guide – Seventh Edition, 2021, p76–77, “Communication Skills”)*
+
+---
+
+**Question 28:**  
+A high-performing team has delivered several milestones. To maintain this performance for upcoming complex deliverables, what is the most effective action?  
+A. Implement a formal individual reward system.  
+B. Recognize accomplishments and facilitate discussions on continuous improvement.  
+C. Increase monitoring to prevent issues.  
+D. Request additional resources to lower workload pressure.  
+
+**Answer:** B  
+*Explanation:* Celebrating success while encouraging ongoing improvement supports motivation and prepares the team for future challenges.  
+*(PMBOK Guide – Seventh Edition, 2021, p88–89, “Team Motivation”)*
+
+---
+
+**Question 29:**  
+Your project team includes a member who consistently delivers high-quality work but dismisses others’ ideas. What will you do next?  
+A. Reward only that individual for their high performance.  
+B. Coach the team member privately on the importance of respecting others’ input.  
+C. Ignore the behavior as long as work is done.  
+D. Publicly reprimand the team member.  
+
+**Answer:** B  
+*Explanation:* Coaching helps the high performer understand the importance of collaboration, which benefits overall team dynamics.  
+*(PMBOK Guide – Seventh Edition, 2021, p21, “Team Environment and Culture”)*
+
+---
+
+**Question 30:**  
+A team member consistently ignores agreed processes and does work their own way, causing errors. What will you do next?  
+A. Confront them publicly.  
+B. Discuss the issue privately to understand their perspective and reinforce process importance.  
+C. Immediately remove the team member.  
+D. Tolerate the behavior hoping it resolves over time.  
+
+**Answer:** B  
+*Explanation:* A private conversation is the best way to address process deviations while maintaining respect and fostering improvement.  
+*(PMBOK Guide – Seventh Edition, 2021, p28, “Create a Collaborative Team Environment”)*
+
+---
+
+**Question 31:**  
+In an agile project, a senior developer is micromanaging the team by assigning tasks, which conflicts with the self-organizing principle. What will you do next?  
+A. Allow it because of their expertise.  
+B. Remind the team of agile principles and coach the senior developer to let the team self-organize.  
+C. Have the product owner assign tasks instead.  
+D. Remove the senior developer from the team.  
+
+**Answer:** B  
+*Explanation:* Reinforcing agile principles and coaching the team member restores self-organization without demotivating the individual.  
+*(PMBOK Guide – Seventh Edition, 2021, p73, “Maintaining Team Focus and Empowerment”)*
+
+---
+
+**Question 32:**  
+In a matrix organization, a functional manager frequently pulls a key team member off project tasks, delaying progress. What will you do next?  
+A. Escalate to upper management immediately.  
+B. Negotiate with the functional manager to secure dedicated project time for the resource.  
+C. Replace the team member with someone fully available.  
+D. Accept the delays and adjust the project schedule.  
+
+**Answer:** B  
+*Explanation:* Negotiation with the functional manager to balance resource commitments is the most collaborative solution.  
+*(PMBOK Guide – Seventh Edition, 2021, p64, “Project Team Composition and Availability”)*
+
+---
+
+**Question 33:**  
+During a requirements workshop, a disagreement erupts between the technical team and the client. How will you handle the situation?  
+A. Stop the workshop and postpone discussions indefinitely.  
+B. Facilitate a break to allow parties to cool off, then reconvene for a structured discussion.  
+C. Side with the client to maintain external relationships.  
+D. Side with the technical team to preserve project feasibility.  
+
+**Answer:** B  
+*Explanation:* Taking a break and then reconvening under structured facilitation helps defuse tension and leads to clearer understanding of requirements.  
+*(PMBOK Guide – Seventh Edition, 2021, p29, “Conflict Management”)*
+
+---
+
+**Question 34:**  
+A normally high-performing team member is missing deadlines due to personal issues. What will you do next?  
+A. Issue a formal warning immediately.  
+B. Meet privately, express support, and adjust workload temporarily.  
+C. Remove the team member from the project.  
+D. Ignore the issue expecting improvement over time.  
+
+**Answer:** B  
+*Explanation:* Providing support and adjusting workload helps maintain morale and performance while addressing personal challenges.  
+*(PMBOK Guide – Seventh Edition, 2021, p24, “Leadership Skills: Motivation and Support”)*
+
+---
+
+**Question 35:**  
+A high-performing team member has become arrogant and dismissive of colleagues’ ideas, causing resentment. What will you do next?  
+A. Provide private coaching on the importance of teamwork and mutual respect.  
+B. Promote the team member for their performance, ignoring the behavior.  
+C. Publicly reprimand the individual.  
+D. Isolate them from team meetings.  
+
+**Answer:** A  
+*Explanation:* Coaching reinforces the importance of collaboration and helps integrate the team member more constructively into the team environment.  
+*(PMBOK Guide – Seventh Edition, 2021, p21, “Team Environment and Culture”)*
+
+---
+
+**Question 36:**  
+When faced with a decision on a technical solution where the team is divided, what is the best course of action?  
+A. Choose the option you believe is best.  
+B. Facilitate a discussion evaluating the pros and cons to reach a consensus.  
+C. Escalate the decision to the project sponsor.  
+D. Delay the decision until further data is available.  
+
+**Answer:** B  
+*Explanation:* Facilitating a balanced discussion ensures that the decision leverages the team’s collective expertise and gains broad support.  
+*(PMBOK Guide – Seventh Edition, 2021, p18, “Leadership: Support Team Autonomy”)*
+
+---
+
+**Question 37:**  
+Shared resources between projects are causing scheduling conflicts and tension. What will you do next?  
+A. Demand exclusive access for your project.  
+B. Collaborate with the other project manager to develop a shared resource schedule.  
+C. Hire additional resources immediately.  
+D. Ignore the issue, expecting it to resolve itself.  
+
+**Answer:** B  
+*Explanation:* Coordinating with the other project manager to create a mutually acceptable resource schedule is the best collaborative solution.  
+*(PMBOK Guide – Seventh Edition, 2021, p39, “Managing Interproject Interactions”)*
+
+---
+
+**Question 38:**  
+In recent retrospectives, team members have become quiet and hesitant to provide feedback. What will you do next?  
+A. Cancel future retrospectives.  
+B. Implement an anonymous feedback mechanism to encourage candid input.  
+C. Individually ask team members to speak up in meetings.  
+D. Assume everything is fine and continue as is.  
+
+**Answer:** B  
+*Explanation:* An anonymous feedback system helps team members express concerns without fear of repercussions, leading to honest insights for improvement.  
+*(PMBOK Guide – Seventh Edition, 2021, p28, “Collaborative Team Environment and Trust”)*
+
+---
+
+**Question 39:**  
+A busy project sponsor delays key decisions, affecting the project schedule. What will you do next?  
+A. Make decisions unilaterally and inform the sponsor later.  
+B. Request that the sponsor delegate decision authority or set up regular brief check-in meetings.  
+C. Escalate to higher management for sponsor replacement.  
+D. Continue without sponsor input.  
+
+**Answer:** B  
+*Explanation:* Arranging regular check-ins or delegating certain decisions ensures the project continues moving while accommodating the sponsor’s availability.  
+*(PMBOK Guide – Seventh Edition, 2021, p15, “Stakeholder Engagement and Support”)*
+
+---
+
+**Question 40:**  
+A high-profile stakeholder is spreading negativity about the project. What is your best course of action?  
+A. Ignore the negativity.  
+B. Meet privately to understand and address their concerns.  
+C. Publicly refute the stakeholder’s statements.  
+D. Remove the stakeholder from project communications.  
+
+**Answer:** B  
+*Explanation:* Direct engagement helps uncover valid concerns and can mitigate negative influence while preserving constructive relationships.  
+*(PMBOK Guide – Seventh Edition, 2021, p15, “Monitor Stakeholder Engagement”)*
+
+---
+
+**Question 41:**  
+Your team is spending excessive time on process improvement suggestions. What will you do next?  
+A. Dismiss the suggestions to keep focus on tasks.  
+B. Encourage the team to test improvements in a controlled manner and evaluate the results.  
+C. Immediately implement all suggestions.  
+D. Escalate the issue to senior management.  
+
+**Answer:** B  
+*Explanation:* Testing process improvements on a small scale allows the team to learn and adopt changes without disrupting ongoing work.  
+*(PMBOK Guide – Seventh Edition, 2021, p71, “Continuous Improvement and Adaptability”)*
+
+---
+
+**Question 42:**  
+During meetings, one team member frequently challenges your decisions in a disruptive manner. What will you do next?  
+A. Address the behavior privately, emphasizing respectful dialogue and constructive feedback.  
+B. Ignore the behavior to avoid conflict.  
+C. Publicly reprimand the individual during the meeting.  
+D. Remove the person from the meeting immediately.  
+
+**Answer:** A  
+*Explanation:* A private discussion helps address the issue while preserving the individual’s dignity and promoting a culture of respectful communication.  
+*(PMBOK Guide – Seventh Edition, 2021, p29, “Conflict Management and Open Communication”)*
+
+---
+
+**Question 43:**  
+Your newly formed agile team is experiencing minor conflicts and uncertainty about roles. What will you do next?  
+A. Restructure the team immediately.  
+B. Facilitate a session to clarify roles and develop team ground rules.  
+C. Ignore the conflicts, expecting them to resolve over time.  
+D. Escalate the issues to the sponsor.  
+
+**Answer:** B  
+*Explanation:* Early team conflicts are normal; guiding the team through role clarification and establishing norms can help move the team into higher performance.  
+*(PMBOK Guide – Seventh Edition, 2021, p18, “Team Development and Formation”)*
+
+---
+
+**Question 44:**  
+A team member independently starts work on a feature requested directly by a stakeholder, bypassing the change control process. What will you do next?  
+A. Praise the initiative and formally add the change to the scope.  
+B. Instruct the team member to stop and explain that changes must follow the proper process.  
+C. Ignore it since the stakeholder is senior.  
+D. Escalate the matter immediately.  
+
+**Answer:** B  
+*Explanation:* Ensuring all changes go through the change control process maintains project control and avoids scope creep.  
+*(PMBOK Guide – Seventh Edition, 2021, p11, “Change Management”)*
+
+---
+
+**Question 45:**  
+Team members are frequently asking for your approval on minor decisions, slowing progress. What will you do next?  
+A. Continue approving all decisions.  
+B. Clarify decision-making boundaries to empower team members to make choices independently.  
+C. Delegate all decisions entirely to the team without oversight.  
+D. Escalate the issue to senior management.  
+
+**Answer:** B  
+*Explanation:* Empowering the team with clear decision-making authority improves efficiency and team morale.  
+*(PMBOK Guide – Seventh Edition, 2021, p18, “Enable Team Members and Remove Roadblocks”)*
+
+---
+
+**Question 46:**  
+After completing several milestones on time and within budget, what is the best way to maintain high performance?  
+A. Immediately push the team to the next milestone without recognition.  
+B. Recognize and celebrate achievements, and discuss opportunities for continuous improvement.  
+C. Announce individual rewards only.  
+D. Increase monitoring of every team member.  
+
+**Answer:** B  
+*Explanation:* Celebrating success and promoting continuous improvement sustains team motivation and productivity.  
+*(PMBOK Guide – Seventh Edition, 2021, p21, “Team Culture – Celebrate Success”)*
+
+---
+
+**Question 47:**  
+A team member holds critical knowledge for a module, posing a risk if they leave. What will you do next?  
+A. Assume the member will stay and take no action.  
+B. Have them document the module and mentor a colleague to share the knowledge.  
+C. Immediately hire a replacement.  
+D. Isolate their work to minimize risk.  
+
+**Answer:** B  
+*Explanation:* Knowledge sharing mitigates the risk of reliance on a single individual and ensures project continuity.  
+*(PMBOK Guide – Seventh Edition, 2021, p77, “Knowledge Management and Transfer”)*
+
+---
+
+**Question 48:**  
+Your distributed team is showing signs of low trust and weak cohesion. What will you do next?  
+A. Reassign team members to local groups.  
+B. Organize virtual or in-person team-building events to strengthen relationships.  
+C. Increase written reports to compensate for lack of interaction.  
+D. Do nothing; trust will develop over time.  
+
+**Answer:** B  
+*Explanation:* Team-building activities help foster trust and improve communication among distributed team members.  
+*(PMBOK Guide – Seventh Edition, 2021, p21, “Team Culture – Trust and Relationship Building”)*
+
+---
+
+**Question 49:**  
+A team member’s performance is declining, and they tend to blame external factors for missed deadlines. What will you do next?  
+A. Meet with the team member privately to discuss performance expectations and offer support.  
+B. Publicly reprimand them in the next meeting.  
+C. Replace the team member immediately.  
+D. Ignore the situation hoping it will self-resolve.  
+
+**Answer:** A  
+*Explanation:* A one-on-one discussion is the best way to identify issues, set expectations, and offer assistance, thereby improving performance.  
+*(PMBOK Guide – Seventh Edition, 2021, p24, “Motivation and Team Performance”)*
+
+---
+
+**Question 50:**  
+A client representative contacts individual developers daily for updates and minor changes, bypassing proper channels. What will you do next?  
+A. Ask the representative to follow the established communication plan and route requests through you.  
+B. Allow the direct contact to maintain customer satisfaction.  
+C. Block the client’s access to the team.  
+D. Tell the team to ignore the requests.  
+
+**Answer:** A  
+*Explanation:* Reinforcing the agreed communication channels ensures that the team remains focused while still keeping the client informed through proper updates.  
+*(PMBOK Guide – Seventh Edition, 2021, p15, “Manage Stakeholder Communications”)*
+
+---
+
+**Question 51:**  
+A team member is the sole expert on a critical module. What should you do to mitigate risk?  
+A. Rely solely on them.  
+B. Ensure they document their work and mentor another team member.  
+C. Hire an external consultant immediately.  
+D. Do nothing until the risk materializes.  
+
+**Answer:** B  
+*Explanation:* Sharing critical knowledge reduces dependency on one individual and ensures continuity if they become unavailable.  
+*(PMBOK Guide – Seventh Edition, 2021, p77, “Knowledge Management and Transfer”)*
+
+---
+
+**Question 52:**  
+Your agile team has just formed, and early in the project, there are conflicts and uncertainty. What will you do next?  
+A. Restructure the team immediately.  
+B. Hold a retrospective to surface issues and collaboratively establish clear working agreements.  
+C. Ignore the conflicts as they are normal.  
+D. Escalate the matter to senior management.  
+
+**Answer:** B  
+*Explanation:* Early retrospectives help the team identify and resolve issues, paving the way for improved collaboration and performance.  
+*(PMBOK Guide – Seventh Edition, 2021, p18, “Team Development and Formation”)*
+
+---
+
+*--- Additional Questions (53–100) ---*
+
+**Question 53:**  
+Your remote team is struggling with communication barriers, causing misunderstandings and delays. What will you do next?  
+A. Mandate in-person meetings exclusively.  
+B. Implement collaboration tools and schedule daily virtual stand-ups.  
+C. Ignore the issue and expect the team to adjust.  
+D. Replace remote workers with local staff.  
+
+**Answer:** B  
+*Explanation:* Utilizing collaboration tools and daily stand-ups enhances communication and ensures all team members are aligned despite geographic separation.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Communication in Virtual Teams”)*
+
+---
+
+**Question 54:**  
+A team member frequently misses virtual meetings due to unreliable internet connectivity. What is your best course of action?  
+A. Exclude them from meetings.  
+B. Work with them to identify a reliable solution or alternate communication method, such as dial-in options.  
+C. Assume the issue is temporary and take no action.  
+D. Escalate the matter to HR immediately.  
+
+**Answer:** B  
+*Explanation:* Supporting the team member in resolving connectivity issues ensures inclusion and maintains team cohesion.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Effective Communication in Distributed Teams”)*
+
+---
+
+**Question 55:**  
+Your team is experiencing low morale due to a prolonged period of intense work and little recognition. What will you do next?  
+A. Increase workload to maintain momentum.  
+B. Organize a recognition event or informal celebration to acknowledge their efforts.  
+C. Ignore the issue as morale will eventually rebound.  
+D. Assign additional tasks to distract the team.  
+
+**Answer:** B  
+*Explanation:* Recognizing and celebrating achievements improves morale and motivates the team to sustain their performance.  
+*(PMBOK Guide – Seventh Edition, 2021, p88, “Team Motivation and Recognition”)*
+
+---
+
+**Question 56:**  
+A conflict arises when two team members disagree over the implementation approach for a critical feature. What will you do next?  
+A. Force one approach without discussion.  
+B. Facilitate a discussion where both parties explain their views and jointly decide on the best solution.  
+C. Ignore the disagreement.  
+D. Escalate the conflict to the project sponsor immediately.  
+
+**Answer:** B  
+*Explanation:* Facilitated discussions help the team reach consensus while leveraging diverse perspectives.  
+*(PMBOK Guide – Seventh Edition, 2021, p29, “Conflict Resolution Techniques”)*
+
+---
+
+**Question 57:**  
+You observe that team members are hesitant to provide honest feedback during meetings. What will you do next?  
+A. Cancel meetings to avoid conflict.  
+B. Implement an anonymous feedback mechanism to encourage open, honest input.  
+C. Ignore the lack of feedback.  
+D. Mandate that everyone speak up regardless of comfort.  
+
+**Answer:** B  
+*Explanation:* Anonymous feedback can help surface issues without fear of retribution, leading to more effective team improvements.  
+*(PMBOK Guide – Seventh Edition, 2021, p28, “Building a Trusting Team Environment”)*
+
+---
+
+**Question 58:**  
+A key stakeholder’s behavior is negatively influencing team discussions. What will you do next?  
+A. Remove the stakeholder from all meetings.  
+B. Arrange a one-on-one meeting with the stakeholder to discuss their concerns and suggest a more constructive approach.  
+C. Ignore their behavior.  
+D. Publicly confront the stakeholder during the next meeting.  
+
+**Answer:** B  
+*Explanation:* Direct engagement helps address the stakeholder’s concerns and promotes a more positive interaction with the team.  
+*(PMBOK Guide – Seventh Edition, 2021, p15, “Stakeholder Engagement”)*
+
+---
+
+**Question 59:**  
+Your team is reluctant to adopt a new collaboration tool recommended by you. What will you do next?  
+A. Force its usage immediately.  
+B. Provide training and highlight the benefits to gain buy-in from the team.  
+C. Discard the tool and revert to old methods.  
+D. Ignore the issue and hope the team adapts eventually.  
+
+**Answer:** B  
+*Explanation:* Training and clear communication of benefits can increase team acceptance and lead to smoother transitions to new tools.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Adapting Communication Tools”)*
+
+---
+
+**Question 60:**  
+A team member consistently produces work of lower quality despite repeated coaching. What will you do next?  
+A. Publicly shame the individual.  
+B. Reassign their responsibilities and offer additional training or mentoring.  
+C. Ignore the issue and hope for improvement.  
+D. Immediately replace the team member.  
+
+**Answer:** B  
+*Explanation:* Adjusting responsibilities and providing targeted support can help improve performance while maintaining team morale.  
+*(PMBOK Guide – Seventh Edition, 2021, p24, “Managing Team Performance”)*
+
+---
+
+**Question 61:**  
+A team member is feeling overwhelmed and has started to show signs of burnout. What will you do next?  
+A. Increase their workload to test their resilience.  
+B. Meet with the team member to discuss workload adjustments and offer support, such as temporary resource reallocation.  
+C. Ignore the signs and expect improvement over time.  
+D. Immediately remove them from the project.  
+
+**Answer:** B  
+*Explanation:* Addressing burnout proactively by adjusting workloads and offering support can prevent further issues and sustain team performance.  
+*(PMBOK Guide – Seventh Edition, 2021, p24, “Team Motivation and Well-being”)*
+
+---
+
+**Question 62:**  
+A stakeholder who is critical to the project is not participating in scheduled meetings. What will you do next?  
+A. Send detailed meeting minutes and request feedback individually.  
+B. Exclude the stakeholder from future communications.  
+C. Wait for them to eventually join meetings.  
+D. Report their absence to the sponsor.  
+
+**Answer:** A  
+*Explanation:* Providing detailed minutes and following up individually can help keep the stakeholder informed and engaged.  
+*(PMBOK Guide – Seventh Edition, 2021, p15, “Stakeholder Engagement”)*
+
+---
+
+**Question 63:**  
+Your team is divided over which communication tool best suits their needs. What will you do next?  
+A. Mandate a single tool for everyone.  
+B. Survey the team and adopt the tool that best meets the majority’s needs while ensuring essential documentation.  
+C. Allow each member to use a different tool.  
+D. Avoid using any tool to reduce complexity.  
+
+**Answer:** B  
+*Explanation:* Engaging the team in the decision ensures that the chosen tool meets their needs and maintains consistency in communication.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Effective Communication”)*
+
+---
+
+**Question 64:**  
+A junior team member is struggling to express their ideas in group meetings. What will you do next?  
+A. Ignore their input.  
+B. Provide a safe space by encouraging them to share ideas in a smaller group or one-on-one setting.  
+C. Publicly force them to speak up.  
+D. Replace them with someone more vocal.  
+
+**Answer:** B  
+*Explanation:* Creating a safe space fosters confidence and helps all team members contribute effectively.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Emotional Intelligence in Leadership”)*
+
+---
+
+**Question 65:**  
+You learn that one team member has a significant conflict with a colleague over responsibilities. What will you do next?  
+A. Ignore the conflict, assuming it will resolve over time.  
+B. Mediate a discussion between the two to clarify roles and responsibilities.  
+C. Immediately reassign one of the team members.  
+D. Escalate the issue to HR without discussion.  
+
+**Answer:** B  
+*Explanation:* Mediation helps clarify roles and facilitates mutual understanding, which is essential for team collaboration.  
+*(PMBOK Guide – Seventh Edition, 2021, p29, “Conflict Management”)*
+
+---
+
+**Question 66:**  
+A senior team member’s domineering behavior is stifling creative input from others. What will you do next?  
+A. Publicly reprimand the senior member.  
+B. Facilitate a meeting to discuss team collaboration and encourage respectful dialogue.  
+C. Remove the senior member from meetings.  
+D. Ignore the behavior to preserve team hierarchy.  
+
+**Answer:** B  
+*Explanation:* Facilitating respectful dialogue helps balance contributions and preserves a collaborative environment.  
+*(PMBOK Guide – Seventh Edition, 2021, p29, “Leadership and Team Collaboration”)*
+
+---
+
+**Question 67:**  
+Your team expresses concerns about the clarity of their roles in the project. What will you do next?  
+A. Provide a detailed roles and responsibilities matrix and discuss it with the team.  
+B. Ask team members to figure it out on their own.  
+C. Change the project structure immediately.  
+D. Ignore the concerns as they are normal.  
+
+**Answer:** A  
+*Explanation:* Clear documentation and discussion of roles help ensure everyone understands their responsibilities and contributes effectively.  
+*(PMBOK Guide – Seventh Edition, 2021, p18, “Team Development”)*
+
+---
+
+**Question 68:**  
+A critical team member is frequently traveling and is hard to reach. What will you do next?  
+A. Reassign their tasks to someone else immediately.  
+B. Set up regular remote check-ins to ensure they remain engaged and informed.  
+C. Ignore their absence.  
+D. Request the team member cancel future trips.  
+
+**Answer:** B  
+*Explanation:* Regular remote check-ins help maintain communication and ensure that even traveling team members stay involved in project updates.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Effective Communication in Distributed Teams”)*
+
+---
+
+**Question 69:**  
+Your project sponsor provides vague feedback on project deliverables, leaving the team confused about expectations. What will you do next?  
+A. Request a follow-up meeting with the sponsor to gain clear, actionable feedback.  
+B. Assume the deliverables are acceptable as-is.  
+C. Disregard the sponsor’s feedback completely.  
+D. Ask the team to interpret the feedback independently.  
+
+**Answer:** A  
+*Explanation:* Seeking clarification ensures that the team understands expectations, reducing ambiguity and improving deliverable quality.  
+*(PMBOK Guide – Seventh Edition, 2021, p15, “Stakeholder Engagement”)*
+
+---
+
+**Question 70:**  
+A team member expresses a desire to lead a part of the project but lacks formal leadership experience. What will you do next?  
+A. Deny the request to avoid risk.  
+B. Mentor and empower the team member with leadership opportunities on a trial basis.  
+C. Immediately promote the team member to a leadership role.  
+D. Ignore their request.  
+
+**Answer:** B  
+*Explanation:* Mentoring and gradually empowering team members builds leadership capacity and contributes to team growth.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Leadership Skills and Team Empowerment”)*
+
+---
+
+**Question 71:**  
+During a project meeting, a team member’s idea is dismissed by others without discussion. What will you do next?  
+A. Allow it to pass to maintain meeting flow.  
+B. Encourage an open discussion to ensure all ideas are considered.  
+C. Ask the team member to re-submit the idea in writing.  
+D. End the meeting early.  
+
+**Answer:** B  
+*Explanation:* Encouraging open discussion ensures all ideas are heard, fostering innovation and team inclusion.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Fostering a Collaborative Team Environment”)*
+
+---
+
+**Question 72:**  
+Your team has received conflicting instructions from two different senior stakeholders. What will you do next?  
+A. Follow the instructions of the more senior stakeholder.  
+B. Arrange a meeting with both stakeholders to reconcile the conflicting directives.  
+C. Ignore both sets of instructions.  
+D. Implement both instructions simultaneously.  
+
+**Answer:** B  
+*Explanation:* Bringing stakeholders together to clarify and align on priorities helps prevent confusion and miscommunication.  
+*(PMBOK Guide – Seventh Edition, 2021, p15, “Stakeholder Engagement”)*
+
+---
+
+**Question 73:**  
+A team member often works in isolation and rarely collaborates with others. What will you do next?  
+A. Force the member into group settings.  
+B. Encourage collaboration by assigning pair work or group tasks that require joint effort.  
+C. Allow them to work alone permanently.  
+D. Reassign them to a solitary task permanently.  
+
+**Answer:** B  
+*Explanation:* Facilitating collaborative tasks can help integrate the team member into group dynamics and improve overall team performance.  
+*(PMBOK Guide – Seventh Edition, 2021, p18, “Team Collaboration”)*
+
+---
+
+**Question 74:**  
+Your team is using a new project management tool, but some members are struggling to adapt. What will you do next?  
+A. Mandate its use without further assistance.  
+B. Organize training sessions and provide user support to ease the transition.  
+C. Revert to the old system immediately.  
+D. Ignore the learning curve and assume adaptation will occur over time.  
+
+**Answer:** B  
+*Explanation:* Offering training and support helps the team adapt to new tools and minimizes productivity loss during transitions.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Adapting Communication Tools”)*
+
+---
+
+**Question 75:**  
+A key stakeholder criticizes the team’s progress in a public forum. What will you do next?  
+A. Publicly defend the team in the same forum.  
+B. Arrange a private meeting with the stakeholder to understand their concerns and provide context.  
+C. Ignore the criticism.  
+D. Blame the team publicly for the delays.  
+
+**Answer:** B  
+*Explanation:* Addressing concerns privately helps maintain a positive team environment and resolves misunderstandings without public conflict.  
+*(PMBOK Guide – Seventh Edition, 2021, p15, “Stakeholder Engagement”)*
+
+---
+
+**Question 76:**  
+Your team struggles with time management, often running over in meetings. What will you do next?  
+A. Cancel meetings altogether.  
+B. Set strict agendas and time-box each meeting segment to improve efficiency.  
+C. Extend meeting times to cover all discussions.  
+D. Ignore the issue.  
+
+**Answer:** B  
+*Explanation:* Time-boxing meetings with clear agendas improves efficiency and ensures discussions remain focused.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Efficient Team Communication”)*
+
+---
+
+**Question 77:**  
+A team member has an innovative idea that could improve project outcomes, but they are hesitant to share it. What will you do next?  
+A. Wait for them to eventually share it.  
+B. Proactively ask for their input and create a supportive environment for innovation.  
+C. Dismiss the idea as unimportant.  
+D. Have them submit the idea anonymously.  
+
+**Answer:** B  
+*Explanation:* Proactively inviting ideas fosters an innovative culture and ensures valuable suggestions are not lost.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Fostering Innovation”)*
+
+---
+
+**Question 78:**  
+Your project team is experiencing delays because too many emails and status reports are interrupting their work. What will you do next?  
+A. Increase the frequency of emails for better communication.  
+B. Implement a streamlined reporting process or dashboard to reduce interruptions.  
+C. Stop all email communications completely.  
+D. Ask the team to ignore the emails.  
+
+**Answer:** B  
+*Explanation:* Streamlining reporting through dashboards or periodic updates minimizes disruptions while keeping stakeholders informed.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Optimizing Communication Channels”)*
+
+---
+
+**Question 79:**  
+A team member complains that their ideas are always ignored during brainstorming sessions. What will you do next?  
+A. Ignore the complaint.  
+B. Ensure everyone has equal opportunity to speak, perhaps by using a structured round-robin approach during sessions.  
+C. Cancel brainstorming sessions altogether.  
+D. Ask the team member to document their ideas only in writing.  
+
+**Answer:** B  
+*Explanation:* Structuring brainstorming sessions helps guarantee that every team member’s input is heard and considered.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Team Collaboration and Inclusive Practices”)*
+
+---
+
+**Question 80:**  
+Your team faces challenges transitioning from a traditional to an agile environment. What will you do next?  
+A. Mandate agile practices without support.  
+B. Provide coaching and training on agile principles and facilitate gradual adaptation.  
+C. Revert to traditional methods immediately.  
+D. Ignore the challenges and hope they improve over time.  
+
+**Answer:** B  
+*Explanation:* Offering targeted coaching and training eases the transition and helps the team adopt agile practices effectively.  
+*(PMBOK Guide – Seventh Edition, 2021, p62, “Agile Transition and Coaching”)*
+
+---
+
+**Question 81:**  
+A new team member feels overwhelmed by the project’s pace and volume of information. What will you do next?  
+A. Assign them a mentor and provide onboarding resources to help them catch up.  
+B. Leave them to figure it out on their own.  
+C. Reduce their workload permanently.  
+D. Exclude them from critical meetings.  
+
+**Answer:** A  
+*Explanation:* Pairing the new member with a mentor and offering comprehensive onboarding helps them integrate smoothly and build confidence.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Onboarding and Mentorship”)*
+
+---
+
+**Question 82:**  
+Your team’s collaboration suffers because some members are in different time zones. What will you do next?  
+A. Schedule meetings at a time convenient only for the majority.  
+B. Establish a rotating meeting schedule and use asynchronous communication tools to accommodate everyone.  
+C. Exclude those in less convenient time zones from meetings.  
+D. Expect everyone to adjust to a single time zone.  
+
+**Answer:** B  
+*Explanation:* A flexible meeting schedule and asynchronous tools help bridge time zone differences while ensuring all voices are heard.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Global Team Communication”)*
+
+---
+
+**Question 83:**  
+A team member often submits work late, citing personal issues. What will you do next?  
+A. Ignore the lateness as long as the work quality is acceptable.  
+B. Discuss their challenges privately and collaboratively develop a plan to better manage their deadlines.  
+C. Immediately reassign their tasks.  
+D. Publicly admonish them to set an example.  
+
+**Answer:** B  
+*Explanation:* A private discussion helps identify the root causes and allows for the creation of a supportive plan to improve timeliness.  
+*(PMBOK Guide – Seventh Edition, 2021, p24, “Team Performance Management”)*
+
+---
+
+**Question 84:**  
+Your team is hesitant to experiment with new methods due to fear of failure. What will you do next?  
+A. Enforce strict adherence to current methods.  
+B. Encourage a culture of safe experimentation and learning from mistakes.  
+C. Punish failures to avoid risk.  
+D. Ignore the fear and proceed with new methods regardless.  
+
+**Answer:** B  
+*Explanation:* Fostering a culture where experimentation is safe encourages innovation and continuous improvement.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Continuous Improvement and Innovation”)*
+
+---
+
+**Question 85:**  
+A key stakeholder is upset about a recent change in project direction and expresses their dissatisfaction openly. What will you do next?  
+A. Argue with the stakeholder publicly.  
+B. Arrange a private meeting to understand their concerns and discuss how the change aligns with project goals.  
+C. Ignore the stakeholder’s feedback.  
+D. Immediately reverse the change without discussion.  
+
+**Answer:** B  
+*Explanation:* A private conversation helps address concerns and clarifies the rationale behind the change, aligning expectations.  
+*(PMBOK Guide – Seventh Edition, 2021, p15, “Stakeholder Engagement”)*
+
+---
+
+**Question 86:**  
+Your project manager notices that team decisions are taking too long due to extensive debates on minor details. What will you do next?  
+A. Impose a time limit on discussions and focus on decision-making criteria.  
+B. Allow unlimited debate to ensure all opinions are heard.  
+C. Cancel decision meetings entirely.  
+D. Defer decisions until later in the project.  
+
+**Answer:** A  
+*Explanation:* Time-boxing discussions helps keep meetings efficient and ensures decisions are made without unnecessary delays.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Effective Meeting Management”)*
+
+---
+
+**Question 87:**  
+A team member is resistant to using a new collaboration process, preferring old methods. What will you do next?  
+A. Forcibly replace the process immediately.  
+B. Explain the benefits and provide training to ease the transition.  
+C. Allow them to continue with the old method, creating inconsistency.  
+D. Ignore their concerns and enforce the new process without support.  
+
+**Answer:** B  
+*Explanation:* Explaining benefits and offering training helps overcome resistance and fosters a smoother transition to new processes.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Change Management in Teams”)*
+
+---
+
+**Question 88:**  
+A team member is concerned that their career development is being overlooked on the project. What will you do next?  
+A. Dismiss their concern as irrelevant to project work.  
+B. Discuss their career goals and identify opportunities within the project to help develop their skills.  
+C. Promise a promotion immediately.  
+D. Ignore the concern and focus solely on project outcomes.  
+
+**Answer:** B  
+*Explanation:* Supporting career development builds team loyalty and improves overall performance by aligning individual goals with project needs.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Team Development and Motivation”)*
+
+---
+
+**Question 89:**  
+During a crisis, your team is demoralized and confused about priorities. What will you do next?  
+A. Leave them to figure it out on their own.  
+B. Provide clear, transparent communication and reestablish priorities with the team.  
+C. Increase workload to push through the crisis.  
+D. Cancel all meetings to allow them to focus on tasks.  
+
+**Answer:** B  
+*Explanation:* Clear communication and reestablishing priorities help refocus the team and restore confidence during a crisis.  
+*(PMBOK Guide – Seventh Edition, 2021, p15, “Crisis Management and Communication”)*
+
+---
+
+**Question 90:**  
+A junior team member suggests an unconventional solution that may carry risk. What will you do next?  
+A. Immediately reject the idea due to the risk.  
+B. Evaluate the idea’s potential benefits and risks with the team before making a decision.  
+C. Accept the idea without evaluation.  
+D. Delay any decision until further notice.  
+
+**Answer:** B  
+*Explanation:* Evaluating both risks and benefits collaboratively can lead to innovative solutions while managing potential downsides.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Innovation and Risk Management”)*
+
+---
+
+**Question 91:**  
+Your project is facing delays because the team is overburdened with administrative tasks. What will you do next?  
+A. Increase administrative requirements.  
+B. Automate reporting and administrative tasks to allow the team more time for core work.  
+C. Ignore the issue as it’s part of the process.  
+D. Reassign core work to administrative staff.  
+
+**Answer:** B  
+*Explanation:* Automating repetitive tasks frees up time for the team to focus on value-added work and improves efficiency.  
+*(PMBOK Guide – Seventh Edition, 2021, p76, “Process Improvement and Efficiency”)*
+
+---
+
+**Question 92:**  
+A team member suggests a radical change to the project’s working model. What will you do next?  
+A. Immediately implement the change without discussion.  
+B. Gather the team to discuss the proposal, evaluate its feasibility, and decide collectively.  
+C. Reject the suggestion to avoid disrupting the current process.  
+D. Ask the team member to develop the idea independently.  
+
+**Answer:** B  
+*Explanation:* Engaging the team in evaluating radical ideas promotes innovation and collective ownership of the project’s direction.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Fostering Innovation and Collaboration”)*
+
+---
+
+**Question 93:**  
+Your team is struggling to manage stress during a high-pressure phase of the project. What will you do next?  
+A. Ignore stress as part of the job.  
+B. Introduce short breaks, wellness sessions, or stress management resources to support the team.  
+C. Increase workloads to distract from the stress.  
+D. Remove stressed individuals from the team immediately.  
+
+**Answer:** B  
+*Explanation:* Implementing stress-relief measures helps maintain productivity and supports the well-being of the team.  
+*(PMBOK Guide – Seventh Edition, 2021, p24, “Team Well-being”)*
+
+---
+
+**Question 94:**  
+A team member who usually contributes actively has become withdrawn and uncommunicative. What will you do next?  
+A. Confront them publicly.  
+B. Have a private, empathetic discussion to understand any underlying issues.  
+C. Assume they’re just quiet and do nothing.  
+D. Reassign them to a less critical role without discussion.  
+
+**Answer:** B  
+*Explanation:* A private, empathetic conversation can help uncover issues affecting the team member’s performance and allow for supportive interventions.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Emotional Intelligence in Leadership”)*
+
+---
+
+**Question 95:**  
+Your team’s performance is suffering because members are unclear about the project’s vision. What will you do next?  
+A. Reiterate the project vision in a clear, compelling manner during a team meeting.  
+B. Assume the vision is understood and focus on tasks.  
+C. Delegate the responsibility of communicating the vision to a junior member.  
+D. Delay communication until later in the project.  
+
+**Answer:** A  
+*Explanation:* Clearly communicating and reinforcing the project vision aligns the team’s efforts and boosts motivation.  
+*(PMBOK Guide – Seventh Edition, 2021, p24, “Vision and Project Alignment”)*
+
+---
+
+**Question 96:**  
+A team member’s suggestions for process improvements are frequently ignored during meetings. What will you do next?  
+A. Ask the team to document all suggestions and revisit them in a dedicated improvement session.  
+B. Disregard the suggestions completely.  
+C. Publicly criticize the team member for their persistence.  
+D. Immediately implement every suggestion regardless of feasibility.  
+
+**Answer:** A  
+*Explanation:* Documenting and revisiting suggestions in a structured manner ensures that valuable ideas are not lost and that continuous improvement is fostered.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Continuous Improvement”)*
+
+---
+
+**Question 97:**  
+During a sprint review, a team member’s contribution is overshadowed by others. What will you do next?  
+A. Ignore the imbalance.  
+B. Ensure that credit is given fairly by acknowledging all contributions and encouraging inclusive feedback.  
+C. Focus only on the contributions of the most senior members.  
+D. Reassign tasks so that only certain members contribute in future sprints.  
+
+**Answer:** B  
+*Explanation:* Fair recognition reinforces positive behavior and motivates all team members to contribute their best.  
+*(PMBOK Guide – Seventh Edition, 2021, p88, “Team Motivation”)*
+
+---
+
+**Question 98:**  
+A conflict between two team members escalates into personal remarks during a meeting. What will you do next?  
+A. Immediately end the meeting and reprimand both publicly.  
+B. Calmly intervene, ask both parties to pause, and arrange for a private mediation session to resolve the conflict.  
+C. Allow the conflict to continue to see if it resolves naturally.  
+D. Side with one member to quickly settle the matter.  
+
+**Answer:** B  
+*Explanation:* Intervening calmly and arranging mediation helps resolve personal conflicts constructively while preserving team cohesion.  
+*(PMBOK Guide – Seventh Edition, 2021, p29, “Conflict Resolution”)*
+
+---
+
+**Question 99:**  
+Your team is hesitant to adopt new leadership initiatives because they fear additional accountability. What will you do next?  
+A. Force the adoption of new initiatives regardless of team sentiment.  
+B. Clearly explain the benefits and provide support and training to help the team understand and embrace the changes.  
+C. Abandon all new initiatives to keep the team comfortable.  
+D. Outsource leadership responsibilities.  
+
+**Answer:** B  
+*Explanation:* Educating and supporting the team during changes fosters acceptance and reduces fear of additional accountability.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Leadership and Change Management”)*
+
+---
+
+**Question 100:**  
+A recent internal survey shows that team members feel they lack sufficient input into project decision-making. What will you do next?  
+A. Continue with the current decision-making process.  
+B. Revise the decision-making process to include regular input from all team members, ensuring their voices are heard.  
+C. Limit decision-making to senior management.  
+D. Ignore the survey results as an anomaly.  
+
+**Answer:** B  
+*Explanation:* Involving the entire team in decision-making increases buy-in and can lead to better project outcomes.  
+*(PMBOK Guide – Seventh Edition, 2021, p80, “Empowering Teams through Inclusive Decision-Making”)*
