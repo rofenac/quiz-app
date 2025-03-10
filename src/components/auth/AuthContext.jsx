@@ -82,9 +82,9 @@ export const AuthProvider = ({ children }) => {
         },
         body: JSON.stringify({
           username,
-          email,
+          email: email || '',
           password,
-          displayName: displayName || username // Use username as displayName if not provided
+          displayName: displayName || username
         })
       })
 

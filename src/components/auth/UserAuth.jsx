@@ -134,7 +134,7 @@ export const RegisterForm = ({ onClose }) => {
             className="input input-bordered input-primary shadow-sm"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            required
+            placeholder="Optional"
           />
         </div>
 
